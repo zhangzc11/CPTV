@@ -1,0 +1,6 @@
+StreamChain add 0x157877f0
+Start to process run: 40801 ... 
+[Run]:40801 [Site]:1 [Bin]:14254 [FullTime]:3471.41 [SkipTime]:0 [Veto1]:714.732 [Veto2]:733.805 [Veto3]:515.483 [Veto4]:515.483 [SgUp1]:55161 [SgUp2]:54250 [SgUp3]:0 [SgUp4]:0 [SgLow1]:55040 [SgLow2]:54148 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:554372 [NetMuon2]:550272 [NetMuon3]:594210 [NetMuon4]:594210
+[Run]:40801 [Site]:1 [Bin]:14255 [FullTime]:3600 [SkipTime]:0 [Veto1]:748.584 [Veto2]:746.263 [Veto3]:533.667 [Veto4]:533.667 [SgUp1]:57188 [SgUp2]:56916 [SgUp3]:0 [SgUp4]:0 [SgLow1]:57080 [SgLow2]:56787 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:571788 [NetMuon2]:572150 [NetMuon3]:614828 [NetMuon4]:614828
+End process Run: 40801 ... 
+[Run]:40801 [Site]:1 [Bin]:14256 [FullTime]:3515.56 [SkipTime]:0 [Veto1]:712.134 [Veto2]:715.175 [Veto3]:521.376 [Veto4]:521.376

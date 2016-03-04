@@ -1,0 +1,10 @@
+StreamChain add 0x138b27f0
+Start to process run: 35400 ... 
+[Run]:35400 [Site]:4 [Bin]:7992 [FullTime]:1964.21 [SkipTime]:0 [Veto1]:33.9406 [Veto2]:42.8226 [Veto3]:39.8383 [Veto4]:39.8124 [SgUp1]:37558 [SgUp2]:37941 [SgUp3]:38456 [SgUp4]:38129 [SgLow1]:37553 [SgLow2]:37911 [SgLow3]:38430 [SgLow4]:38109 [NetMuon1]:32417 [NetMuon2]:32287 [NetMuon3]:32303 [NetMuon4]:32312
+[Run]:35400 [Site]:4 [Bin]:7993 [FullTime]:3600 [SkipTime]:0 [Veto1]:72.1854 [Veto2]:66.2895 [Veto3]:69.2213 [Veto4]:76.0817 [SgUp1]:68565 [SgUp2]:69242 [SgUp3]:70039 [SgUp4]:69434 [SgLow1]:68532 [SgLow2]:69215 [SgLow3]:70006 [SgLow4]:69400 [NetMuon1]:59176 [NetMuon2]:59291 [NetMuon3]:59223 [NetMuon4]:59102
+[Run]:35400 [Site]:4 [Bin]:7994 [FullTime]:3600 [SkipTime]:0 [Veto1]:78.128 [Veto2]:67.2449 [Veto3]:75.1639 [Veto4]:71.1695 [SgUp1]:68455 [SgUp2]:69409 [SgUp3]:70659 [SgUp4]:70152 [SgLow1]:68432 [SgLow2]:69370 [SgLow3]:70630 [SgLow4]:70129 [NetMuon1]:59124 [NetMuon2]:59306 [NetMuon3]:59149 [NetMuon4]:59231
+[Run]:35400 [Site]:4 [Bin]:7995 [FullTime]:3600 [SkipTime]:0 [Veto1]:66.3513 [Veto2]:66.3473 [Veto3]:68.3334 [Veto4]:71.5306 [SgUp1]:68729 [SgUp2]:69582 [SgUp3]:69974 [SgUp4]:70224 [SgLow1]:68698 [SgLow2]:69546 [SgLow3]:69936 [SgLow4]:70191 [NetMuon1]:60605 [NetMuon2]:60597 [NetMuon3]:60557 [NetMuon4]:60508
+[Run]:35400 [Site]:4 [Bin]:7996 [FullTime]:3600 [SkipTime]:0 [Veto1]:68.3355 [Veto2]:81.0563 [Veto3]:71.2253 [Veto4]:64.3144 [SgUp1]:69379 [SgUp2]:69652 [SgUp3]:70244 [SgUp4]:69655 [SgLow1]:69351 [SgLow2]:69601 [SgLow3]:70217 [SgLow4]:69609 [NetMuon1]:62988 [NetMuon2]:62733 [NetMuon3]:62923 [NetMuon4]:63041
+[Run]:35400 [Site]:4 [Bin]:7997 [FullTime]:3600 [SkipTime]:0 [Veto1]:64.4691 [Veto2]:65.4134 [Veto3]:71.3589 [Veto4]:69.3417 [SgUp1]:68880 [SgUp2]:69599 [SgUp3]:70563 [SgUp4]:69937 [SgLow1]:68870 [SgLow2]:69560 [SgLow3]:70526 [SgLow4]:69912 [NetMuon1]:60747 [NetMuon2]:60734 [NetMuon3]:60630 [NetMuon4]:60664
+End process Run: 35400 ... 
+[Run]:35400 [Site]:4 [Bin]:7998 [FullTime]:3375.6 [SkipTime]:0 [Veto1]:66.99 [Veto2]:61.0364 [Veto3]:64.0008 [Veto4]:69.9143

@@ -1,0 +1,17 @@
+Sender: LSF System <lsfadmin@c02b02>
+Subject: Job 4530203: </work/wangzhe_work/zhangzc/Ostw_Solar/EH1/Ostw/aileron/Script/EH1/run0021221Z1.csh> Done
+
+Job </work/wangzhe_work/zhangzc/Ostw_Solar/EH1/Ostw/aileron/Script/EH1/run0021221Z1.csh> was submitted from host <ln0> by user <wangzhe> in cluster <cluster1>.
+Job was executed on host(s) <2*c02b02>, in queue <normal>, as user <wangzhe> in cluster <cluster1>.
+</tmp/.lsbtmp628> was used as the home directory.
+</home/wangzhe/WORK/zhangzc/Ostw_Solar/EH1/Ostw/aileron> was used as the working directory.
+Started at Sat Mar  7 22:17:11 2015
+Results reported at Mon Mar  9 06:15:49 2015
+Cannot open your job file: /tmp/.lsbtmp628/.lsbatch/1425717407.4530203
+Successfully completed
+
+PS:
+
+Unable to read output data from the stdout buffer file </tmp/.lsbtmp628/.lsbatch/1425717407.4530203.out>: your job was probably aborted prematurely.
+Unable to read stderr data from stderr buffer file; your job was probably aborted prematurely.
+

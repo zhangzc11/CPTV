@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/dybsvn/!svn/ver/21631/people/wangzhe/TWin/AccSub/P12e_1.5MeV_Gd
+END
+TestRun.csh
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/dybsvn/!svn/ver/21617/people/wangzhe/TWin/AccSub/P12e_1.5MeV_Gd/TestRun.csh
+END
+runEH1-P12e-Gd22Dist.csh
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/dybsvn/!svn/ver/21631/people/wangzhe/TWin/AccSub/P12e_1.5MeV_Gd/runEH1-P12e-Gd22Dist.csh
+END
+TestEH1-P12e-Gd.list
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/dybsvn/!svn/ver/21628/people/wangzhe/TWin/AccSub/P12e_1.5MeV_Gd/TestEH1-P12e-Gd.list
+END
+runEH2-P12e-Gd22Dist.csh
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/dybsvn/!svn/ver/21631/people/wangzhe/TWin/AccSub/P12e_1.5MeV_Gd/runEH2-P12e-Gd22Dist.csh
+END
+TestEH2-P12e-Gd.list
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/dybsvn/!svn/ver/21628/people/wangzhe/TWin/AccSub/P12e_1.5MeV_Gd/TestEH2-P12e-Gd.list
+END
+runEH3-P12e-Gd22Dist.csh
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/dybsvn/!svn/ver/21631/people/wangzhe/TWin/AccSub/P12e_1.5MeV_Gd/runEH3-P12e-Gd22Dist.csh
+END
+TestEH3-P12e-Gd.list
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/dybsvn/!svn/ver/21628/people/wangzhe/TWin/AccSub/P12e_1.5MeV_Gd/TestEH3-P12e-Gd.list
+END
+runEH1-P12e-Gd.csh
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/dybsvn/!svn/ver/21617/people/wangzhe/TWin/AccSub/P12e_1.5MeV_Gd/runEH1-P12e-Gd.csh
+END
+runEH2-P12e-Gd.csh
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/dybsvn/!svn/ver/21617/people/wangzhe/TWin/AccSub/P12e_1.5MeV_Gd/runEH2-P12e-Gd.csh
+END
+runEH3-P12e-Gd.csh
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/dybsvn/!svn/ver/21617/people/wangzhe/TWin/AccSub/P12e_1.5MeV_Gd/runEH3-P12e-Gd.csh
+END
+RunInfo.txt
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/dybsvn/!svn/ver/21617/people/wangzhe/TWin/AccSub/P12e_1.5MeV_Gd/RunInfo.txt
+END
+TestRun.list
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/dybsvn/!svn/ver/21628/people/wangzhe/TWin/AccSub/P12e_1.5MeV_Gd/TestRun.list
+END

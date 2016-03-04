@@ -1,0 +1,151 @@
+\documentclass[amsmath, amssymb,
+%twocolumn,
+%%linenumbers,
+nobibnotes, superscriptaddress]{revtex4}
+%\documentclass[amsmath,secnumarabic,twocolumn,prd]{revtex4}
+\usepackage{graphicx}
+\usepackage{dcolumn}   % needed for some tables
+\usepackage{hyperref}
+\usepackage{epstopdf}
+\usepackage{multirow}
+\usepackage{subfigure}
+\usepackage{longtable}
+%\usepackage{floatfix}
+\usepackage{float}
+
+\usepackage{color}
+\definecolor{darkblue}{rgb}{0,0,0.5}
+
+\usepackage{hyperref}  % Create clickable links for figures, tables, and references. Work only with pdflatex
+\hypersetup{
+    colorlinks=true, %set true if you want colored links
+%    linktoc=all,     %set to all if you want both sections and subsections linked
+    linkcolor=darkblue,  %choose some color if you want links to stand out
+    urlcolor=darkblue,
+    citecolor=darkblue,
+    filecolor=darkblue,
+}
+
+\begin{document}
+
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{rcccc}
+\hline \textcolor[rgb]{1.00,0.00,0.00}{1 energy bin($ee$)} & Simultaneous fit & EH1 only & EH2 only & EH3 only \\ \hline
+$a^{X}_R-0.0084c^{TX}_R$/$10^{-21}$GeV          &$-11.9 \pm 7.2$ &$-94.0 \pm 36.4$ &$9.2 \pm 29.6$ &$18.4 \pm 7.6$    \\ 
+$c^{XZ}_R$/$10^{-18}$           &$3.6 \pm 1.4$ &$-2.7 \pm 4.3$ &$-5.2 \pm 8.7$ &$-3.7 \pm 1.6$    \\ 
+$-a^{Y}_R+0.0084c^{TY}_R$/$10^{-21}$GeV           &$6.6 \pm 7.2$ &$-1.1 \pm 36.4$ &$-12.2 \pm 29.5$ &$-34.6 \pm 7.6$    \\ 
+$c^{YZ}_R$/$10^{-18}$           &$1.7 \pm 1.4$ &$-3.3 \pm 4.3$ &$-13.1 \pm 8.7$ &$-5.6 \pm 1.6$    \\ 
+$c^{XX}_R-c^{YY}_R$/$10^{-18}$           &$-3.9 \pm 4.6$ &$0.8 \pm 15.6$ &$1.9 \pm 16.6$ &$-4.9 \pm 5.1$    \\ 
+$c^{XY}_R$/$10^{-18}$  &$-2.0 \pm 2.3$ &$3.4 \pm 7.8$ &$-9.5 \pm 8.3$ &$-1.9 \pm 2.5$    \\ 
+$\chi^2/NDF$  & $53.6/ 66$ & $18.7/ 18$& $13.2/ 18$ & $17.0/ 18$      \\ 
+\hline
+\end{tabular}
+\caption{Fit results for the $ee$ flavor combination. With Tsinghua new data (EH3 predicted by reactor flux). }
+\label{tab:FitResultee}
+%\end{scriptsize}
+\end{center}
+\end{table}
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{rcccc}
+$a^{X}_R-0.0084c^{TX}_R$/$10^{-21}$GeV          &$32.2 \pm 18.4$ &$13.5 \pm 95.7$ &$-36.0 \pm 80.6$ &$12.8 \pm 19.3$    \\ 
+$c^{XZ}_R$/$10^{-18}$           &$-9.4 \pm 3.7$ &$-14.1 \pm 11.4$ &$-3.3 \pm 23.3$ &$-5.1 \pm 3.9$    \\ 
+$-a^{Y}_R+0.0084c^{TY}_R$/$10^{-21}$GeV           &$-17.5 \pm 18.4$ &$15.6 \pm 95.6$ &$-75.2 \pm 80.5$ &$-24.6 \pm 19.3$    \\ 
+$c^{YZ}_R$/$10^{-18}$           &$-4.5 \pm 3.7$ &$-9.1 \pm 11.4$ &$9.3 \pm 23.4$ &$-7.5 \pm 3.9$    \\ 
+$c^{XX}_R-c^{YY}_R$/$10^{-18}$           &$10.1 \pm 11.9$ &$-1.9 \pm 41.2$ &$-5.6 \pm 44.9$ &$12.6 \pm 12.9$    \\ 
+$c^{XY}_R$/$10^{-18}$  &$5.1 \pm 6.0$ &$-8.9 \pm 20.6$ &$25.8 \pm 22.4$ &$4.7 \pm 6.5$    \\ 
+$\chi^2/NDF$  & $53.6/ 66$ & $18.7/ 18$& $13.2/ 18$ & $17.0/ 18$      \\ 
+\hline
+\end{tabular}
+\caption{Fit results for the $\mu\mu$ flavor combination. With Tsinghua new data (EH3 predicted by reactor flux). }
+\label{tab:FitResultmumu}
+%\end{scriptsize}
+\end{center}
+\end{table}
+
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{rcccc}
+\hline \textcolor[rgb]{1.00,0.00,0.00}{1 energy bin($\tau\tau$)} & Simultaneous fit & EH1 only & EH2 only & EH3 only \\ \hline
+$a^{X}_R-0.0084c^{TX}_R$/$10^{-21}$GeV          &$18.6 \pm 11.9$ &$-18.1 \pm 58.8$ &$-22.4 \pm 46.7$ &$14.3 \pm 12.6$    \\ 
+$c^{XZ}_R$/$10^{-18}$           &$-5.7 \pm 2.4$ &$-10.7 \pm 6.8$ &$-4.3 \pm 13.8$ &$-4.7 \pm 2.6$    \\ 
+$-a^{Y}_R+0.0084c^{TY}_R$/$10^{-21}$GeV           &$-10.8 \pm 11.8$ &$10.6 \pm 58.8$ &$-54.9 \pm 46.7$ &$-26.9 \pm 12.5$    \\ 
+$c^{YZ}_R$/$10^{-18}$           &$-2.9 \pm 2.4$ &$-7.5 \pm 6.8$ &$2.7 \pm 13.9$ &$-7.0 \pm 2.6$    \\ 
+$c^{XX}_R-c^{YY}_R$/$10^{-18}$           &$6.3 \pm 7.6$ &$-1.0 \pm 25.0$ &$-2.8 \pm 26.2$ &$8.1 \pm 8.3$    \\ 
+$c^{XY}_R$/$10^{-18}$  &$3.3 \pm 3.8$ &$-5.4 \pm 12.5$ &$15.1 \pm 13.1$ &$3.0 \pm 4.2$    \\ 
+$\chi^2/NDF$  & $53.6/ 66$ & $18.7/ 18$& $13.2/ 18$ & $17.0/ 18$      \\ 
+\hline
+\end{tabular}
+\caption{Fit results for the $\tau\tau$ flavor combination. With Tsinghua new data (EH3 predicted by reactor flux). }
+\label{tab:FitResulttautau}
+%\end{scriptsize}
+\end{center}
+\end{table}
+
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{rcccc}
+
+\hline \textcolor[rgb]{1.00,0.00,0.00}{1 energy bin($e\mu$)} & Simultaneous fit & EH1 only & EH2 only & EH3 only \\ \hline
+$a^{X}_R-0.0084c^{TX}_R$/$10^{-21}$GeV          &$-9.9 \pm 5.9$ &$-88.3 \pm 29.9$ &$7.0 \pm 24.7$ &$18.1 \pm 6.2$    \\ 
+$c^{XZ}_R$/$10^{-18}$           &$2.9 \pm 1.2$ &$-3.3 \pm 3.5$ &$-5.3 \pm 7.2$ &$-3.8 \pm 1.3$    \\ 
+$-a^{Y}_R+0.0084c^{TY}_R$/$10^{-21}$GeV           &$5.3 \pm 5.9$ &$0.4 \pm 29.9$ &$-15.1 \pm 24.7$ &$-34.0 \pm 6.2$    \\ 
+$c^{YZ}_R$/$10^{-18}$           &$1.4 \pm 1.2$ &$-3.6 \pm 3.5$ &$-12.1 \pm 7.2$ &$-5.7 \pm 1.3$    \\ 
+$c^{XX}_R-c^{YY}_R$/$10^{-18}$           &$-3.2 \pm 3.8$ &$0.7 \pm 12.8$ &$1.7 \pm 13.8$ &$-4.0 \pm 4.1$    \\ 
+$c^{XY}_R$/$10^{-18}$  &$-1.6 \pm 1.9$ &$2.8 \pm 6.4$ &$-7.9 \pm 6.9$ &$-1.5 \pm 2.1$    \\ 
+$\chi^2/NDF$  & $53.6/ 66$ & $18.7/ 18$& $13.2/ 18$ & $17.0/ 18$      \\ 
+\hline
+\end{tabular}
+\caption{Fit results for the $e\mu$ flavor combination. With Tsinghua new data (EH3 predicted by reactor flux). }
+\label{tab:FitResultemu}
+%\end{scriptsize}
+\end{center}
+\end{table}
+
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{rcccc}
+
+\hline \textcolor[rgb]{1.00,0.00,0.00}{1 energy bin($e\tau$)} & Simultaneous fit & EH1 only & EH2 only & EH3 only \\ \hline
+$a^{X}_R-0.0084c^{TX}_R$/$10^{-21}$GeV          &$-6.4 \pm 4.1$ &$-81.4 \pm 20.1$ &$3.8 \pm 16.0$ &$17.7 \pm 4.3$    \\ 
+$c^{XZ}_R$/$10^{-18}$           &$2.0 \pm 0.8$ &$-4.1 \pm 2.3$ &$-5.0 \pm 4.7$ &$-3.9 \pm 0.9$    \\ 
+$-a^{Y}_R+0.0084c^{TY}_R$/$10^{-21}$GeV           &$3.6 \pm 4.0$ &$0.4 \pm 20.1$ &$-19.7 \pm 16.0$ &$-33.2 \pm 4.3$    \\ 
+$c^{YZ}_R$/$10^{-18}$           &$1.0 \pm 0.8$ &$-4.0 \pm 2.3$ &$-10.4 \pm 4.8$ &$-5.8 \pm 0.9$    \\ 
+$c^{XX}_R-c^{YY}_R$/$10^{-18}$           &$-2.2 \pm 2.6$ &$0.5 \pm 8.6$ &$1.0 \pm 9.0$ &$-2.7 \pm 2.8$    \\ 
+$c^{XY}_R$/$10^{-18}$  &$-1.1 \pm 1.3$ &$1.8 \pm 4.3$ &$-5.2 \pm 4.5$ &$-1.0 \pm 1.4$    \\ 
+$\chi^2/NDF$  & $53.6/ 66$ & $18.7/ 18$& $13.2/ 18$ & $17.0/ 18$      \\ 
+\hline
+\end{tabular}
+\caption{Fit results for the $e\tau$ flavor combination. With Tsinghua new data (EH3 predicted by reactor flux).}
+\label{tab:FitResultetau}
+%\end{scriptsize}
+\end{center}
+\end{table}
+
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{rcccc}
+\hline \textcolor[rgb]{1.00,0.00,0.00}{1 energy bin($\mu\tau$)} & Simultaneous fit & EH1 only & EH2 only & EH3 only \\ \hline
+$a^{X}_R-0.0084c^{TX}_R$/$10^{-21}$GeV          &$10.3 \pm 12.2$ &$-34.6 \pm 47.3$ &$-14.9 \pm 30.2$ &$14.2 \pm 13.9$    \\ 
+$c^{XZ}_R$/$10^{-18}$           &$-4.6 \pm 2.5$ &$-9.3 \pm 5.0$ &$-5.3 \pm 9.6$ &$-4.6 \pm 3.0$    \\ 
+$-a^{Y}_R+0.0084c^{TY}_R$/$10^{-21}$GeV           &$-9.3 \pm 12.2$ &$4.7 \pm 47.3$ &$-42.7 \pm 30.2$ &$-24.6 \pm 13.9$    \\ 
+$c^{YZ}_R$/$10^{-18}$           &$-2.6 \pm 2.5$ &$-7.0 \pm 5.0$ &$-0.5 \pm 9.6$ &$-7.2 \pm 3.0$    \\ 
+$c^{XX}_R-c^{YY}_R$/$10^{-18}$           &$5.4 \pm 7.2$ &$-0.5 \pm 19.2$ &$-0.7 \pm 17.4$ &$8.1 \pm 8.7$    \\ 
+$c^{XY}_R$/$10^{-18}$  &$3.4 \pm 3.6$ &$-4.2 \pm 9.6$ &$10.0 \pm 8.7$ &$3.3 \pm 4.3$    \\ 
+$\chi^2/NDF$  & $53.5/ 66$ & $18.7/ 18$& $13.2/ 18$ & $17.0/ 18$      \\ 
+\hline
+\end{tabular}
+\caption{Fit results for the $\mu\tau$ flavor combination. With Tsinghua new data (EH3 predicted by reactor flux). }
+\label{tab:FitResultmutau}
+%\end{scriptsize}
+\end{center}
+\end{table}
+
+\end{document}

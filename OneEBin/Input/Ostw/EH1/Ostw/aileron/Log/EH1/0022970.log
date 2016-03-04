@@ -1,0 +1,6 @@
+StreamChain add 0x1285e7e0
+Start to process run: 22970 ... 
+[Run]:22970 [Site]:1 [Bin]:2151 [FullTime]:2926.7 [SkipTime]:0 [Veto1]:498.103 [Veto2]:517.38 [Veto3]:333.302 [Veto4]:333.302 [SgUp1]:146090 [SgUp2]:142617 [SgUp3]:0 [SgUp4]:0 [SgLow1]:145729 [SgLow2]:142247 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:489219 [NetMuon2]:485651 [NetMuon3]:522343 [NetMuon4]:522343
+[Run]:22970 [Site]:1 [Bin]:2152 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:626.03 [Veto2]:637.765 [Veto3]:408.562 [Veto4]:408.562 [SgUp1]:179153 [SgUp2]:174078 [SgUp3]:0 [SgUp4]:0 [SgLow1]:178692 [SgLow2]:173705 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:596265 [NetMuon2]:593962 [NetMuon3]:640040 [NetMuon4]:640040
+End process Run: 22970 ... 
+[Run]:22970 [Site]:1 [Bin]:2153 [FullTime]:149.861 [SkipTime]:0 [Veto1]:25.08 [Veto2]:19.8138 [Veto3]:16.9335 [Veto4]:16.9335

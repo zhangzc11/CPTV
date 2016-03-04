@@ -1,0 +1,36 @@
+Sender: LSF System <lsfadmin@c02b06>
+Subject: Job 4516356: </work/wangzhe_work/zhangzc/Ostw_Solar/EH2/Ostw/aileron/Script/EH2/run0022991Z2.csh> Exited
+
+Job </work/wangzhe_work/zhangzc/Ostw_Solar/EH2/Ostw/aileron/Script/EH2/run0022991Z2.csh> was submitted from host <ln0> by user <wangzhe> in cluster <cluster1>.
+Job was executed on host(s) <2*c02b06>, in queue <normal>, as user <wangzhe> in cluster <cluster1>.
+</tmp/.lsbtmp628> was used as the home directory.
+</home/wangzhe/WORK/zhangzc/Ostw_Solar/EH2/Ostw/aileron> was used as the working directory.
+Started at Thu Mar  5 23:16:43 2015
+Results reported at Thu Mar  5 23:17:09 2015
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/work/wangzhe_work/zhangzc/Ostw_Solar/EH2/Ostw/aileron/Script/EH2/run0022991Z2.csh
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time   :     25.43 sec.
+    Max Memory :        38 MB
+    Max Swap   :       284 MB
+
+    Max Processes  :         4
+    Max Threads    :         5
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file </work/wangzhe_work/zhangzc/Ostw_Solar/EH2/Ostw/aileron/Log/EH2/error.4516356> for stderr output of this job.
+

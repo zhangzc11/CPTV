@@ -1,0 +1,24 @@
+package ReactorTable 
+
+use DybPolicy
+
+use GaudiKernel v*
+use Conventions     v*     DataModel
+use Context         v*     DataModel
+use CLHEP v* LCG_Interfaces
+use DatabaseInterface *    Database
+use DybTest   v*
+use DybDbi   v* Database
+
+use DybROOT "*"  External 
+include_dirs "${OFFLINE_DB_WEEKLYROOT}/include"
+
+macro rootMathLibs  "-L$(ROOTSYS)/lib -lMathCore -lMathMore"
+#apply_pattern monolithic_application
+macro ReactorTable_linkopts  "-ldl $(rootMathLibs)"
+
+application  ReactorTable   *.cc \
+                           ../app/*.cc
+
+apply_pattern  application_path
+

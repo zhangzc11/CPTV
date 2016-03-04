@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/dybsvn/!svn/ver/16909/people/wangzhe/TWin/Fit/DBSensitivityLib/include
+END
+Detector.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/dybsvn/!svn/ver/16909/people/wangzhe/TWin/Fit/DBSensitivityLib/include/Detector.h
+END
+InverseBetaCS.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/dybsvn/!svn/ver/16909/people/wangzhe/TWin/Fit/DBSensitivityLib/include/InverseBetaCS.h
+END
+Experiment.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/dybsvn/!svn/ver/16909/people/wangzhe/TWin/Fit/DBSensitivityLib/include/Experiment.h
+END
+MixingMatrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/dybsvn/!svn/ver/16909/people/wangzhe/TWin/Fit/DBSensitivityLib/include/MixingMatrix.h
+END
+ReactorCore.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/dybsvn/!svn/ver/16909/people/wangzhe/TWin/Fit/DBSensitivityLib/include/ReactorCore.h
+END

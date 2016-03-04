@@ -1,0 +1,36 @@
+Sender: LSF System <lsfadmin@c04b01>
+Subject: Job 3998291: </work/wangzhe_work/zhangzc/Ostw/EH3/Ostw/aileron/Script/EH3/run0040776Z3.csh> Exited
+
+Job </work/wangzhe_work/zhangzc/Ostw/EH3/Ostw/aileron/Script/EH3/run0040776Z3.csh> was submitted from host <ln2> by user <wangzhe> in cluster <cluster1>.
+Job was executed on host(s) <2*c04b01>, in queue <normal>, as user <wangzhe> in cluster <cluster1>.
+</tmp/.lsbtmp628> was used as the home directory.
+</home/wangzhe/WORK/zhangzc/Ostw/EH3/Ostw/aileron> was used as the working directory.
+Started at Thu Oct 23 04:02:01 2014
+Results reported at Thu Oct 23 04:02:19 2014
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/work/wangzhe_work/zhangzc/Ostw/EH3/Ostw/aileron/Script/EH3/run0040776Z3.csh
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time   :      4.09 sec.
+    Max Memory :         7 MB
+    Max Swap   :       395 MB
+
+    Max Processes  :         7
+    Max Threads    :         8
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file </work/wangzhe_work/zhangzc/Ostw/EH3/Ostw/aileron/Log/EH3/error.3998291> for stderr output of this job.
+

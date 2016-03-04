@@ -1,0 +1,9 @@
+root -q -l -b FFT_MC_Gap.C
+root -q -l -b FFT_MC_NoGap.C
+root -q -l -b FFT_MC_WithGap.C
+root -q -l -b FFT_MC_WithGap_NE.C
+root -q -l -b FFT_MC_GapRemove.C
+root -q -l -b FFT_MC_Unc.C
+root -q -l -b FFT_data.C
+root -q -l -b FFT_result.C
+root -q -l -b FFT_result_NE.C

@@ -1,0 +1,19 @@
+{
+  TChain* Event = new TChain("Event");
+  Event->Add("MC_LS_01.TWin.root");
+  Event->Add("MC_LS_02.TWin.root");
+  Event->Add("MC_LS_03.TWin.root");
+  Event->Add("MC_LS_04.TWin.root");
+  Event->Add("MC_LS_05.TWin.root");
+  Event->Add("MC_LS_07.TWin.root");
+  Event->Add("MC_LS_09.TWin.root");
+  Event->Add("MC_LS_10.TWin.root");
+  Event->Add("MC_LS_11.TWin.root");
+  Event->Add("MC_LS_13.TWin.root");
+  Event->Add("MC_LS_14.TWin.root");
+  Event->Add("MC_LS_15.TWin.root");
+  Event->Add("MC_LS_16.TWin.root");
+  Event->Add("MC_LS_17.TWin.root");
+  Event->Add("MC_LS_18.TWin.root");
+  Event->Add("MC_LS_19.TWin.root");
+}

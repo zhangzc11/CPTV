@@ -1,0 +1,10 @@
+StreamChain add 0x858a7e0
+Start to process run: 38584 ... 
+[Run]:38584 [Site]:4 [Bin]:11627 [FullTime]:45.2 [SkipTime]:0 [Veto1]:0.456376 [Veto2]:1.44857 [Veto3]:0.452722 [Veto4]:0.454376 [SgUp1]:2529 [SgUp2]:2377 [SgUp3]:2535 [SgUp4]:2524 [SgLow1]:2523 [SgLow2]:2366 [SgLow3]:2531 [SgLow4]:2522 [NetMuon1]:718 [NetMuon2]:707 [NetMuon3]:718 [NetMuon4]:718
+[Run]:38584 [Site]:4 [Bin]:11628 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:50.1037 [Veto2]:53.0217 [Veto3]:49.041 [Veto4]:55.0042 [SgUp1]:194850 [SgUp2]:195006 [SgUp3]:196615 [SgUp4]:196662 [SgLow1]:194499 [SgLow2]:194752 [SgLow3]:196297 [SgLow4]:196330 [NetMuon1]:54074 [NetMuon2]:54034 [NetMuon3]:54081 [NetMuon4]:54013
+[Run]:38584 [Site]:4 [Bin]:11629 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:63.6455 [Veto2]:51.7398 [Veto3]:52.7666 [Veto4]:48.7765 [SgUp1]:194111 [SgUp2]:195944 [SgUp3]:196340 [SgUp4]:197366 [SgLow1]:193845 [SgLow2]:195603 [SgLow3]:196038 [SgLow4]:197063 [NetMuon1]:53331 [NetMuon2]:53558 [NetMuon3]:53530 [NetMuon4]:53613
+[Run]:38584 [Site]:4 [Bin]:11630 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:62.9304 [Veto2]:49.0069 [Veto3]:56.9099 [Veto4]:46.0596 [SgUp1]:194015 [SgUp2]:196047 [SgUp3]:195738 [SgUp4]:196192 [SgLow1]:193732 [SgLow2]:195730 [SgLow3]:195431 [SgLow4]:195913 [NetMuon1]:53808 [NetMuon2]:54005 [NetMuon3]:53899 [NetMuon4]:54035
+[Run]:38584 [Site]:4 [Bin]:11631 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:49.7984 [Veto2]:58.5547 [Veto3]:53.7288 [Veto4]:54.6951 [SgUp1]:195385 [SgUp2]:194347 [SgUp3]:196751 [SgUp4]:195834 [SgLow1]:195017 [SgLow2]:194105 [SgLow3]:196456 [SgLow4]:195550 [NetMuon1]:53581 [NetMuon2]:53457 [NetMuon3]:53505 [NetMuon4]:53508
+[Run]:38584 [Site]:4 [Bin]:11632 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:51.1967 [Veto2]:55.1414 [Veto3]:58.0336 [Veto4]:50.574 [SgUp1]:194643 [SgUp2]:194630 [SgUp3]:196357 [SgUp4]:197009 [SgLow1]:194348 [SgLow2]:194311 [SgLow3]:196075 [SgLow4]:196701 [NetMuon1]:54250 [NetMuon2]:54161 [NetMuon3]:54123 [NetMuon4]:54227
+End process Run: 38584 ... 
+[Run]:38584 [Site]:4 [Bin]:11633 [FullTime]:2217.04 [SkipTime]:0 [Veto1]:36.0069 [Veto2]:31.0572 [Veto3]:35.0732 [Veto4]:33.0681

@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/dybsvn/!svn/ver/22781/people/wangzhe/TWin/Streamer/FastStreamer
+END
+CalibReadoutHeaderReader.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/dybsvn/!svn/ver/16651/people/wangzhe/TWin/Streamer/FastStreamer/CalibReadoutHeaderReader.h
+END
+MC_acrylic.csh
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/dybsvn/!svn/ver/19209/people/wangzhe/TWin/Streamer/FastStreamer/MC_acrylic.csh
+END
+FastStreamer.C
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/dybsvn/!svn/ver/22781/people/wangzhe/TWin/Streamer/FastStreamer/FastStreamer.C
+END
+CalibReadoutHeaderReader_Dict.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/dybsvn/!svn/ver/16651/people/wangzhe/TWin/Streamer/FastStreamer/CalibReadoutHeaderReader_Dict.h
+END
+MC_GdLS.csh
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/dybsvn/!svn/ver/19209/people/wangzhe/TWin/Streamer/FastStreamer/MC_GdLS.csh
+END
+StreamTree.C
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/dybsvn/!svn/ver/16651/people/wangzhe/TWin/Streamer/FastStreamer/StreamTree.C
+END
+CalibStatsReader.C
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/dybsvn/!svn/ver/16651/people/wangzhe/TWin/Streamer/FastStreamer/CalibStatsReader.C
+END
+CalibStatsReader_Dict.C
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/dybsvn/!svn/ver/16651/people/wangzhe/TWin/Streamer/FastStreamer/CalibStatsReader_Dict.C
+END
+StreamTree.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/dybsvn/!svn/ver/16651/people/wangzhe/TWin/Streamer/FastStreamer/StreamTree.h
+END
+CalibStatsReader.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/dybsvn/!svn/ver/16651/people/wangzhe/TWin/Streamer/FastStreamer/CalibStatsReader.h
+END
+AdSimpleReader.C
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/dybsvn/!svn/ver/16651/people/wangzhe/TWin/Streamer/FastStreamer/AdSimpleReader.C
+END
+MC_acrylic_thick.csh
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/dybsvn/!svn/ver/20991/people/wangzhe/TWin/Streamer/FastStreamer/MC_acrylic_thick.csh
+END
+CalibStatsReader_Dict.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/dybsvn/!svn/ver/16651/people/wangzhe/TWin/Streamer/FastStreamer/CalibStatsReader_Dict.h
+END
+AdSimpleReader_Dict.C
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/dybsvn/!svn/ver/16651/people/wangzhe/TWin/Streamer/FastStreamer/AdSimpleReader_Dict.C
+END
+AdSimpleReader.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/dybsvn/!svn/ver/16651/people/wangzhe/TWin/Streamer/FastStreamer/AdSimpleReader.h
+END
+MC_LS.csh
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/dybsvn/!svn/ver/18809/people/wangzhe/TWin/Streamer/FastStreamer/MC_LS.csh
+END
+AdSimpleReader_Dict.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/dybsvn/!svn/ver/16651/people/wangzhe/TWin/Streamer/FastStreamer/AdSimpleReader_Dict.h
+END
+CalibReadoutHeaderReader.C
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/dybsvn/!svn/ver/16651/people/wangzhe/TWin/Streamer/FastStreamer/CalibReadoutHeaderReader.C
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/dybsvn/!svn/ver/22781/people/wangzhe/TWin/Streamer/FastStreamer/Makefile
+END
+CalibReadoutHeaderReader_Dict.C
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/dybsvn/!svn/ver/16651/people/wangzhe/TWin/Streamer/FastStreamer/CalibReadoutHeaderReader_Dict.C
+END

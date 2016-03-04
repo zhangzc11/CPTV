@@ -1,0 +1,18 @@
+package ReconStreamer
+
+# All packages needed ...
+use GaudiAlg          *
+use DybPolicy         * 
+use DybROOT           *  External
+use CalibReadoutEvent *  DataModel
+use UserData          *  DataModel
+use DataSvc           *  DataModel
+
+include_path none
+
+library ReconStreamer *.cc
+
+apply_pattern component_library library=ReconStreamer
+
+apply_pattern install_scripts
+apply_pattern install_python_modules

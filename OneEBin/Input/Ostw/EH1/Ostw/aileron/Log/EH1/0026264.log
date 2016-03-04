@@ -1,0 +1,10 @@
+StreamChain add 0x58177e0
+Start to process run: 26264 ... 
+[Run]:26264 [Site]:1 [Bin]:4839 [FullTime]:1212.31 [SkipTime]:0 [Veto1]:204.614 [Veto2]:222.319 [Veto3]:137.855 [Veto4]:137.855 [SgUp1]:60611 [SgUp2]:57809 [SgUp3]:0 [SgUp4]:0 [SgLow1]:60501 [SgLow2]:57693 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:202827 [NetMuon2]:199056 [NetMuon3]:216100 [NetMuon4]:216100
+[Run]:26264 [Site]:1 [Bin]:4840 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:615.489 [Veto2]:619.568 [Veto3]:408.703 [Veto4]:408.703 [SgUp1]:177829 [SgUp2]:174963 [SgUp3]:0 [SgUp4]:0 [SgLow1]:177425 [SgLow2]:174573 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:599472 [NetMuon2]:598241 [NetMuon3]:640689 [NetMuon4]:640689
+[Run]:26264 [Site]:1 [Bin]:4841 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:599.636 [Veto2]:605.393 [Veto3]:408.521 [Veto4]:408.521 [SgUp1]:179515 [SgUp2]:175854 [SgUp3]:0 [SgUp4]:0 [SgLow1]:179110 [SgLow2]:175464 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:602043 [NetMuon2]:600904 [NetMuon3]:640426 [NetMuon4]:640426
+[Run]:26264 [Site]:1 [Bin]:4842 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:629.19 [Veto2]:611.046 [Veto3]:408.18 [Veto4]:408.18 [SgUp1]:176721 [SgUp2]:175272 [SgUp3]:0 [SgUp4]:0 [SgLow1]:176360 [SgLow2]:174924 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:595167 [NetMuon2]:598812 [NetMuon3]:639643 [NetMuon4]:639643
+[Run]:26264 [Site]:1 [Bin]:4843 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:611.88 [Veto2]:643.525 [Veto3]:408.965 [Veto4]:408.965 [SgUp1]:178017 [SgUp2]:174136 [SgUp3]:0 [SgUp4]:0 [SgLow1]:177660 [SgLow2]:173755 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:600253 [NetMuon2]:594101 [NetMuon3]:641309 [NetMuon4]:641309
+[Run]:26264 [Site]:1 [Bin]:4844 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:642.425 [Veto2]:638.498 [Veto3]:409.289 [Veto4]:409.289 [SgUp1]:175427 [SgUp2]:173801 [SgUp3]:0 [SgUp4]:0 [SgLow1]:175030 [SgLow2]:173413 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:594868 [NetMuon2]:595281 [NetMuon3]:641515 [NetMuon4]:641515
+End process Run: 26264 ... 
+[Run]:26264 [Site]:1 [Bin]:4845 [FullTime]:2463.49 [SkipTime]:0 [Veto1]:438.686 [Veto2]:433.806 [Veto3]:280.347 [Veto4]:280.347

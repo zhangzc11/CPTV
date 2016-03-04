@@ -1,0 +1,17 @@
+root -q -l -b AccPerRun_EH1_AD1.C
+root -q -l -b AccPerRun_EH1_AD2.C
+root -q -l -b AccPerRun_EH2_AD1.C
+root -q -l -b AccPerRun_EH2_AD2.C
+root -q -l -b AccPerRun_EH3_AD1.C
+root -q -l -b AccPerRun_EH3_AD2.C
+root -q -l -b AccPerRun_EH3_AD3.C
+root -q -l -b AccPerRun_EH3_AD4.C
+root -q -l -b AccDistr_EH1_AD1.C
+root -q -l -b AccDistr_EH1_AD2.C
+root -q -l -b AccDistr_EH2_AD1.C
+root -q -l -b AccDistr_EH2_AD2.C
+root -q -l -b AccDistr_EH3_AD1.C
+root -q -l -b AccDistr_EH3_AD2.C
+root -q -l -b AccDistr_EH3_AD3.C
+root -q -l -b AccDistr_EH3_AD4.C
+root -q -l -b Acc.C

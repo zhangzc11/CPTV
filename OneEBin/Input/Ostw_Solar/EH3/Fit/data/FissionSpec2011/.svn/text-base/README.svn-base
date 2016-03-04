@@ -1,0 +1,27 @@
+From Tutorial/Theta13/data
+
+These data are generated based on the following papers:
+
+1. Names antiNeuFlux_IsoName2011.dat, IsoName = U235, Pu239, Pu241 from 
+   P. Huber, Phys. Rev. C84, 024617(2011)
+2. IsoName = U238, Th. A. Mueller et al, Phys. Rev. C83, 054615(2011)
+3. Names antiNeuFlux_IsoName_French2011.dat, IsoName = U235, Pu239, Pu241 from 
+   Th. A. Mueller et al, Phys. Rev. C83, 054615(2011)
+4. Original data points are [2MeV, 8MeV] with bin size 0.25 MeV
+5. Extra points are from interpolation and extrapolation based on the
+   slope defined by two closest neighboring points.
+6. Interpolation and extrapolation are done in logarithm (yield).
+
+--- Wei (3/30/2012)
+
+
+From Xin:
+
+spectrum-unit.dat
+spectrum.dat
+
+Should use:
+antiNeuFlux_Pu2392011.dat
+antiNeuFlux_Pu2412011.dat
+antiNeuFlux_U2352011.dat
+antiNeuFlux_U2382011.dat

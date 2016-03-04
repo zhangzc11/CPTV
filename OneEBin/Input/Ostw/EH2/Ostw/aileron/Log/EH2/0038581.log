@@ -1,0 +1,10 @@
+StreamChain add 0x19747e0
+Start to process run: 38581 ... 
+[Run]:38581 [Site]:2 [Bin]:11627 [FullTime]:727.561 [SkipTime]:0 [Veto1]:107.318 [Veto2]:100.804 [Veto3]:62.5439 [Veto4]:62.5439 [SgUp1]:34786 [SgUp2]:35661 [SgUp3]:0 [SgUp4]:0 [SgLow1]:34707 [SgLow2]:35567 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:92909 [NetMuon2]:93850 [NetMuon3]:99517 [NetMuon4]:99517
+[Run]:38581 [Site]:2 [Bin]:11628 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:492.325 [Veto2]:525.798 [Veto3]:308.246 [Veto4]:308.246 [SgUp1]:173163 [SgUp2]:173355 [SgUp3]:0 [SgUp4]:0 [SgLow1]:172758 [SgLow2]:172991 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:463495 [NetMuon2]:458241 [NetMuon3]:490975 [NetMuon4]:490975
+[Run]:38581 [Site]:2 [Bin]:11629 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:493.64 [Veto2]:513.768 [Veto3]:307.409 [Veto4]:307.409 [SgUp1]:173209 [SgUp2]:174295 [SgUp3]:0 [SgUp4]:0 [SgLow1]:172872 [SgLow2]:173912 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:461950 [NetMuon2]:459251 [NetMuon3]:489820 [NetMuon4]:489820
+[Run]:38581 [Site]:2 [Bin]:11630 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:506.477 [Veto2]:508.34 [Veto3]:307.56 [Veto4]:307.56 [SgUp1]:172516 [SgUp2]:174598 [SgUp3]:0 [SgUp4]:0 [SgLow1]:172154 [SgLow2]:174160 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:460252 [NetMuon2]:459819 [NetMuon3]:489787 [NetMuon4]:489787
+[Run]:38581 [Site]:2 [Bin]:11631 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:509.507 [Veto2]:501.604 [Veto3]:308.309 [Veto4]:308.309 [SgUp1]:172321 [SgUp2]:174671 [SgUp3]:0 [SgUp4]:0 [SgLow1]:171961 [SgLow2]:174263 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:461388 [NetMuon2]:462336 [NetMuon3]:491120 [NetMuon4]:491120
+[Run]:38581 [Site]:2 [Bin]:11632 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:493.729 [Veto2]:521.106 [Veto3]:308.297 [Veto4]:308.297 [SgUp1]:173809 [SgUp2]:172983 [SgUp3]:0 [SgUp4]:0 [SgLow1]:173470 [SgLow2]:172573 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:463228 [NetMuon2]:459059 [NetMuon3]:490985 [NetMuon4]:490985
+End process Run: 38581 ... 
+[Run]:38581 [Site]:2 [Bin]:11633 [FullTime]:2218.79 [SkipTime]:0 [Veto1]:317.614 [Veto2]:299.236 [Veto3]:190.781 [Veto4]:190.781

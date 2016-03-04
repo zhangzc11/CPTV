@@ -1,0 +1,10 @@
+StreamChain add 0xd9297f0
+Start to process run: 35390 ... 
+[Run]:35390 [Site]:2 [Bin]:7954 [FullTime]:1807.28 [SkipTime]:0 [Veto1]:293.767 [Veto2]:295.749 [Veto3]:205.547 [Veto4]:205.547 [SgUp1]:29592 [SgUp2]:30154 [SgUp3]:0 [SgUp4]:0 [SgLow1]:29538 [SgLow2]:30112 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:228517 [NetMuon2]:228189 [NetMuon3]:241930 [NetMuon4]:241930
+[Run]:35390 [Site]:2 [Bin]:7955 [FullTime]:3600 [SkipTime]:0 [Veto1]:611.42 [Veto2]:609.139 [Veto3]:408.758 [Veto4]:408.758 [SgUp1]:58217 [SgUp2]:58935 [SgUp3]:0 [SgUp4]:0 [SgLow1]:58111 [SgLow2]:58807 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:449836 [NetMuon2]:450360 [NetMuon3]:480372 [NetMuon4]:480372
+[Run]:35390 [Site]:2 [Bin]:7956 [FullTime]:3600 [SkipTime]:0 [Veto1]:594.422 [Veto2]:588.559 [Veto3]:408.401 [Veto4]:408.401 [SgUp1]:58608 [SgUp2]:59809 [SgUp3]:0 [SgUp4]:0 [SgLow1]:58508 [SgLow2]:59686 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:452748 [NetMuon2]:453484 [NetMuon3]:480513 [NetMuon4]:480513
+[Run]:35390 [Site]:2 [Bin]:7957 [FullTime]:3600 [SkipTime]:0 [Veto1]:612.829 [Veto2]:614.72 [Veto3]:408.436 [Veto4]:408.436 [SgUp1]:58955 [SgUp2]:59410 [SgUp3]:0 [SgUp4]:0 [SgLow1]:58849 [SgLow2]:59300 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:449730 [NetMuon2]:449086 [NetMuon3]:480365 [NetMuon4]:480365
+[Run]:35390 [Site]:2 [Bin]:7958 [FullTime]:3600 [SkipTime]:0 [Veto1]:601.973 [Veto2]:597.193 [Veto3]:408.608 [Veto4]:408.608 [SgUp1]:58626 [SgUp2]:59291 [SgUp3]:0 [SgUp4]:0 [SgLow1]:58508 [SgLow2]:59172 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:451764 [NetMuon2]:452602 [NetMuon3]:480792 [NetMuon4]:480792
+[Run]:35390 [Site]:2 [Bin]:7959 [FullTime]:3600 [SkipTime]:0 [Veto1]:612.715 [Veto2]:618.05 [Veto3]:408.446 [Veto4]:408.446 [SgUp1]:58643 [SgUp2]:58913 [SgUp3]:0 [SgUp4]:0 [SgLow1]:58545 [SgLow2]:58814 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:449453 [NetMuon2]:448887 [NetMuon3]:480263 [NetMuon4]:480263
+End process Run: 35390 ... 
+[Run]:35390 [Site]:2 [Bin]:7960 [FullTime]:603.302 [SkipTime]:0 [Veto1]:106.31 [Veto2]:99.8486 [Veto3]:68.3626 [Veto4]:68.3626

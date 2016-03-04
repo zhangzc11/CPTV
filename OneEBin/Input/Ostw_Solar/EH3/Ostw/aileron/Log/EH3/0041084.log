@@ -1,0 +1,10 @@
+StreamChain add 0x241f7f0
+Start to process run: 41084 ... 
+[Run]:41084 [Site]:4 [Bin]:14449 [FullTime]:1846.49 [SkipTime]:0 [Veto1]:36.9634 [Veto2]:34.9452 [Veto3]:32.9944 [Veto4]:34.955 [SgUp1]:34353 [SgUp2]:35089 [SgUp3]:35841 [SgUp4]:35401 [SgLow1]:34338 [SgLow2]:35080 [SgLow3]:35835 [SgLow4]:35399 [NetMuon1]:30024 [NetMuon2]:30051 [NetMuon3]:30074 [NetMuon4]:30068
+[Run]:41084 [Site]:4 [Bin]:14450 [FullTime]:3600 [SkipTime]:0 [Veto1]:75.6656 [Veto2]:60.1175 [Veto3]:63.7493 [Veto4]:65.7423 [SgUp1]:67413 [SgUp2]:68139 [SgUp3]:69549 [SgUp4]:69382 [SgLow1]:67397 [SgLow2]:68109 [SgLow3]:69513 [SgLow4]:69351 [NetMuon1]:57253 [NetMuon2]:57515 [NetMuon3]:57445 [NetMuon4]:57419
+[Run]:41084 [Site]:4 [Bin]:14451 [FullTime]:3600 [SkipTime]:0 [Veto1]:59.0521 [Veto2]:71.8025 [Veto3]:62.891 [Veto4]:72.7422 [SgUp1]:67493 [SgUp2]:68532 [SgUp3]:69231 [SgUp4]:69511 [SgLow1]:67469 [SgLow2]:68492 [SgLow3]:69205 [SgLow4]:69484 [NetMuon1]:56466 [NetMuon2]:56236 [NetMuon3]:56401 [NetMuon4]:56195
+[Run]:41084 [Site]:4 [Bin]:14452 [FullTime]:3600 [SkipTime]:0 [Veto1]:64.6319 [Veto2]:78.397 [Veto3]:69.4468 [Veto4]:75.6989 [SgUp1]:67502 [SgUp2]:68007 [SgUp3]:69244 [SgUp4]:69092 [SgLow1]:67474 [SgLow2]:67973 [SgLow3]:69214 [SgLow4]:69064 [NetMuon1]:56036 [NetMuon2]:55822 [NetMuon3]:55939 [NetMuon4]:55869
+[Run]:41084 [Site]:4 [Bin]:14453 [FullTime]:3600 [SkipTime]:0 [Veto1]:59.8315 [Veto2]:70.5919 [Veto3]:61.6565 [Veto4]:65.6446 [SgUp1]:67443 [SgUp2]:68183 [SgUp3]:69780 [SgUp4]:69168 [SgLow1]:67424 [SgLow2]:68154 [SgLow3]:69748 [SgLow4]:69133 [NetMuon1]:56211 [NetMuon2]:56029 [NetMuon3]:56183 [NetMuon4]:56116
+[Run]:41084 [Site]:4 [Bin]:14454 [FullTime]:3600 [SkipTime]:0 [Veto1]:67.6061 [Veto2]:64.6223 [Veto3]:67.7402 [Veto4]:65.606 [SgUp1]:67105 [SgUp2]:68426 [SgUp3]:69366 [SgUp4]:69190 [SgLow1]:67082 [SgLow2]:68396 [SgLow3]:69325 [SgLow4]:69177 [NetMuon1]:56030 [NetMuon2]:56045 [NetMuon3]:55983 [NetMuon4]:56003
+End process Run: 41084 ... 
+[Run]:41084 [Site]:4 [Bin]:14455 [FullTime]:2768.92 [SkipTime]:0 [Veto1]:55.0525 [Veto2]:54.0618 [Veto3]:54.0536 [Veto4]:52.0474

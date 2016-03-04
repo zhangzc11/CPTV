@@ -1,0 +1,29 @@
+{
+  TChain Event("Event");
+  Event.Add("LS_r09.root");
+  Event.Add("LS_r10.root");
+  Event.Add("LS_r11.root");
+  Event.Add("LS_r13.root");
+  Event.Add("LS_r14.root");
+  Event.Add("LS_r15.root");
+  Event.Add("LS_r16.root");
+  Event.Add("LS_r17.root");
+  Event.Add("LS_r18.root");
+  Event.Add("LS_r19.root");
+  Event.Add("LS_r20.root");
+  Event.Add("LS_r21.root");
+  Event.Add("LS_r22.root");
+  Event.Add("LS_r23.root");
+  Event.Add("LS_r24.root");
+  Event.Add("LS_r25.root");
+  Event.Add("LS_r26.root");
+  Event.Add("LS_r27.root");
+  Event.Add("LS_r28.root");
+  Event.Add("LS_r29.root");
+  Event.Add("LS_r30.root");
+  Event.Add("LS_r33.root");
+  Event.Add("LS_r34.root");
+  Event.Add("LS_r35.root");
+  Event.Add("LS_r36.root");
+  Event.Add("LS_r37.root");
+}

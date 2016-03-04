@@ -1,0 +1,227 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/dybsvn/!svn/ver/17209/people/wangzhe/TWin/Fit/fit
+END
+ProtonNumber.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/dybsvn/!svn/ver/16916/people/wangzhe/TWin/Fit/fit/ProtonNumber.h
+END
+DailyPlot.C
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/dybsvn/!svn/ver/16909/people/wangzhe/TWin/Fit/fit/DailyPlot.C
+END
+GetWeeklyFlux.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/dybsvn/!svn/ver/16917/people/wangzhe/TWin/Fit/fit/GetWeeklyFlux.h
+END
+Truth.C
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/dybsvn/!svn/ver/17209/people/wangzhe/TWin/Fit/fit/Truth.C
+END
+Spectrum.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/dybsvn/!svn/ver/16909/people/wangzhe/TWin/Fit/fit/Spectrum.h
+END
+TimeStamp.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/dybsvn/!svn/ver/16909/people/wangzhe/TWin/Fit/fit/TimeStamp.h
+END
+Crosssection.C
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/dybsvn/!svn/ver/16909/people/wangzhe/TWin/Fit/fit/Crosssection.C
+END
+Background.C
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/dybsvn/!svn/ver/16909/people/wangzhe/TWin/Fit/fit/Background.C
+END
+OstwEff.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/dybsvn/!svn/ver/16909/people/wangzhe/TWin/Fit/fit/OstwEff.h
+END
+AdMap.C
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/dybsvn/!svn/ver/16909/people/wangzhe/TWin/Fit/fit/AdMap.C
+END
+Tool.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/dybsvn/!svn/ver/16909/people/wangzhe/TWin/Fit/fit/Tool.h
+END
+Flux.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/dybsvn/!svn/ver/16909/people/wangzhe/TWin/Fit/fit/Flux.h
+END
+Measurement.C
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/dybsvn/!svn/ver/16931/people/wangzhe/TWin/Fit/fit/Measurement.C
+END
+SurvProb.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/dybsvn/!svn/ver/16909/people/wangzhe/TWin/Fit/fit/SurvProb.h
+END
+Baseline.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/dybsvn/!svn/ver/16909/people/wangzhe/TWin/Fit/fit/Baseline.h
+END
+ProtonNumber.C
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/dybsvn/!svn/ver/16915/people/wangzhe/TWin/Fit/fit/ProtonNumber.C
+END
+Table.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/dybsvn/!svn/ver/16909/people/wangzhe/TWin/Fit/fit/Table.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/dybsvn/!svn/ver/16921/people/wangzhe/TWin/Fit/fit/Makefile
+END
+GetWeeklyFlux.C
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/dybsvn/!svn/ver/16921/people/wangzhe/TWin/Fit/fit/GetWeeklyFlux.C
+END
+InverseBetaCS.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/dybsvn/!svn/ver/16909/people/wangzhe/TWin/Fit/fit/InverseBetaCS.h
+END
+AnalyzeData.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/dybsvn/!svn/ver/16921/people/wangzhe/TWin/Fit/fit/AnalyzeData.h
+END
+TimeStamp.C
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/dybsvn/!svn/ver/16909/people/wangzhe/TWin/Fit/fit/TimeStamp.C
+END
+DailyPlot.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/dybsvn/!svn/ver/16909/people/wangzhe/TWin/Fit/fit/DailyPlot.h
+END
+Truth.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/dybsvn/!svn/ver/16921/people/wangzhe/TWin/Fit/fit/Truth.h
+END
+OstwEff.C
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/dybsvn/!svn/ver/16909/people/wangzhe/TWin/Fit/fit/OstwEff.C
+END
+Tool.C
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/dybsvn/!svn/ver/16909/people/wangzhe/TWin/Fit/fit/Tool.C
+END
+Constants.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/dybsvn/!svn/ver/17209/people/wangzhe/TWin/Fit/fit/Constants.h
+END
+SurvProb.C
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/dybsvn/!svn/ver/16909/people/wangzhe/TWin/Fit/fit/SurvProb.C
+END
+Baseline.C
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/dybsvn/!svn/ver/16909/people/wangzhe/TWin/Fit/fit/Baseline.C
+END
+Fit.C
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/dybsvn/!svn/ver/16931/people/wangzhe/TWin/Fit/fit/Fit.C
+END
+Crosssection.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/dybsvn/!svn/ver/16909/people/wangzhe/TWin/Fit/fit/Crosssection.h
+END
+Background.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/dybsvn/!svn/ver/16917/people/wangzhe/TWin/Fit/fit/Background.h
+END
+AdMap.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/dybsvn/!svn/ver/16909/people/wangzhe/TWin/Fit/fit/AdMap.h
+END
+Measurement.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/dybsvn/!svn/ver/16931/people/wangzhe/TWin/Fit/fit/Measurement.h
+END
+IGetFlux.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/dybsvn/!svn/ver/16909/people/wangzhe/TWin/Fit/fit/IGetFlux.h
+END
+InverseBetaCS.C
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/dybsvn/!svn/ver/16909/people/wangzhe/TWin/Fit/fit/InverseBetaCS.C
+END
+AnalyzeData.C
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/dybsvn/!svn/ver/16921/people/wangzhe/TWin/Fit/fit/AnalyzeData.C
+END

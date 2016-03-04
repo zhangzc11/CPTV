@@ -1,0 +1,290 @@
+
+double AVEP[3] = {0.985,0.983,0.951455};
+const double pi = 3.141592653;
+
+Double_t WidthOfBin = 86164.09/24.00;// 1 sidereal day = 86164.09 seconds
+
+Double_t StartTime = 1324678393.80705;
+Double_t EndTime = 1385769600.00000;
+
+void DrawResult()
+{
+	double R[3][24] = {{0.0}};
+	double RD_R[3][24] = {{0.0}};
+	int HallID = 0;
+
+	Double_t Ratio_t[3];
+    TFile *F_Ratio = new TFile("RatioInOneDay.root");
+    TTree *Tree_Ratio = (TTree*)F_Ratio->Get("RatioInOneDay");
+    Tree_Ratio->SetBranchAddress("RatioInOneDay",Ratio_t);
+
+    for(int N24=0;N24<24;N24++)
+    {
+
+        Tree_Ratio->GetEntry(N24);
+        for(int Det=0;Det<3;Det++)
+        {
+            R[Det][N24] = Ratio_t[Det];
+        }
+    }
+
+	Double_t RD_Ratio_t[3];
+    TFile *F_RD_Ratio = new TFile("RD_RatioInOneDay.root");
+    TTree *Tree_RD_Ratio = (TTree*)F_RD_Ratio->Get("RD_RatioInOneDay");
+    Tree_RD_Ratio->SetBranchAddress("RD_RatioInOneDay",RD_Ratio_t);
+
+    for(int N24=0;N24<24;N24++)
+    {
+
+        Tree_RD_Ratio->GetEntry(N24);
+        for(int Det=0;Det<3;Det++)
+        {
+            RD_R[Det][N24] = RD_Ratio_t[Det];
+        }
+    }
+
+
+	///////////////////distribution
+	//EH1
+	HallID = 0;
+	TCanvas *myC_distr_EH1 = new TCanvas("CRatio_EH1","CRatio_EH1",200,10,800,600);
+	TH1F *hist_R_EH1 = new TH1F("Data/Expectation","Data/Expectation",20,AVEP[HallID]-0.03,AVEP[HallID]+0.03);
+	for(int i=0;i<24;i++)
+	{
+		hist_R_EH1->Fill(R[HallID][i]);
+	}
+	hist_R_EH1->SetLineWidth(3);
+	hist_R_EH1->GetYaxis()->SetTitle("Entries");
+	hist_R_EH1->GetXaxis()->SetTitle("Data/Expectation");
+
+	hist_R_EH1->GetXaxis()->SetTitleOffset(0.98);
+	hist_R_EH1->GetXaxis()->SetTitleSize(0.05);
+	hist_R_EH1->GetXaxis()->SetLabelSize(0.042);
+	hist_R_EH1->GetXaxis()->SetLabelOffset(0.0);
+	
+	hist_R_EH1->GetYaxis()->SetTitleOffset(0.8);
+	hist_R_EH1->GetYaxis()->SetTitleSize(0.06);
+	hist_R_EH1->GetYaxis()->SetLabelSize(0.06);
+	hist_R_EH1->GetYaxis()->SetLabelOffset(0.0);
+
+	hist_R_EH1->SetFillColor(4);
+	hist_R_EH1->Draw("hbar");
+	myC_distr_EH1->RedrawAxis();
+	myC_distr_EH1->Update();
+	myC_distr_EH1->SaveAs("RatioDistr_EH1.pdf");
+	myC_distr_EH1->SaveAs("RatioDistr_EH1.gif");
+	//EH2
+	HallID = 1;
+	TCanvas *myC_distr_EH2 = new TCanvas("CRatio_EH2","CRatio_EH2",200,10,800,600);
+	TH1F *hist_R_EH2 = new TH1F("Data/Expectation","Data/Expectation",20,AVEP[HallID]-0.03,AVEP[HallID]+0.03);
+	for(int i=0;i<24;i++)
+	{
+		hist_R_EH2->Fill(R[HallID][i]);
+	}
+	hist_R_EH2->SetLineWidth(3);
+	hist_R_EH2->GetYaxis()->SetTitle("Entries");
+	hist_R_EH2->GetXaxis()->SetTitle("Data/Expectation");
+
+	hist_R_EH2->GetXaxis()->SetTitleOffset(0.98);
+	hist_R_EH2->GetXaxis()->SetTitleSize(0.05);
+	hist_R_EH2->GetXaxis()->SetLabelSize(0.042);
+	hist_R_EH2->GetXaxis()->SetLabelOffset(0.0);
+	
+	hist_R_EH2->GetYaxis()->SetTitleOffset(0.8);
+	hist_R_EH2->GetYaxis()->SetTitleSize(0.06);
+	hist_R_EH2->GetYaxis()->SetLabelSize(0.06);
+	hist_R_EH2->GetYaxis()->SetLabelOffset(0.0);
+
+	hist_R_EH2->SetFillColor(4);
+	hist_R_EH2->Draw("hbar");
+	myC_distr_EH2->RedrawAxis();
+	myC_distr_EH2->Update();
+	myC_distr_EH2->SaveAs("RatioDistr_EH2.pdf");
+	myC_distr_EH2->SaveAs("RatioDistr_EH2.gif");
+	//EH3
+	HallID = 2;
+	TCanvas *myC_distr_EH3 = new TCanvas("CRatio_EH3","CRatio_EH3",200,10,800,600);
+	TH1F *hist_R_EH3 = new TH1F("Data/Expectation","Data/Expectation",20,AVEP[HallID]-0.03,AVEP[HallID]+0.03);
+	for(int i=0;i<24;i++)
+	{
+		hist_R_EH3->Fill(R[HallID][i]);
+	}
+	hist_R_EH3->SetLineWidth(3);
+	hist_R_EH3->GetYaxis()->SetTitle("Entries");
+	hist_R_EH3->GetXaxis()->SetTitle("Data/Expectation");
+
+	hist_R_EH3->GetXaxis()->SetTitleOffset(0.98);
+	hist_R_EH3->GetXaxis()->SetTitleSize(0.05);
+	hist_R_EH3->GetXaxis()->SetLabelSize(0.042);
+	hist_R_EH3->GetXaxis()->SetLabelOffset(0.0);
+	
+	hist_R_EH3->GetYaxis()->SetTitleOffset(0.8);
+	hist_R_EH3->GetYaxis()->SetTitleSize(0.06);
+	hist_R_EH3->GetYaxis()->SetLabelSize(0.06);
+	hist_R_EH3->GetYaxis()->SetLabelOffset(0.0);
+
+	hist_R_EH3->SetFillColor(4);
+	hist_R_EH3->Draw("hbar");
+	myC_distr_EH3->RedrawAxis();
+	myC_distr_EH3->Update();
+	myC_distr_EH3->SaveAs("RatioDistr_EH3.pdf");
+	myC_distr_EH3->SaveAs("RatioDistr_EH3.gif");
+
+	////////const fit
+	const Int_t n = 24;
+
+	//////points
+	TCanvas *myC[3];
+	TGraphErrors *gr[3];
+	TLegend* leg[3];
+	TF1 *f_Plot[3];
+
+	const char *c_Name[3]={"Daya Bay - EH1","Daya Bay - EH2","Daya Bay - EH3"};
+	const char *file_Name[3]={"Ratio_EH1_OneDay_sidereal_const.pdf","Ratio_EH2_OneDay_sidereal_const.pdf","Ratio_EH3_OneDay_sidereal_const.pdf"};
+
+	for(int Hidx=0;Hidx<3;Hidx++)
+	{
+		Float_t x[n],y[n],ex[n],ey[n];
+		myC[Hidx] = new TCanvas(c_Name[Hidx],c_Name[Hidx],200,10,800,600);
+		gStyle->SetOptFit(1);
+		myC[Hidx]->SetGrid();
+		myC[Hidx]->GetFrame()->SetFillColor(21);
+		myC[Hidx]->GetFrame()->SetBorderSize(12);
+		for(int i=0;i<n;i++)
+		{
+		x[i]=i*WidthOfBin;
+		y[i]=R[Hidx][i];
+		ex[i]=0;
+		ey[i]=R[Hidx][i]*RD_R[Hidx][i];
+		}
+		gr[Hidx] = new TGraphErrors(n,x,y,ex,ey);
+
+		gr[Hidx]->SetMarkerColor(4);
+		gr[Hidx]->SetMarkerStyle(21);
+		gr[Hidx]->GetXaxis()->SetTitle("sidereal time(seconds)");
+		gr[Hidx]->GetYaxis()->SetTitle("Data/Expectation");
+		gr[Hidx]->GetYaxis()->SetRangeUser(AVEP[Hidx]-0.03,AVEP[Hidx]+0.03);
+
+		gr[Hidx]->SetTitle("");
+
+		gr[Hidx]->GetYaxis()->SetTitleOffset(0.98);
+		gr[Hidx]->GetYaxis()->SetTitleSize(0.05);
+		gr[Hidx]->GetYaxis()->SetLabelSize(0.042);
+		gr[Hidx]->GetYaxis()->SetLabelOffset(0.0);
+	
+		gr[Hidx]->GetXaxis()->SetTitleOffset(0.8);
+		gr[Hidx]->GetXaxis()->SetTitleSize(0.06);
+		//gr[Hidx]->GetXaxis()->SetLabelSize(0.045);
+		gr[Hidx]->GetXaxis()->SetLabelOffset(0.0);
+
+		//gr[Hidx]->SetMarkerStyle(21);
+		gr[Hidx]->Draw("AP");
+		/////////////////plot the fit result:three sites////////////////////////
+		f_Plot[Hidx] = new TF1(c_Name[Hidx],func_Prob_combine_const,0,86165.0,1);
+
+		f_Plot[Hidx]->SetParName(0,"R");
+
+		gr[Hidx]->Fit(f_Plot[Hidx],"R");
+		
+		////////////////////////////////////////////////////////////
+		leg[Hidx] = new TLegend(0.2, 0.75, 0.6, 0.9);
+		leg[Hidx]->AddEntry(gr[Hidx],c_Name[Hidx],"");
+		leg[Hidx]->SetFillStyle(0);
+		leg[Hidx]->SetBorderSize(0);
+		leg[Hidx]->SetTextColor(kRed);
+		leg[Hidx]->Draw();
+
+		myC[Hidx]->Update();
+		myC[Hidx]->SaveAs(file_Name[Hidx]);
+	}
+
+	////////simple fit
+
+	//////points
+	TCanvas *myC_Sp[3];
+	TGraphErrors *gr_Sp[3];
+	TLegend* leg_Sp[3];
+	TF1 *f_Plot_Sp[3];
+
+	const char *c_Name_Sp[3]={"Daya Bay - EH1 - 4P fit","Daya Bay - EH2 - 4P fit","Daya Bay - EH3 - 4P fit"};
+	const char *file_Name_Sp[3]={"Ratio_EH1_OneDay_sidereal_const.pdf","Ratio_EH2_OneDay_sidereal_const.pdf","Ratio_EH3_OneDay_sidereal_const.pdf"};
+
+	for(int Hidx=0;Hidx<3;Hidx++)
+	{
+		Float_t x[n],y[n],ex[n],ey[n];
+		myC_Sp[Hidx] = new TCanvas(c_Name_Sp[Hidx],c_Name_Sp[Hidx],200,10,800,600);
+		gStyle->SetOptFit(1);
+		myC_Sp[Hidx]->SetGrid();
+		myC_Sp[Hidx]->GetFrame()->SetFillColor(21);
+		myC_Sp[Hidx]->GetFrame()->SetBorderSize(12);
+		for(int i=0;i<n;i++)
+		{
+		x[i]=i*WidthOfBin;
+		y[i]=R[Hidx][i];
+		ex[i]=0;
+		ey[i]=R[Hidx][i]*RD_R[Hidx][i];
+		}
+		gr_Sp[Hidx] = new TGraphErrors(n,x,y,ex,ey);
+
+		gr_Sp[Hidx]->SetMarkerColor(4);
+		gr_Sp[Hidx]->SetMarkerStyle(21);
+		gr_Sp[Hidx]->GetXaxis()->SetTitle("sidereal time(seconds)");
+		gr_Sp[Hidx]->GetYaxis()->SetTitle("Data/Expectation");
+		gr_Sp[Hidx]->GetYaxis()->SetRangeUser(AVEP[Hidx]-0.03,AVEP[Hidx]+0.03);
+
+		gr_Sp[Hidx]->SetTitle("");
+
+		gr_Sp[Hidx]->GetYaxis()->SetTitleOffset(0.98);
+		gr_Sp[Hidx]->GetYaxis()->SetTitleSize(0.05);
+		gr_Sp[Hidx]->GetYaxis()->SetLabelSize(0.042);
+		gr_Sp[Hidx]->GetYaxis()->SetLabelOffset(0.0);
+	
+		gr_Sp[Hidx]->GetXaxis()->SetTitleOffset(0.8);
+		gr_Sp[Hidx]->GetXaxis()->SetTitleSize(0.06);
+		//gr_Sp[Hidx]->GetXaxis()->SetLabelSize(0.045);
+		gr_Sp[Hidx]->GetXaxis()->SetLabelOffset(0.0);
+
+		//gr_Sp[Hidx]->SetMarkerStyle(21);
+		gr_Sp[Hidx]->Draw("AP");
+		/////////////////plot the fit result:three sites////////////////////////
+		f_Plot_Sp[Hidx] = new TF1(c_Name_Sp[Hidx],func_Simple,0,86165.0,5);
+
+		f_Plot_Sp[Hidx]->SetParName(0,"C0");
+		f_Plot_Sp[Hidx]->SetParName(1,"A1");
+		f_Plot_Sp[Hidx]->SetParName(2,"A2");
+		f_Plot_Sp[Hidx]->SetParName(3,"A3");
+		f_Plot_Sp[Hidx]->SetParName(4,"A4");
+		f_Plot_Sp[Hidx]->SetParameter(0,AVEP[Hidx]);
+		for(int i=1;i<5;i++)
+		{
+		f_Plot_Sp[Hidx]->SetParameter(i,0.0);
+		}
+
+		gr_Sp[Hidx]->Fit(f_Plot_Sp[Hidx],"R");
+		
+		////////////////////////////////////////////////////////////
+		leg_Sp[Hidx] = new TLegend(0.2, 0.75, 0.6, 0.9);
+		leg_Sp[Hidx]->AddEntry(gr_Sp[Hidx],c_Name_Sp[Hidx],"");
+		leg_Sp[Hidx]->SetFillStyle(0);
+		leg_Sp[Hidx]->SetBorderSize(0);
+		leg_Sp[Hidx]->SetTextColor(kRed);
+		leg_Sp[Hidx]->Draw();
+
+		myC_Sp[Hidx]->Update();
+		myC_Sp[Hidx]->SaveAs(file_Name_Sp[Hidx]);
+	}
+
+}
+
+Double_t func_Prob_combine_const(Double_t *x, Double_t *par)
+{
+	return par[0];
+}
+
+
+Double_t func_Simple(Double_t *x, Double_t *par)
+{
+	Double_t wP = 2.0*pi/86164.0;//omega plus, sidereal frequency
+
+	return par[0]+par[1]*sin(wP*x[0])+par[2]*cos(wP*x[0])+par[3]*sin(2.0*wP*x[0])+par[4]*cos(2.0*wP*x[0]);
+}

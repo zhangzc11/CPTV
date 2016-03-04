@@ -1,0 +1,185 @@
+StreamChain add 0x202b37e0
+Start to process run: 41193 ... 
+[Run]:41193 [Site]:4 [Bin]:14706 [FullTime]:983.838 [SkipTime]:0 [Veto1]:18.2654 [Veto2]:16.2665 [Veto3]:23.2038 [Veto4]:14.2959 [SgUp1]:52584 [SgUp2]:52993 [SgUp3]:53028 [SgUp4]:53380 [SgLow1]:52504 [SgLow2]:52893 [SgLow3]:52911 [SgLow4]:53284 [NetMuon1]:14697 [NetMuon2]:14718 [NetMuon3]:14615 [NetMuon4]:14759
+[Run]:41193 [Site]:4 [Bin]:14707 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:50.253 [Veto2]:53.2353 [Veto3]:52.1782 [Veto4]:53.6915 [SgUp1]:193554 [SgUp2]:193847 [SgUp3]:195246 [SgUp4]:194398 [SgLow1]:193252 [SgLow2]:193530 [SgLow3]:194972 [SgLow4]:194102 [NetMuon1]:54290 [NetMuon2]:54277 [NetMuon3]:54267 [NetMuon4]:54243
+[Run]:41193 [Site]:4 [Bin]:14708 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:58.0669 [Veto2]:51.2065 [Veto3]:58.992 [Veto4]:48.1482 [SgUp1]:192548 [SgUp2]:193621 [SgUp3]:194030 [SgUp4]:194827 [SgLow1]:192249 [SgLow2]:193308 [SgLow3]:193682 [SgLow4]:194539 [NetMuon1]:54093 [NetMuon2]:54220 [NetMuon3]:54083 [NetMuon4]:54246
+[Run]:41193 [Site]:4 [Bin]:14709 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:54.1405 [Veto2]:47.2089 [Veto3]:59.0734 [Veto4]:55.0934 [SgUp1]:193057 [SgUp2]:194345 [SgUp3]:194790 [SgUp4]:194634 [SgLow1]:192730 [SgLow2]:194022 [SgLow3]:194513 [SgLow4]:194401 [NetMuon1]:54180 [NetMuon2]:54255 [NetMuon3]:54085 [NetMuon4]:54131
+[Run]:41193 [Site]:4 [Bin]:14710 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:56.3249 [Veto2]:50.3609 [Veto3]:59.2015 [Veto4]:57.2915 [SgUp1]:193146 [SgUp2]:193698 [SgUp3]:194369 [SgUp4]:195333 [SgLow1]:192786 [SgLow2]:193424 [SgLow3]:194057 [SgLow4]:195029 [NetMuon1]:54422 [NetMuon2]:54493 [NetMuon3]:54352 [NetMuon4]:54399
+[Run]:41193 [Site]:4 [Bin]:14711 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:51.2792 [Veto2]:60.8698 [Veto3]:49.2689 [Veto4]:52.2077 [SgUp1]:193849 [SgUp2]:193615 [SgUp3]:195075 [SgUp4]:195150 [SgLow1]:193558 [SgLow2]:193241 [SgLow3]:194709 [SgLow4]:194847 [NetMuon1]:54341 [NetMuon2]:54192 [NetMuon3]:54367 [NetMuon4]:54343
+[Run]:41193 [Site]:4 [Bin]:14712 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:53.1064 [Veto2]:58.0022 [Veto3]:61.0173 [Veto4]:50.0829 [SgUp1]:193196 [SgUp2]:192949 [SgUp3]:194189 [SgUp4]:194900 [SgLow1]:192892 [SgLow2]:192648 [SgLow3]:193881 [SgLow4]:194598 [NetMuon1]:54065 [NetMuon2]:54031 [NetMuon3]:53980 [NetMuon4]:54135
+[Run]:41193 [Site]:4 [Bin]:14713 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:54.0896 [Veto2]:55.021 [Veto3]:58.0154 [Veto4]:51.1221 [SgUp1]:193426 [SgUp2]:193124 [SgUp3]:194764 [SgUp4]:195505 [SgLow1]:193156 [SgLow2]:192819 [SgLow3]:194415 [SgLow4]:195199 [NetMuon1]:54078 [NetMuon2]:54035 [NetMuon3]:54002 [NetMuon4]:54098
+[Run]:41193 [Site]:4 [Bin]:14714 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:52.2662 [Veto2]:57.1078 [Veto3]:63.0516 [Veto4]:62.0641 [SgUp1]:193835 [SgUp2]:193232 [SgUp3]:194248 [SgUp4]:193555 [SgLow1]:193541 [SgLow2]:192905 [SgLow3]:193916 [SgLow4]:193268 [NetMuon1]:54275 [NetMuon2]:54201 [NetMuon3]:54080 [NetMuon4]:54055
+[Run]:41193 [Site]:4 [Bin]:14715 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:49.1292 [Veto2]:57.749 [Veto3]:51.0359 [Veto4]:65.0236 [SgUp1]:193090 [SgUp2]:193560 [SgUp3]:195094 [SgUp4]:194628 [SgLow1]:192798 [SgLow2]:193243 [SgLow3]:194776 [SgLow4]:194354 [NetMuon1]:54109 [NetMuon2]:53963 [NetMuon3]:54063 [NetMuon4]:53884
+[Run]:41193 [Site]:4 [Bin]:14716 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:50.9987 [Veto2]:47.0369 [Veto3]:59.8714 [Veto4]:53.9975 [SgUp1]:193572 [SgUp2]:193644 [SgUp3]:195125 [SgUp4]:194721 [SgLow1]:193308 [SgLow2]:193327 [SgLow3]:194815 [SgLow4]:194415 [NetMuon1]:53929 [NetMuon2]:54019 [NetMuon3]:53782 [NetMuon4]:53893
+[Run]:41193 [Site]:4 [Bin]:14717 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:59.0018 [Veto2]:52.0441 [Veto3]:51.9975 [Veto4]:50.0827 [SgUp1]:193246 [SgUp2]:193875 [SgUp3]:194485 [SgUp4]:195871 [SgLow1]:192934 [SgLow2]:193532 [SgLow3]:194223 [SgLow4]:195537 [NetMuon1]:53877 [NetMuon2]:53970 [NetMuon3]:54003 [NetMuon4]:54031
+[Run]:41193 [Site]:4 [Bin]:14718 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:56.17 [Veto2]:50.1986 [Veto3]:55.208 [Veto4]:54.2153 [SgUp1]:192854 [SgUp2]:194137 [SgUp3]:195216 [SgUp4]:194791 [SgLow1]:192570 [SgLow2]:193832 [SgLow3]:194899 [SgLow4]:194528 [NetMuon1]:54235 [NetMuon2]:54341 [NetMuon3]:54275 [NetMuon4]:54301
+[Run]:41193 [Site]:4 [Bin]:14719 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:52.0018 [Veto2]:51.9393 [Veto3]:54.8811 [Veto4]:55.9236 [SgUp1]:193248 [SgUp2]:193667 [SgUp3]:194674 [SgUp4]:194990 [SgLow1]:192942 [SgLow2]:193375 [SgLow3]:194374 [SgLow4]:194708 [NetMuon1]:53887 [NetMuon2]:53921 [NetMuon3]:53854 [NetMuon4]:53829
+[Run]:41193 [Site]:4 [Bin]:14720 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:53.1394 [Veto2]:60.0475 [Veto3]:48.0984 [Veto4]:62.0685 [SgUp1]:193498 [SgUp2]:194233 [SgUp3]:194826 [SgUp4]:194594 [SgLow1]:193197 [SgLow2]:193893 [SgLow3]:194508 [SgLow4]:194294 [NetMuon1]:54093 [NetMuon2]:53996 [NetMuon3]:54184 [NetMuon4]:53942
+[Run]:41193 [Site]:4 [Bin]:14721 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:54.9351 [Veto2]:51.9499 [Veto3]:54.95 [Veto4]:56.8585 [SgUp1]:193101 [SgUp2]:193834 [SgUp3]:194242 [SgUp4]:195495 [SgLow1]:192781 [SgLow2]:193536 [SgLow3]:193940 [SgLow4]:195231 [NetMuon1]:53850 [NetMuon2]:53901 [NetMuon3]:53858 [NetMuon4]:53819
+[Run]:41193 [Site]:4 [Bin]:14722 [FullTime]:3590.18 [SkipTime]:0 [Veto1]:53.7805 [Veto2]:55.7417 [Veto3]:49.8023 [Veto4]:55.7913 [SgUp1]:192661 [SgUp2]:194250 [SgUp3]:195547 [SgUp4]:195237 [SgLow1]:192332 [SgLow2]:193927 [SgLow3]:195273 [SgLow4]:194951 [NetMuon1]:53639 [NetMuon2]:53607 [NetMuon3]:53676 [NetMuon4]:53618
+[Run]:41193 [Site]:4 [Bin]:14723 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:53.1787 [Veto2]:52.1039 [Veto3]:58.0685 [Veto4]:57.1096 [SgUp1]:193436 [SgUp2]:193978 [SgUp3]:194396 [SgUp4]:194288 [SgLow1]:193118 [SgLow2]:193613 [SgLow3]:194089 [SgLow4]:194034 [NetMuon1]:54171 [NetMuon2]:54213 [NetMuon3]:54116 [NetMuon4]:54088
+[Run]:41193 [Site]:4 [Bin]:14724 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:58.9683 [Veto2]:50.7446 [Veto3]:56.9228 [Veto4]:50.0211 [SgUp1]:193456 [SgUp2]:194495 [SgUp3]:194887 [SgUp4]:195436 [SgLow1]:193200 [SgLow2]:194179 [SgLow3]:194564 [SgLow4]:195112 [NetMuon1]:53887 [NetMuon2]:53990 [NetMuon3]:53911 [NetMuon4]:54003
+[Run]:41193 [Site]:4 [Bin]:14725 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:56.14 [Veto2]:53.1084 [Veto3]:51.1214 [Veto4]:56.0565 [SgUp1]:193127 [SgUp2]:194514 [SgUp3]:194185 [SgUp4]:194683 [SgLow1]:192822 [SgLow2]:194207 [SgLow3]:193853 [SgLow4]:194373 [NetMuon1]:54119 [NetMuon2]:54130 [NetMuon3]:54180 [NetMuon4]:54098
+[Run]:41193 [Site]:4 [Bin]:14726 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:46.0944 [Veto2]:52.942 [Veto3]:58.9181 [Veto4]:46.1119 [SgUp1]:194383 [SgUp2]:193976 [SgUp3]:194931 [SgUp4]:195293 [SgLow1]:194033 [SgLow2]:193661 [SgLow3]:194618 [SgLow4]:194964 [NetMuon1]:54029 [NetMuon2]:53910 [NetMuon3]:53863 [NetMuon4]:54052
+[Run]:41193 [Site]:4 [Bin]:14727 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:61.952 [Veto2]:58.9627 [Veto3]:58.0608 [Veto4]:51.1121 [SgUp1]:192905 [SgUp2]:193571 [SgUp3]:194568 [SgUp4]:195404 [SgLow1]:192602 [SgLow2]:193244 [SgLow3]:194286 [SgLow4]:195070 [NetMuon1]:53902 [NetMuon2]:53948 [NetMuon3]:53913 [NetMuon4]:54097
+[Run]:41193 [Site]:4 [Bin]:14728 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:53.005 [Veto2]:60.8522 [Veto3]:54.8852 [Veto4]:55.9268 [SgUp1]:194197 [SgUp2]:193212 [SgUp3]:195196 [SgUp4]:194334 [SgLow1]:193886 [SgLow2]:192933 [SgLow3]:194922 [SgLow4]:194039 [NetMuon1]:53900 [NetMuon2]:53779 [NetMuon3]:53837 [NetMuon4]:53874
+[Run]:41193 [Site]:4 [Bin]:14729 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:60.3935 [Veto2]:54.4196 [Veto3]:57.3887 [Veto4]:49.4176 [SgUp1]:192744 [SgUp2]:193594 [SgUp3]:194654 [SgUp4]:196233 [SgLow1]:192426 [SgLow2]:193338 [SgLow3]:194373 [SgLow4]:195966 [NetMuon1]:54530 [NetMuon2]:54599 [NetMuon3]:54567 [NetMuon4]:54663
+[Run]:41193 [Site]:4 [Bin]:14730 [FullTime]:2284.75 [SkipTime]:1305.42 [Veto1]:32.6767 [Veto2]:34.6152 [Veto3]:35.6246 [Veto4]:34.5971 [SgUp1]:122738 [SgUp2]:123044 [SgUp3]:124091 [SgUp4]:124800 [SgLow1]:122533 [SgLow2]:122833 [SgLow3]:123894 [SgLow4]:124598 [NetMuon1]:34328 [NetMuon2]:34302 [NetMuon3]:34274 [NetMuon4]:34304
+[Run]:41193 [Site]:4 [Bin]:14731 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:51.1183 [Veto2]:51.076 [Veto3]:58.0139 [Veto4]:45.1493 [SgUp1]:193925 [SgUp2]:193003 [SgUp3]:194706 [SgUp4]:195662 [SgLow1]:193661 [SgLow2]:192671 [SgLow3]:194419 [SgLow4]:195376 [NetMuon1]:54096 [NetMuon2]:54110 [NetMuon3]:54006 [NetMuon4]:54201
+[Run]:41193 [Site]:4 [Bin]:14732 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:47.8572 [Veto2]:57.6796 [Veto3]:47.7269 [Veto4]:53.7624 [SgUp1]:193381 [SgUp2]:193558 [SgUp3]:195274 [SgUp4]:195559 [SgLow1]:193102 [SgLow2]:193264 [SgLow3]:194978 [SgLow4]:195228 [NetMuon1]:53610 [NetMuon2]:53474 [NetMuon3]:53597 [NetMuon4]:53517
+[Run]:41193 [Site]:4 [Bin]:14733 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:56.7773 [Veto2]:55.7842 [Veto3]:54.7787 [Veto4]:52.778 [SgUp1]:193178 [SgUp2]:193816 [SgUp3]:195099 [SgUp4]:196354 [SgLow1]:192873 [SgLow2]:193493 [SgLow3]:194791 [SgLow4]:196032 [NetMuon1]:53587 [NetMuon2]:53620 [NetMuon3]:53636 [NetMuon4]:53674
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+[Run]:41193 [Site]:4 [Bin]:14734 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:62.0019 [Veto2]:55.0392 [Veto3]:62.8582 [Veto4]:53.052 [SgUp1]:193597 [SgUp2]:194302 [SgUp3]:194913 [SgUp4]:195250 [SgLow1]:193273 [SgLow2]:193851 [SgLow3]:194611 [SgLow4]:194929 [NetMuon1]:53946 [NetMuon2]:54038 [NetMuon3]:53925 [NetMuon4]:54086
+[Run]:41193 [Site]:4 [Bin]:14735 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:58.0685 [Veto2]:48.1132 [Veto3]:53.1069 [Veto4]:59.5349 [SgUp1]:192964 [SgUp2]:194179 [SgUp3]:194880 [SgUp4]:194495 [SgLow1]:192663 [SgLow2]:193845 [SgLow3]:194574 [SgLow4]:194198 [NetMuon1]:54000 [NetMuon2]:54173 [NetMuon3]:54082 [NetMuon4]:53956
+[Run]:41193 [Site]:4 [Bin]:14736 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:61.4388 [Veto2]:51.0836 [Veto3]:55.0286 [Veto4]:51.1141 [SgUp1]:192384 [SgUp2]:194395 [SgUp3]:194909 [SgUp4]:195121 [SgLow1]:192037 [SgLow2]:194095 [SgLow3]:194611 [SgLow4]:194825 [NetMuon1]:53868 [NetMuon2]:54017 [NetMuon3]:54004 [NetMuon4]:54054
+[Run]:41193 [Site]:4 [Bin]:14737 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:53.0006 [Veto2]:57.9288 [Veto3]:64.8836 [Veto4]:61.8969 [SgUp1]:194692 [SgUp2]:193005 [SgUp3]:194646 [SgUp4]:194762 [SgLow1]:194392 [SgLow2]:192691 [SgLow3]:194359 [SgLow4]:194495 [NetMuon1]:53949 [NetMuon2]:53809 [NetMuon3]:53752 [NetMuon4]:53767
+[Run]:41193 [Site]:4 [Bin]:14738 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:59.8174 [Veto2]:51.8436 [Veto3]:55.8093 [Veto4]:51.831 [SgUp1]:193081 [SgUp2]:194785 [SgUp3]:194582 [SgUp4]:195491 [SgLow1]:192785 [SgLow2]:194481 [SgLow3]:194309 [SgLow4]:195234 [NetMuon1]:53615 [NetMuon2]:53739 [NetMuon3]:53711 [NetMuon4]:53765
+[Run]:41193 [Site]:4 [Bin]:14739 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:58.7982 [Veto2]:51.8356 [Veto3]:50.8813 [Veto4]:54.7878 [SgUp1]:193882 [SgUp2]:193989 [SgUp3]:196715 [SgUp4]:195361 [SgLow1]:193615 [SgLow2]:193674 [SgLow3]:196425 [SgLow4]:195076 [NetMuon1]:53650 [NetMuon2]:53750 [NetMuon3]:53768 [NetMuon4]:53722
+[Run]:41193 [Site]:4 [Bin]:14740 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:55.9498 [Veto2]:53.8815 [Veto3]:51.8785 [Veto4]:50.5299 [SgUp1]:193187 [SgUp2]:193323 [SgUp3]:195061 [SgUp4]:194612 [SgLow1]:192905 [SgLow2]:192972 [SgLow3]:194810 [SgLow4]:194320 [NetMuon1]:53786 [NetMuon2]:53764 [NetMuon3]:53792 [NetMuon4]:53838
+[Run]:41193 [Site]:4 [Bin]:14741 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:53.92 [Veto2]:49.6744 [Veto3]:59.7798 [Veto4]:48.9288 [SgUp1]:194166 [SgUp2]:193496 [SgUp3]:194530 [SgUp4]:195143 [SgLow1]:193891 [SgLow2]:193222 [SgLow3]:194205 [SgLow4]:194860 [NetMuon1]:53787 [NetMuon2]:53822 [NetMuon3]:53662 [NetMuon4]:53839
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+[Run]:41193 [Site]:4 [Bin]:14742 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:48.7865 [Veto2]:64.5515 [Veto3]:57.6332 [Veto4]:43.7541 [SgUp1]:193969 [SgUp2]:193694 [SgUp3]:194599 [SgUp4]:195632 [SgLow1]:193682 [SgLow2]:193105 [SgLow3]:194311 [SgLow4]:195310 [NetMuon1]:53529 [NetMuon2]:53311 [NetMuon3]:53377 [NetMuon4]:53644
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+ Warning: Fold>20
+[Run]:41193 [Site]:4 [Bin]:14743 [FullTime]:3590.18 [SkipTime]:0 [Veto1]:60.2126 [Veto2]:58.2026 [Veto3]:59.1895 [Veto4]:49.3194 [SgUp1]:193406 [SgUp2]:193440 [SgUp3]:193626 [SgUp4]:195670 [SgLow1]:193126 [SgLow2]:193155 [SgLow3]:193312 [SgLow4]:195368 [NetMuon1]:54249 [NetMuon2]:54269 [NetMuon3]:54279 [NetMuon4]:54437
+[Run]:41193 [Site]:4 [Bin]:14744 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:55.3607 [Veto2]:48.3422 [Veto3]:58.2818 [Veto4]:54.3118 [SgUp1]:193709 [SgUp2]:193935 [SgUp3]:195135 [SgUp4]:195147 [SgLow1]:193407 [SgLow2]:193606 [SgLow3]:194801 [SgLow4]:194866 [NetMuon1]:54480 [NetMuon2]:54568 [NetMuon3]:54408 [NetMuon4]:54453
+[Run]:41193 [Site]:4 [Bin]:14745 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:61.1772 [Veto2]:56.2017 [Veto3]:66.1615 [Veto4]:55.2615 [SgUp1]:194172 [SgUp2]:194640 [SgUp3]:194820 [SgUp4]:194748 [SgLow1]:193853 [SgLow2]:194370 [SgLow3]:194505 [SgLow4]:194471 [NetMuon1]:54243 [NetMuon2]:54312 [NetMuon3]:54185 [NetMuon4]:54324
+[Run]:41193 [Site]:4 [Bin]:14746 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:55.2039 [Veto2]:57.2421 [Veto3]:56.2318 [Veto4]:54.2902 [SgUp1]:194275 [SgUp2]:194253 [SgUp3]:195421 [SgUp4]:195462 [SgLow1]:193973 [SgLow2]:193955 [SgLow3]:195086 [SgLow4]:195176 [NetMuon1]:54381 [NetMuon2]:54365 [NetMuon3]:54406 [NetMuon4]:54408
+[Run]:41193 [Site]:4 [Bin]:14747 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:62.8869 [Veto2]:59.7798 [Veto3]:58.0112 [Veto4]:54.8178 [SgUp1]:193748 [SgUp2]:193565 [SgUp3]:194950 [SgUp4]:194754 [SgLow1]:193478 [SgLow2]:193267 [SgLow3]:194625 [SgLow4]:194475 [NetMuon1]:53549 [NetMuon2]:53600 [NetMuon3]:53616 [NetMuon4]:53684
+[Run]:41193 [Site]:4 [Bin]:14748 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:59.9989 [Veto2]:49.0345 [Veto3]:55.9537 [Veto4]:58.9693 [SgUp1]:192692 [SgUp2]:193742 [SgUp3]:194920 [SgUp4]:195200 [SgLow1]:192390 [SgLow2]:193415 [SgLow3]:194619 [SgLow4]:194884 [NetMuon1]:53922 [NetMuon2]:54067 [NetMuon3]:53970 [NetMuon4]:53906
+[Run]:41193 [Site]:4 [Bin]:14749 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:51.1759 [Veto2]:56.037 [Veto3]:55.042 [Veto4]:55.076 [SgUp1]:193406 [SgUp2]:194399 [SgUp3]:194779 [SgUp4]:195158 [SgLow1]:193068 [SgLow2]:194066 [SgLow3]:194438 [SgLow4]:194869 [NetMuon1]:54198 [NetMuon2]:54107 [NetMuon3]:54100 [NetMuon4]:54118
+[Run]:41193 [Site]:4 [Bin]:14750 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:53.5737 [Veto2]:58.5514 [Veto3]:58.5187 [Veto4]:69.4457 [SgUp1]:193850 [SgUp2]:194301 [SgUp3]:195195 [SgUp4]:193616 [SgLow1]:193571 [SgLow2]:193973 [SgLow3]:194881 [SgLow4]:193256 [NetMuon1]:54902 [NetMuon2]:54767 [NetMuon3]:54802 [NetMuon4]:54651
+[Run]:41193 [Site]:4 [Bin]:14751 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:55.3495 [Veto2]:64.1858 [Veto3]:53.3063 [Veto4]:61.2615 [SgUp1]:193293 [SgUp2]:192688 [SgUp3]:195546 [SgUp4]:194801 [SgLow1]:193039 [SgLow2]:192375 [SgLow3]:195234 [SgLow4]:194521 [NetMuon1]:54454 [NetMuon2]:54298 [NetMuon3]:54519 [NetMuon4]:54337
+[Run]:41193 [Site]:4 [Bin]:14752 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:54.2624 [Veto2]:48.3127 [Veto3]:57.2281 [Veto4]:59.2596 [SgUp1]:193411 [SgUp2]:194264 [SgUp3]:194829 [SgUp4]:194000 [SgLow1]:193126 [SgLow2]:193921 [SgLow3]:194612 [SgLow4]:193712 [NetMuon1]:54354 [NetMuon2]:54476 [NetMuon3]:54331 [NetMuon4]:54361
+[Run]:41193 [Site]:4 [Bin]:14753 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:58.1143 [Veto2]:55.1413 [Veto3]:51.2539 [Veto4]:49.2369 [SgUp1]:193897 [SgUp2]:193548 [SgUp3]:194772 [SgUp4]:195819 [SgLow1]:193586 [SgLow2]:193253 [SgLow3]:194506 [SgLow4]:195481 [NetMuon1]:54167 [NetMuon2]:54215 [NetMuon3]:54279 [NetMuon4]:54296
+End process Run: 41193 ... 
+[Run]:41193 [Site]:4 [Bin]:14754 [FullTime]:1453.72 [SkipTime]:0 [Veto1]:19.8396 [Veto2]:24.8536 [Veto3]:20.9156 [Veto4]:20.9314

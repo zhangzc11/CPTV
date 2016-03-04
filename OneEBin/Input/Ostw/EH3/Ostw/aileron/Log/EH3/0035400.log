@@ -1,0 +1,10 @@
+StreamChain add 0x4b7a7e0
+Start to process run: 35400 ... 
+[Run]:35400 [Site]:4 [Bin]:8016 [FullTime]:3154.25 [SkipTime]:0 [Veto1]:45.9888 [Veto2]:51.9433 [Veto3]:53.8716 [Veto4]:56.8035 [SgUp1]:172732 [SgUp2]:172792 [SgUp3]:178414 [SgUp4]:174354 [SgLow1]:172462 [SgLow2]:172523 [SgLow3]:178112 [SgLow4]:174051 [NetMuon1]:52487 [NetMuon2]:52404 [NetMuon3]:52323 [NetMuon4]:52292
+[Run]:35400 [Site]:4 [Bin]:8017 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:63.1675 [Veto2]:55.2409 [Veto3]:55.2882 [Veto4]:60.1639 [SgUp1]:195726 [SgUp2]:196641 [SgUp3]:203075 [SgUp4]:198458 [SgLow1]:195377 [SgLow2]:196311 [SgLow3]:202787 [SgLow4]:198149 [NetMuon1]:59120 [NetMuon2]:59283 [NetMuon3]:59276 [NetMuon4]:59154
+[Run]:35400 [Site]:4 [Bin]:8018 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:63.0965 [Veto2]:59.1245 [Veto3]:67.0344 [Veto4]:57.3907 [SgUp1]:195641 [SgUp2]:196566 [SgUp3]:203234 [SgUp4]:199398 [SgLow1]:195366 [SgLow2]:196193 [SgLow3]:202926 [SgLow4]:199089 [NetMuon1]:59037 [NetMuon2]:59088 [NetMuon3]:58948 [NetMuon4]:59123
+[Run]:35400 [Site]:4 [Bin]:8019 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:55.8496 [Veto2]:55.7948 [Veto3]:52.8307 [Veto4]:59.7792 [SgUp1]:197073 [SgUp2]:197674 [SgUp3]:203306 [SgUp4]:198249 [SgLow1]:196777 [SgLow2]:197341 [SgLow3]:203017 [SgLow4]:197914 [NetMuon1]:61836 [NetMuon2]:61808 [NetMuon3]:61833 [NetMuon4]:61747
+[Run]:35400 [Site]:4 [Bin]:8020 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:54.489 [Veto2]:63.322 [Veto3]:55.4491 [Veto4]:54.4022 [SgUp1]:197259 [SgUp2]:196441 [SgUp3]:203085 [SgUp4]:197939 [SgLow1]:196950 [SgLow2]:196149 [SgLow3]:202774 [SgLow4]:197625 [NetMuon1]:62876 [NetMuon2]:62715 [NetMuon3]:62878 [NetMuon4]:62892
+[Run]:35400 [Site]:4 [Bin]:8021 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:48.361 [Veto2]:57.2137 [Veto3]:62.1989 [Veto4]:52.2443 [SgUp1]:196410 [SgUp2]:197762 [SgUp3]:202676 [SgUp4]:198785 [SgLow1]:196087 [SgLow2]:197424 [SgLow3]:202321 [SgLow4]:198487 [NetMuon1]:59383 [NetMuon2]:59253 [NetMuon3]:59168 [NetMuon4]:59307
+End process Run: 35400 ... 
+[Run]:35400 [Site]:4 [Bin]:8022 [FullTime]:2234.71 [SkipTime]:0 [Veto1]:41.2333 [Veto2]:29.3562 [Veto3]:34.3034 [Veto4]:43.2233

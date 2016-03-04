@@ -1,0 +1,18 @@
+package ExamTruth
+
+# all the data model
+use SimEvent            v* DataModel
+use GenEvent            v* DataModel
+use DetHelpers          v* Detector
+use DybPolicy
+use GaudiPython
+use DybROOT             *  External
+
+include_path none
+
+library ExamTruth *.cc
+
+apply_pattern component_library library=ExamTruth
+
+apply_pattern install_scripts
+apply_pattern install_python_modules

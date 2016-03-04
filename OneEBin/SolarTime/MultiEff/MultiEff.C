@@ -1,0 +1,252 @@
+
+#include <string>
+#include <fstream>
+#include <sstream>
+#include <math.h>
+
+Double_t f_MultiEff(Double_t Ru,Double_t Rs,Double_t Tc);
+Double_t f_MultiEff_Div(Double_t Ru,Double_t Nu,Double_t Rs,Double_t Ns,Double_t Tc);
+
+void MultiEff()
+{
+	Double_t WidthOfBin = 3600.0;// 1 sidereal day = 86164.09 seconds
+	Double_t StartTime = 1324684800.0 ;
+	Double_t EndTime = 1385769600.00000;
+	Int_t NumOfBin = 16968;//(EndTime - StartTime)/WidthOfBin;//16968
+	Double_t Tc = 400*1e-6;
+
+
+	Double_t AveMultiEff[8]={0.0};
+	Double_t E_AveMultiEff[8]={0.0};
+
+	Double_t MultiEff_t[8];
+
+	Double_t MultiEffInOneDay[8][24];
+	memset(MultiEffInOneDay,0.0,sizeof(MultiEffInOneDay));
+
+	Double_t E_MultiEffInOneDay[8][24];
+	memset(E_MultiEffInOneDay,0.0,sizeof(E_MultiEffInOneDay));
+
+
+	Double_t TotalFullTime[8]={0.0};
+	Double_t FullTime_t[8];
+
+	Double_t FullTimeInOneDay[8][24];
+	memset(FullTimeInOneDay,0.0,sizeof(FullTimeInOneDay));
+
+	TFile *F_FullTime = new TFile("../FullTime.root");
+	TTree *Tree_FullTime = (TTree*)F_FullTime->Get("FullTime");
+	Tree_FullTime->SetBranchAddress("FullTime",FullTime_t);
+
+	Double_t TotalLiveTime[8]={0.0};
+	Double_t LiveTime_t[8];
+
+	Double_t LiveTimeInOneDay[8][24];
+	memset(LiveTimeInOneDay,0.0,sizeof(LiveTimeInOneDay));
+
+	TFile *F_LiveTime = new TFile("../LiveTime.root");
+	TTree *Tree_LiveTime = (TTree*)F_LiveTime->Get("LiveTime");
+	Tree_LiveTime->SetBranchAddress("LiveTime",LiveTime_t);
+
+	Double_t TotalSgUp[8]={0.0};
+	Double_t SgUp_t[8];
+
+	Double_t SgUpInOneDay[8][24];
+	memset(SgUpInOneDay,0.0,sizeof(SgUpInOneDay));
+
+	TFile *F_SgUp = new TFile("../SgUp.root");
+	TTree *Tree_SgUp = (TTree*)F_SgUp->Get("SgUp");
+	Tree_SgUp->SetBranchAddress("SgUp",SgUp_t);
+
+	Double_t TotalSgLow[8]={0.0};
+	Double_t SgLow_t[8];
+
+	Double_t SgLowInOneDay[8][24];
+	memset(SgLowInOneDay,0.0,sizeof(SgLowInOneDay));
+
+	TFile *F_SgLow = new TFile("../SgLow.root");
+	TTree *Tree_SgLow = (TTree*)F_SgLow->Get("SgLow");
+	Tree_SgLow->SetBranchAddress("SgLow",SgLow_t);
+
+	Double_t TotalNetMu[8]={0.0};
+	Double_t NetMu_t[8];
+
+	Double_t NetMuInOneDay[8][24];
+	memset(NetMuInOneDay,0.0,sizeof(NetMuInOneDay));
+
+	TFile *F_NetMu = new TFile("../NetMu.root");
+	TTree *Tree_NetMu = (TTree*)F_NetMu->Get("NetMu");
+	Tree_NetMu->SetBranchAddress("NetMu",NetMu_t);
+
+	for(int Bin=0;Bin<NumOfBin;Bin++)
+	{
+		int N24 = Bin%24;
+		Tree_FullTime->GetEntry(Bin);
+		Tree_LiveTime->GetEntry(Bin);
+		Tree_SgUp->GetEntry(Bin);
+		Tree_SgLow->GetEntry(Bin);
+		Tree_NetMu->GetEntry(Bin);
+
+		for(int Det=0;Det<8;Det++)
+		{
+			FullTimeInOneDay[Det][N24] += FullTime_t[Det];
+			LiveTimeInOneDay[Det][N24] += LiveTime_t[Det];
+			SgUpInOneDay[Det][N24] += SgUp_t[Det];
+			SgLowInOneDay[Det][N24] += SgLow_t[Det];
+			NetMuInOneDay[Det][N24] += NetMu_t[Det];
+			TotalFullTime[Det] += FullTime_t[Det];
+			TotalLiveTime[Det] += LiveTime_t[Det];
+			TotalSgUp[Det] += SgUp_t[Det];
+			TotalSgLow[Det] += SgLow_t[Det];
+			TotalNetMu[Det] += NetMu_t[Det];
+			
+		}
+	}
+
+	for(int Det=0;Det<8;Det++)
+	{
+		for(int N24=0;N24<24;N24++)
+		{
+			MultiEffInOneDay[Det][N24] = f_MultiEff(NetMuInOneDay[Det][N24]/FullTimeInOneDay[Det][N24],0.5*(SgUpInOneDay[Det][N24]+SgLowInOneDay[Det][N24])/LiveTimeInOneDay[Det][N24],Tc);
+			E_MultiEffInOneDay[Det][N24] = f_MultiEff_Div(NetMuInOneDay[Det][N24]/FullTimeInOneDay[Det][N24],NetMuInOneDay[Det][N24],0.5*(SgUpInOneDay[Det][N24]+SgLowInOneDay[Det][N24])/LiveTimeInOneDay[Det][N24],0.5*(SgUpInOneDay[Det][N24]+SgLowInOneDay[Det][N24]),Tc);
+		}
+		AveMultiEff[Det] = f_MultiEff(TotalNetMu[Det]/TotalFullTime[Det],0.5*(TotalSgUp[Det]+TotalSgLow[Det])/TotalLiveTime[Det],Tc);
+	}
+	
+	const char *hist_Name[8] = {"EH1_AD1","EH1_AD2","EH2_AD1","EH2_AD2","EH3_AD1","EH3_AD2","EH3_AD3","EH3_AD4"}; 
+	const char *file_Name[8] = {
+		"MultiEffInOneDay_EH1_AD1.pdf","MultiEffInOneDay_EH1_AD2.pdf","MultiEffInOneDay_EH2_AD1.pdf","MultiEffInOneDay_EH2_AD2.pdf",
+		"MultiEffInOneDay_EH3_AD1.pdf","MultiEffInOneDay_EH3_AD2.pdf","MultiEffInOneDay_EH3_AD3.pdf","MultiEffInOneDay_EH3_AD4.pdf"};
+	TCanvas *myC[8];
+	TH1F *my_h[8];
+	TLegend *leg[8];
+	for(int Det=0;Det<8;Det++)
+	{
+		myC[Det] = new TCanvas(hist_Name[Det],hist_Name[Det],0,0,800,420);
+		my_h[Det] = new TH1F(hist_Name[Det],hist_Name[Det],24,0,24);
+	    Double_t MaxR=0.0,MinR=MultiEffInOneDay[Det][0],MeanR=0.0,MaxE=0.0;
+
+	    for(int i=0;i<24;i++)
+	    {
+		   my_h[Det]->SetBinContent(i+1,MultiEffInOneDay[Det][i]);
+		   my_h[Det]->SetBinError(i+1,E_MultiEffInOneDay[Det][i]);
+		   MeanR += MultiEffInOneDay[Det][i];
+		   if(MultiEffInOneDay[Det][i]>MaxR){MaxR=MultiEffInOneDay[Det][i];}
+		   if(MultiEffInOneDay[Det][i]<MinR){MinR=MultiEffInOneDay[Det][i];}
+		   if(E_MultiEffInOneDay[Det][i] > MaxE){MaxE = E_MultiEffInOneDay[Det][i];}
+	    }
+		cout<<"Average MultiEff of "<<hist_Name[Det]<<"  "<<AveMultiEff[Det]<<endl;
+		cout<<"Time Variation: "<<24.0*(MaxR-MinR)/MeanR<<endl;
+		cout<<"Maximum Error: "<<MaxE<<endl;
+
+		my_h[Det]->GetXaxis()->SetTitle("sidereal time(1 bin = 86164.09/24.00 seconds)");
+	
+	//my_h[Det]->GetYaxis()->SetRangeUser(1990*1e3,2080*1e3);
+	my_h[Det]->GetXaxis()->SetRangeUser(0,24);
+	my_h[Det]->GetXaxis()->SetNdivisions(24);
+	
+	my_h[Det]->SetTitle("");
+	my_h[Det]->SetLineWidth(3);
+
+	my_h[Det]->GetYaxis()->SetTitleOffset(0.7);
+	my_h[Det]->GetYaxis()->SetTitleSize(0.07);
+	my_h[Det]->GetYaxis()->SetLabelSize(0.06);
+	my_h[Det]->GetYaxis()->SetLabelOffset(0.0);
+	
+	my_h[Det]->GetXaxis()->SetTitleOffset(0.8);
+	my_h[Det]->GetXaxis()->SetTitleSize(0.06);
+	my_h[Det]->GetXaxis()->SetLabelSize(0.045);
+	my_h[Det]->GetXaxis()->SetLabelOffset(0.0);
+	
+	my_h[Det]->Draw();
+
+   leg[Det] = new TLegend(0.35, 0.75, 0.65, 0.9);
+   leg[Det]->AddEntry(my_h[Det],hist_Name[Det],"");
+   leg[Det]->SetFillStyle(0);
+   leg[Det]->SetBorderSize(0);
+   leg[Det]->SetTextColor(kRed);
+   leg[Det]->Draw();
+
+	myC[Det]->SaveAs(file_Name[Det]);
+	}
+
+	//save
+	TFile  *F_MultiEffInOneDay = new TFile("MultiEffInOneDay.root","recreate");
+	TTree *Tree_MultiEffInOneDay = new TTree("MultiEffInOneDay","MultiEffInOneDay");
+	Tree_MultiEffInOneDay->Branch("MultiEffInOneDay",MultiEff_t,"MultiEff_t[8]/D");
+
+	for(int Bin=0; Bin<24;Bin++)
+	{
+		for(int Det=0;Det<8;Det++)
+		{
+			MultiEff_t[Det] = MultiEffInOneDay[Det][Bin];
+		}
+		Tree_MultiEffInOneDay->Fill();
+	}
+	Tree_MultiEffInOneDay->Write();
+
+}
+
+
+Double_t f_MultiEff(Double_t Ru,Double_t Rs,Double_t Tc)
+{
+	//cout<<Ru<<"   "<<Rs<<endl;
+	return ( (Ru/(Rs+Ru))*(1-exp(-(Ru+Rs)*Tc)) + exp(-(Ru+Rs)*Tc) 
+		+ (Rs/(Rs+Ru))*exp(-Ru*Tc)*(1-exp(-(Ru+Rs)*Tc)) - (Rs/(2*Rs+Ru))*exp(-Ru*Tc)*(1-exp(-(Ru+2*Rs)*Tc)))*exp(-Rs*Tc);
+
+}
+
+Double_t f_MultiEff_Div(Double_t Ru,Double_t Nu,Double_t Rs,Double_t Ns,Double_t Tc)
+{
+	Double_t RD_Rs	= 1.0/(sqrt(Ns));
+	Double_t RD_Ru	= 1.0/sqrt(Nu);
+
+	Double_t RsTc	= exp(-Rs*Tc);
+	Double_t D_RsTc= Tc * RD_Rs * Rs * RsTc;
+
+	Double_t RuTc	= exp(-Ru*Tc);
+	Double_t D_RuTc= Tc * RD_Ru * Ru * RuTc;
+
+	Double_t RsuTc	= exp(-(Ru+Rs)*Tc);
+	Double_t D_RsuTc= RsuTc*Tc*sqrt(pow(Ru*RD_Ru,2.0)+pow(Rs*RD_Rs,2.0));
+
+	Double_t R2suTc	= exp(-(Ru+2*Rs)*Tc);
+	Double_t D_R2suTc= R2suTc*Tc*sqrt(pow(Ru*RD_Ru,2.0)+pow(2*Rs*RD_Rs,2.0));
+
+	Double_t Rus	= Ru/(Rs + Ru);
+	Double_t RD_Rus = sqrt(1.0/Nu + (pow(Ru*RD_Ru,2.0)+pow(Rs*RD_Rs,2.0))/(pow(Ru+Rs,2.0)));
+
+	Double_t Rsu	= Rs/(Rs + Ru);
+	Double_t RD_Rsu = sqrt( pow(RD_Rs, 2.0) + (pow(Ru*RD_Ru,2.0)+pow(Rs*RD_Rs,2.0))/(pow(Ru+Rs,2.0)));
+	
+	Double_t R2su	= Rs/(2*Rs + Ru);
+	Double_t RD_R2su= sqrt( pow(RD_Rs, 2.0) + (pow(Ru*RD_Ru,2.0)+pow(2*Rs*RD_Rs,2.0))/(pow(Ru+2*Rs,2.0)));
+	/////////////////////////////////////////////////////////////////////////////
+	Double_t In1	= Rus * (1-RsuTc);
+	Double_t D_In1	= In1 * sqrt(pow(RD_Rus,2.0) + pow(D_RsuTc/(1-RsuTc),2.0));
+
+	Double_t In2	= RsuTc;
+	Double_t D_In2	= D_RsuTc;
+
+	Double_t In3	= Rsu * RuTc * (1-RsuTc);
+	Double_t D_In3	= In3 * sqrt(pow(RD_Rsu,2.0)+pow(D_RuTc/RuTc,2.0)+pow(D_RsuTc/(1-RsuTc),2.0));
+
+	Double_t In4	= R2su * RuTc * (1-R2suTc);
+	Double_t D_In4	= In4 * sqrt(pow(RD_R2su,2.0)+pow(D_RuTc/RuTc,2.0)+pow(D_R2suTc/(1-R2suTc),2.0));
+	
+	/////////////////////////////////////////////////////////////////////////////
+	Double_t In		= In1 + In2 + In3 - In4;
+	Double_t D_In	= sqrt(pow(D_In1,2.0)+pow(D_In2,2.0)+pow(D_In3,2.0)+pow(D_In4,2.0));
+
+	Double_t Out	= RsTc;
+	Double_t D_Out	= D_RsTc;
+	
+	/*cout<<"In1: "<<In1<<"   D_In1:   "<<D_In1<<endl;
+	cout<<"In2: "<<In2<<"   D_In2:   "<<D_In2<<endl;
+	cout<<"In3: "<<In3<<"   D_In3:   "<<D_In3<<endl;
+	cout<<"In4: "<<In4<<"   D_In4:   "<<D_In4<<endl;
+	cout<<"In:  "<<In<<"  D_In: "<<D_In<<endl; 
+	cout<<"In*Out  "<<In*Out<<endl;
+	*/
+	return f_MultiEff(Ru,Rs,Tc) * sqrt(pow(D_In/In,2.0)+pow(D_Out/Out,2.0));
+}

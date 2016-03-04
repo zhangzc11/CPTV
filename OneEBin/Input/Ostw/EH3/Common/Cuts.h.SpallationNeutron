@@ -1,0 +1,131 @@
+/// 
+/// Cuts list
+/// 
+/// Zhe Wang, Nov. 12 2011
+///
+/// For spallation neutron
+/// 
+#ifndef _CUTS_H_
+#define _CUTS_H_
+
+#include "CLHEP/Units/SystemOfUnits.h"
+using namespace CLHEP;
+
+class Cuts
+{  
+ public:
+  enum DataSet_t{
+    Gd = 0,
+    H  = 1 };
+
+ public:
+  Cuts( DataSet_t DataSet  )
+    {
+      /// Events fall into the first three catagories won't be considered.
+      /// ================================================================
+      /// 
+      /// A general cuts
+      MultiTrig = 0x10000100;
+      ESumTrig  = 0x10001000;
+
+      /// The same sub-event. 
+      /// The Latency covers the relative delay between detectors and 
+      /// retrigger delay DocDB 6756.
+      Latency = 2 * microsecond;
+
+      /// Retrigger window
+      ReTrigWin = 10 * microsecond;
+ 
+      /// Event type determination.
+      /// =========================
+      /// Muon idenfication
+      NChnlIws  = 12;
+      NChnlOws  = 15;
+      QSumAD    = 20 * MeV;
+      ShowerAD  = 2.5 * GeV;
+
+      /// A general cuts for all AD for flashers
+      /* Flasher cuts needs to be reevaluated. */
+      /* 8Inch flasher */
+      /*
+      TRMS      = 15;
+      QMaxToSumLow  = 0;
+      QMaxToSumHigh = 0.3;
+      */
+      // Ellipse cut
+      /* 2Inch flasher */ 
+      /* ... */
+
+      /// AD event select
+      QSumLow   = DataSet == Gd ? 0.7 * MeV : 1 * MeV;
+      QSumHigh  = 20  * MeV;
+
+      /// Window decision
+      PlMuVeto   = 20 * microsecond;
+      AdMuVeto   = 20 * microsecond;
+      ShMuVeto   = 1 * second;
+      CoinDt     = DataSet == Gd ? 200 * microsecond : 400 * microsecond;
+
+      /// Distance between the prompt and delayed signal
+      D2First    = DataSet == Gd ? 50000 * mm : 500 * mm;
+
+      /// Energy cut for 2.2 MeV signal
+      /// Need a Crystal ball fit
+      E22Low = (2.357 - 3*0.143) * MeV;
+      E22Hgh = (2.357 + 3*0.143) * MeV;
+
+      /// Energy cut for 8 MeV signal
+      E8Low = 6.0 * MeV;
+      E8Hgh = 10.0 * MeV;
+    };
+
+  ~Cuts() {}; 
+
+ public:
+  /// Latency
+  double  Latency;
+
+  /// A general cuts for all events
+  int     MultiTrig; 
+  int     ESumTrig;
+
+  /// Use a simple window cut determine triggers
+  /// Could be more complicated
+  double  ReTrigWin;
+
+  /// A general cuts for all AD events
+  double  TRMS;
+  double  QMaxToSumLow;
+  double  QMaxToSumHigh;
+  
+  /// Muon idenfication 
+  int     NChnlIws;
+  int     NChnlOws;
+  double  QSumAD;
+  double  ShowerAD;
+
+  /// AD event selection
+  double  QSumLow;   
+  double  QSumHigh;  
+
+  /// The two critical cuts determine the
+  /// muon spallation t and
+  /// delay-coincident delta t
+  double  PlMuVeto;
+  double  AdMuVeto;
+  double  ShMuVeto;
+  double  CoinDt;
+
+  /// Distance between the prompt and delayed signal
+  double  D2First;
+
+  /// Energy cut for 2.2 MeV signal
+  double E22Low;
+  double E22Hgh;
+
+  /// Energy cut for 8 MeV signal
+  double E8Low;
+  double E8Hgh;
+};
+
+#endif // _CUTS_H_

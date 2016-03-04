@@ -1,0 +1,10 @@
+StreamChain add 0x6a537e0
+Start to process run: 34747 ... 
+[Run]:34747 [Site]:1 [Bin]:7454 [FullTime]:1188.68 [SkipTime]:0 [Veto1]:203.018 [Veto2]:206.061 [Veto3]:134.855 [Veto4]:134.855 [SgUp1]:59220 [SgUp2]:58321 [SgUp3]:0 [SgUp4]:0 [SgLow1]:59045 [SgLow2]:58187 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:197884 [NetMuon2]:197019 [NetMuon3]:211477 [NetMuon4]:211477
+[Run]:34747 [Site]:1 [Bin]:7455 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:604.985 [Veto2]:638.22 [Veto3]:406.789 [Veto4]:406.789 [SgUp1]:180595 [SgUp2]:174976 [SgUp3]:0 [SgUp4]:0 [SgLow1]:180159 [SgLow2]:174596 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:598517 [NetMuon2]:591500 [NetMuon3]:637657 [NetMuon4]:637657
+[Run]:34747 [Site]:1 [Bin]:7456 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:647.925 [Veto2]:674.181 [Veto3]:407.735 [Veto4]:407.735 [SgUp1]:177899 [SgUp2]:172894 [SgUp3]:0 [SgUp4]:0 [SgLow1]:177516 [SgLow2]:172474 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:591361 [NetMuon2]:586126 [NetMuon3]:639553 [NetMuon4]:639553
+[Run]:34747 [Site]:1 [Bin]:7457 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:603.637 [Veto2]:641.888 [Veto3]:406.687 [Veto4]:406.687 [SgUp1]:179681 [SgUp2]:174769 [SgUp3]:0 [SgUp4]:0 [SgLow1]:179217 [SgLow2]:174379 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:598259 [NetMuon2]:590388 [NetMuon3]:637588 [NetMuon4]:637588
+[Run]:34747 [Site]:1 [Bin]:7458 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:613.293 [Veto2]:629.69 [Veto3]:406.935 [Veto4]:406.935 [SgUp1]:179677 [SgUp2]:175307 [SgUp3]:0 [SgUp4]:0 [SgLow1]:179285 [SgLow2]:174912 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:596554 [NetMuon2]:593172 [NetMuon3]:637887 [NetMuon4]:637887
+[Run]:34747 [Site]:1 [Bin]:7459 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:616.197 [Veto2]:630.972 [Veto3]:406.345 [Veto4]:406.345 [SgUp1]:178815 [SgUp2]:175049 [SgUp3]:0 [SgUp4]:0 [SgLow1]:178428 [SgLow2]:174676 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:595085 [NetMuon2]:592246 [NetMuon3]:637134 [NetMuon4]:637134
+End process Run: 34747 ... 
+[Run]:34747 [Site]:1 [Bin]:7460 [FullTime]:3263.67 [SkipTime]:0 [Veto1]:569.198 [Veto2]:556.133 [Veto3]:370.137 [Veto4]:370.137

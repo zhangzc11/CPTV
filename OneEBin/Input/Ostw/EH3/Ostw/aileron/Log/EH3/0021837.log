@@ -1,0 +1,10 @@
+StreamChain add 0xa2ab7e0
+Start to process run: 21837 ... 
+[Run]:21837 [Site]:4 [Bin]:727 [FullTime]:2011.68 [SkipTime]:0 [Veto1]:28.7775 [Veto2]:26.8102 [Veto3]:33.7715 [Veto4]:18.1155 [SgUp1]:123065 [SgUp2]:125378 [SgUp3]:126300 [SgUp4]:0 [SgLow1]:122880 [SgLow2]:125189 [SgLow3]:126075 [SgLow4]:0 [NetMuon1]:29885 [NetMuon2]:29909 [NetMuon3]:29843 [NetMuon4]:30060
+[Run]:21837 [Site]:4 [Bin]:728 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:51.6844 [Veto2]:51.1582 [Veto3]:47.7512 [Veto4]:32.3987 [SgUp1]:219688 [SgUp2]:224108 [SgUp3]:225306 [SgUp4]:0 [SgLow1]:219335 [SgLow2]:223773 [SgLow3]:224946 [SgLow4]:0 [NetMuon1]:53500 [NetMuon2]:53516 [NetMuon3]:53570 [NetMuon4]:53776
+[Run]:21837 [Site]:4 [Bin]:729 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:54.4419 [Veto2]:55.507 [Veto3]:56.1616 [Veto4]:32.2183 [SgUp1]:219906 [SgUp2]:224113 [SgUp3]:224385 [SgUp4]:0 [SgLow1]:219583 [SgLow2]:223742 [SgLow3]:224030 [SgLow4]:0 [NetMuon1]:53064 [NetMuon2]:53105 [NetMuon3]:53069 [NetMuon4]:53446
+[Run]:21837 [Site]:4 [Bin]:730 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:57.2431 [Veto2]:49.5541 [Veto3]:55.516 [Veto4]:32.2774 [SgUp1]:219369 [SgUp2]:224186 [SgUp3]:225499 [SgUp4]:0 [SgLow1]:219021 [SgLow2]:223846 [SgLow3]:225182 [SgLow4]:0 [NetMuon1]:53158 [NetMuon2]:53270 [NetMuon3]:53240 [NetMuon4]:53555
+[Run]:21837 [Site]:4 [Bin]:731 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:52.7439 [Veto2]:56.717 [Veto3]:63.616 [Veto4]:32.4919 [SgUp1]:221028 [SgUp2]:224173 [SgUp3]:224869 [SgUp4]:0 [SgLow1]:220678 [SgLow2]:223783 [SgLow3]:224467 [SgLow4]:0 [NetMuon1]:53569 [NetMuon2]:53508 [NetMuon3]:53421 [NetMuon4]:53891
+[Run]:21837 [Site]:4 [Bin]:732 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:61.4828 [Veto2]:65.414 [Veto3]:57.4978 [Veto4]:32.2644 [SgUp1]:219918 [SgUp2]:223519 [SgUp3]:224356 [SgUp4]:0 [SgLow1]:219555 [SgLow2]:223169 [SgLow3]:223998 [SgLow4]:0 [NetMuon1]:53098 [NetMuon2]:53056 [NetMuon3]:53142 [NetMuon4]:53521
+End process Run: 21837 ... 
+[Run]:21837 [Site]:4 [Bin]:733 [FullTime]:2785.88 [SkipTime]:0 [Veto1]:45.9479 [Veto2]:45.3815 [Veto3]:34.0742 [Veto4]:25.0374

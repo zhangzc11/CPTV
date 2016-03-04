@@ -1,0 +1,10 @@
+StreamChain add 0xb51c7e0
+Start to process run: 38577 ... 
+[Run]:38577 [Site]:1 [Bin]:11627 [FullTime]:2355.1 [SkipTime]:0 [Veto1]:393.089 [Veto2]:418.749 [Veto3]:266.619 [Veto4]:266.619 [SgUp1]:115973 [SgUp2]:112193 [SgUp3]:0 [SgUp4]:0 [SgLow1]:115781 [SgLow2]:111974 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:392726 [NetMuon2]:387190 [NetMuon3]:417981 [NetMuon4]:417981
+[Run]:38577 [Site]:1 [Bin]:11628 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:635.861 [Veto2]:627.387 [Veto3]:404.866 [Veto4]:404.866 [SgUp1]:174139 [SgUp2]:172401 [SgUp3]:0 [SgUp4]:0 [SgLow1]:173764 [SgLow2]:172070 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:588807 [NetMuon2]:590587 [NetMuon3]:635026 [NetMuon4]:635026
+[Run]:38577 [Site]:1 [Bin]:11629 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:619.844 [Veto2]:641.125 [Veto3]:405.585 [Veto4]:405.585 [SgUp1]:175232 [SgUp2]:171602 [SgUp3]:0 [SgUp4]:0 [SgLow1]:174904 [SgLow2]:171267 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:593512 [NetMuon2]:589534 [NetMuon3]:636235 [NetMuon4]:636235
+[Run]:38577 [Site]:1 [Bin]:11630 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:597.352 [Veto2]:625.234 [Veto3]:405.654 [Veto4]:405.654 [SgUp1]:176181 [SgUp2]:172500 [SgUp3]:0 [SgUp4]:0 [SgLow1]:175812 [SgLow2]:172148 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:597616 [NetMuon2]:591828 [NetMuon3]:636138 [NetMuon4]:636138
+[Run]:38577 [Site]:1 [Bin]:11631 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:610.199 [Veto2]:633.211 [Veto3]:406.781 [Veto4]:406.781 [SgUp1]:174397 [SgUp2]:171437 [SgUp3]:0 [SgUp4]:0 [SgLow1]:174056 [SgLow2]:171103 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:597124 [NetMuon2]:592727 [NetMuon3]:637885 [NetMuon4]:637885
+[Run]:38577 [Site]:1 [Bin]:11632 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:603.173 [Veto2]:629.953 [Veto3]:405.802 [Veto4]:405.802 [SgUp1]:175858 [SgUp2]:172153 [SgUp3]:0 [SgUp4]:0 [SgLow1]:175501 [SgLow2]:171777 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:596929 [NetMuon2]:591728 [NetMuon3]:636438 [NetMuon4]:636438
+End process Run: 38577 ... 
+[Run]:38577 [Site]:1 [Bin]:11633 [FullTime]:1811.29 [SkipTime]:0 [Veto1]:322.411 [Veto2]:314.214 [Veto3]:205.225 [Veto4]:205.225

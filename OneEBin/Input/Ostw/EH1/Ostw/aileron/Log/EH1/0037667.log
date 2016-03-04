@@ -1,0 +1,10 @@
+StreamChain add 0x1abd77e0
+Start to process run: 37667 ... 
+[Run]:37667 [Site]:1 [Bin]:10417 [FullTime]:3262.58 [SkipTime]:0 [Veto1]:582.621 [Veto2]:576.027 [Veto3]:368.088 [Veto4]:368.088 [SgUp1]:158020 [SgUp2]:156524 [SgUp3]:0 [SgUp4]:0 [SgLow1]:157650 [SgLow2]:156227 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:534402 [NetMuon2]:535902 [NetMuon3]:577362 [NetMuon4]:577362
+[Run]:37667 [Site]:1 [Bin]:10418 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:620.325 [Veto2]:641.635 [Veto3]:404.597 [Veto4]:404.597 [SgUp1]:175253 [SgUp2]:171134 [SgUp3]:0 [SgUp4]:0 [SgLow1]:174892 [SgLow2]:170740 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:591742 [NetMuon2]:587111 [NetMuon3]:634699 [NetMuon4]:634699
+[Run]:37667 [Site]:1 [Bin]:10419 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:602.703 [Veto2]:655.538 [Veto3]:405.477 [Veto4]:405.477 [SgUp1]:176543 [SgUp2]:171453 [SgUp3]:0 [SgUp4]:0 [SgLow1]:176196 [SgLow2]:171088 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:596530 [NetMuon2]:586475 [NetMuon3]:636235 [NetMuon4]:636235
+[Run]:37667 [Site]:1 [Bin]:10420 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:617.489 [Veto2]:625.062 [Veto3]:404.841 [Veto4]:404.841 [SgUp1]:175735 [SgUp2]:172870 [SgUp3]:0 [SgUp4]:0 [SgLow1]:175351 [SgLow2]:172513 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:592706 [NetMuon2]:591206 [NetMuon3]:635051 [NetMuon4]:635051
+[Run]:37667 [Site]:1 [Bin]:10421 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:611.238 [Veto2]:634.846 [Veto3]:404.684 [Veto4]:404.684 [SgUp1]:175489 [SgUp2]:171622 [SgUp3]:0 [SgUp4]:0 [SgLow1]:175129 [SgLow2]:171222 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:593468 [NetMuon2]:589039 [NetMuon3]:634915 [NetMuon4]:634915
+[Run]:37667 [Site]:1 [Bin]:10422 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:629.161 [Veto2]:636.582 [Veto3]:404.393 [Veto4]:404.393 [SgUp1]:175029 [SgUp2]:171926 [SgUp3]:0 [SgUp4]:0 [SgLow1]:174666 [SgLow2]:171573 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:589459 [NetMuon2]:588337 [NetMuon3]:634571 [NetMuon4]:634571
+End process Run: 37667 ... 
+[Run]:37667 [Site]:1 [Bin]:10423 [FullTime]:1245.23 [SkipTime]:0 [Veto1]:215.843 [Veto2]:221.997 [Veto3]:140.441 [Veto4]:140.441

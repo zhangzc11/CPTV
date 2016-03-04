@@ -1,0 +1,10 @@
+StreamChain add 0xa84b7f0
+Start to process run: 24881 ... 
+[Run]:24881 [Site]:4 [Bin]:3625 [FullTime]:2976.78 [SkipTime]:448.249 [Veto1]:58.2797 [Veto2]:66.1636 [Veto3]:59.2524 [Veto4]:43.0244 [SgUp1]:66101 [SgUp2]:67230 [SgUp3]:67726 [SgUp4]:0 [SgLow1]:66079 [SgLow2]:67202 [SgLow3]:67703 [SgLow4]:0 [NetMuon1]:53223 [NetMuon2]:53040 [NetMuon3]:53193 [NetMuon4]:53435
+[Run]:24881 [Site]:4 [Bin]:3626 [FullTime]:3600.01 [SkipTime]:0 [Veto1]:64.3707 [Veto2]:67.4155 [Veto3]:65.4222 [Veto4]:45.2038 [SgUp1]:69278 [SgUp2]:70374 [SgUp3]:70784 [SgUp4]:0 [SgLow1]:69256 [SgLow2]:70356 [SgLow3]:70744 [SgLow4]:0 [NetMuon1]:55834 [NetMuon2]:55806 [NetMuon3]:55845 [NetMuon4]:56149
+[Run]:24881 [Site]:4 [Bin]:3627 [FullTime]:3600 [SkipTime]:0 [Veto1]:69.7433 [Veto2]:60.8231 [Veto3]:69.7345 [Veto4]:45.5548 [SgUp1]:69160 [SgUp2]:70529 [SgUp3]:71385 [SgUp4]:0 [SgLow1]:69132 [SgLow2]:70498 [SgLow3]:71354 [SgLow4]:0 [NetMuon1]:56210 [NetMuon2]:56323 [NetMuon3]:56195 [NetMuon4]:56573
+[Run]:24881 [Site]:4 [Bin]:3628 [FullTime]:3600 [SkipTime]:0 [Veto1]:62.5415 [Veto2]:59.6027 [Veto3]:58.6132 [Veto4]:45.3002 [SgUp1]:68996 [SgUp2]:70966 [SgUp3]:71479 [SgUp4]:0 [SgLow1]:68974 [SgLow2]:70952 [SgLow3]:71451 [SgLow4]:0 [NetMuon1]:55998 [NetMuon2]:56042 [NetMuon3]:56070 [NetMuon4]:56271
+[Run]:24881 [Site]:4 [Bin]:3629 [FullTime]:3600 [SkipTime]:0 [Veto1]:71.6073 [Veto2]:60.7516 [Veto3]:70.6983 [Veto4]:45.5008 [SgUp1]:68892 [SgUp2]:71068 [SgUp3]:71180 [SgUp4]:0 [SgLow1]:68856 [SgLow2]:71031 [SgLow3]:71155 [SgLow4]:0 [NetMuon1]:56105 [NetMuon2]:56290 [NetMuon3]:56157 [NetMuon4]:56539
+[Run]:24881 [Site]:4 [Bin]:3630 [FullTime]:3600 [SkipTime]:0 [Veto1]:68.6081 [Veto2]:75.4889 [Veto3]:61.7031 [Veto4]:45.4288 [SgUp1]:69132 [SgUp2]:70457 [SgUp3]:71701 [SgUp4]:0 [SgLow1]:69098 [SgLow2]:70430 [SgLow3]:71666 [SgLow4]:0 [NetMuon1]:56059 [NetMuon2]:55946 [NetMuon3]:56161 [NetMuon4]:56426
+End process Run: 24881 ... 
+[Run]:24881 [Site]:4 [Bin]:3631 [FullTime]:3120.59 [SkipTime]:0 [Veto1]:55.7492 [Veto2]:62.6476 [Veto3]:69.557 [Veto4]:39.6769

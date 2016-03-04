@@ -1,0 +1,11 @@
+StreamChain add 0x7b5d7f0
+Start to process run: 35436 ... 
+[Run]:35436 [Site]:2 [Bin]:8033 [FullTime]:1029.43 [SkipTime]:0 [Veto1]:173.617 [Veto2]:175.621 [Veto3]:116.338 [Veto4]:116.338 [SgUp1]:16605 [SgUp2]:16567 [SgUp3]:0 [SgUp4]:0 [SgLow1]:16576 [SgLow2]:16537 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:127960 [NetMuon2]:127893 [NetMuon3]:136739 [NetMuon4]:136739
+[Run]:35436 [Site]:2 [Bin]:8034 [FullTime]:3600 [SkipTime]:0 [Veto1]:590.704 [Veto2]:597.274 [Veto3]:407.236 [Veto4]:407.236 [SgUp1]:59058 [SgUp2]:58709 [SgUp3]:0 [SgUp4]:0 [SgLow1]:58934 [SgLow2]:58619 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:452095 [NetMuon2]:450827 [NetMuon3]:479235 [NetMuon4]:479235
+[Run]:35436 [Site]:2 [Bin]:8035 [FullTime]:3600 [SkipTime]:0 [Veto1]:601.624 [Veto2]:610.147 [Veto3]:407.559 [Veto4]:407.559 [SgUp1]:58875 [SgUp2]:59093 [SgUp3]:0 [SgUp4]:0 [SgLow1]:58752 [SgLow2]:58976 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:450261 [NetMuon2]:449090 [NetMuon3]:479455 [NetMuon4]:479455
+[Run]:35436 [Site]:2 [Bin]:8036 [FullTime]:3600 [SkipTime]:0 [Veto1]:583.092 [Veto2]:607.641 [Veto3]:407.256 [Veto4]:407.256 [SgUp1]:59547 [SgUp2]:59331 [SgUp3]:0 [SgUp4]:0 [SgLow1]:59408 [SgLow2]:59242 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:452626 [NetMuon2]:448908 [NetMuon3]:478999 [NetMuon4]:478999
+[Run]:35436 [Site]:2 [Bin]:8037 [FullTime]:3600 [SkipTime]:0 [Veto1]:609.209 [Veto2]:595.849 [Veto3]:406.696 [Veto4]:406.696 [SgUp1]:58841 [SgUp2]:60086 [SgUp3]:0 [SgUp4]:0 [SgLow1]:58741 [SgLow2]:59970 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:448214 [NetMuon2]:450333 [NetMuon3]:478490 [NetMuon4]:478490
+[Run]:35436 [Site]:2 [Bin]:8038 [FullTime]:3600 [SkipTime]:0 [Veto1]:601.683 [Veto2]:588.309 [Veto3]:407.418 [Veto4]:407.418 [SgUp1]:59018 [SgUp2]:59687 [SgUp3]:0 [SgUp4]:0 [SgLow1]:58905 [SgLow2]:59565 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:450097 [NetMuon2]:451883 [NetMuon3]:479091 [NetMuon4]:479091
+[Run]:35436 [Site]:2 [Bin]:8039 [FullTime]:3600 [SkipTime]:0 [Veto1]:600.752 [Veto2]:603.47 [Veto3]:406.757 [Veto4]:406.757 [SgUp1]:59351 [SgUp2]:59173 [SgUp3]:0 [SgUp4]:0 [SgLow1]:59237 [SgLow2]:59063 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:449244 [NetMuon2]:448939 [NetMuon3]:478306 [NetMuon4]:478306
+End process Run: 35436 ... 
+[Run]:35436 [Site]:2 [Bin]:8040 [FullTime]:3023.3 [SkipTime]:0 [Veto1]:504.669 [Veto2]:511.206 [Veto3]:341.236 [Veto4]:341.236

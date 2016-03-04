@@ -1,0 +1,10 @@
+StreamChain add 0x10e467e0
+Start to process run: 35000 ... 
+[Run]:35000 [Site]:2 [Bin]:7681 [FullTime]:679.038 [SkipTime]:0 [Veto1]:90.0692 [Veto2]:84.8973 [Veto3]:58.0696 [Veto4]:58.0696 [SgUp1]:32872 [SgUp2]:33672 [SgUp3]:0 [SgUp4]:0 [SgLow1]:32790 [SgLow2]:33595 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:87750 [NetMuon2]:88546 [NetMuon3]:92530 [NetMuon4]:92530
+[Run]:35000 [Site]:2 [Bin]:7682 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:518.952 [Veto2]:498.809 [Veto3]:308.546 [Veto4]:308.546 [SgUp1]:171804 [SgUp2]:175774 [SgUp3]:0 [SgUp4]:0 [SgLow1]:171429 [SgLow2]:175407 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:459503 [NetMuon2]:462808 [NetMuon3]:491347 [NetMuon4]:491347
+[Run]:35000 [Site]:2 [Bin]:7683 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:507.3 [Veto2]:509.593 [Veto3]:308.697 [Veto4]:308.697 [SgUp1]:172694 [SgUp2]:175094 [SgUp3]:0 [SgUp4]:0 [SgLow1]:172292 [SgLow2]:174718 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:461643 [NetMuon2]:461305 [NetMuon3]:491676 [NetMuon4]:491676
+[Run]:35000 [Site]:2 [Bin]:7684 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:503.785 [Veto2]:504.112 [Veto3]:309.408 [Veto4]:309.408 [SgUp1]:172635 [SgUp2]:175150 [SgUp3]:0 [SgUp4]:0 [SgLow1]:172301 [SgLow2]:174709 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:463724 [NetMuon2]:463907 [NetMuon3]:493007 [NetMuon4]:493007
+[Run]:35000 [Site]:2 [Bin]:7685 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:526.431 [Veto2]:510.441 [Veto3]:309.116 [Veto4]:309.116 [SgUp1]:171487 [SgUp2]:174272 [SgUp3]:0 [SgUp4]:0 [SgLow1]:171187 [SgLow2]:173861 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:459473 [NetMuon2]:461799 [NetMuon3]:492183 [NetMuon4]:492183
+[Run]:35000 [Site]:2 [Bin]:7686 [FullTime]:3590.17 [SkipTime]:0 [Veto1]:505.665 [Veto2]:500.819 [Veto3]:309.505 [Veto4]:309.505 [SgUp1]:172926 [SgUp2]:175069 [SgUp3]:0 [SgUp4]:0 [SgLow1]:172554 [SgLow2]:174688 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:463661 [NetMuon2]:463720 [NetMuon3]:492951 [NetMuon4]:492951
+End process Run: 35000 ... 
+[Run]:35000 [Site]:2 [Bin]:7687 [FullTime]:1851.11 [SkipTime]:0 [Veto1]:264.445 [Veto2]:266.809 [Veto3]:159.466 [Veto4]:159.466

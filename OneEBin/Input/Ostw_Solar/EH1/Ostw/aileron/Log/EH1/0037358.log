@@ -1,0 +1,7 @@
+StreamChain add 0xff737f0
+Start to process run: 37358 ... 
+[Run]:37358 [Site]:1 [Bin]:9845 [FullTime]:1190.58 [SkipTime]:0 [Veto1]:237.996 [Veto2]:250.917 [Veto3]:176.297 [Veto4]:176.297 [SgUp1]:18990 [SgUp2]:18601 [SgUp3]:0 [SgUp4]:0 [SgLow1]:18943 [SgLow2]:18579 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:190733 [NetMuon2]:188245 [NetMuon3]:203037 [NetMuon4]:203037
+[Run]:37358 [Site]:1 [Bin]:9846 [FullTime]:3600 [SkipTime]:0 [Veto1]:755.116 [Veto2]:745.41 [Veto3]:531.926 [Veto4]:531.926 [SgUp1]:56535 [SgUp2]:56456 [SgUp3]:0 [SgUp4]:0 [SgLow1]:56428 [SgLow2]:56351 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:568410 [NetMuon2]:570029 [NetMuon3]:612990 [NetMuon4]:612990
+[Run]:37358 [Site]:1 [Bin]:9847 [FullTime]:3600 [SkipTime]:0 [Veto1]:726.993 [Veto2]:728.578 [Veto3]:531.078 [Veto4]:531.078 [SgUp1]:57355 [SgUp2]:56984 [SgUp3]:0 [SgUp4]:0 [SgLow1]:57254 [SgLow2]:56898 [SgLow3]:0 [SgLow4]:0 [NetMuon1]:573191 [NetMuon2]:572903 [NetMuon3]:612392 [NetMuon4]:612392
+End process Run: 37358 ... 
+[Run]:37358 [Site]:1 [Bin]:9848 [FullTime]:2314.16 [SkipTime]:0 [Veto1]:483.227 [Veto2]:475.662 [Veto3]:342.06 [Veto4]:342.06

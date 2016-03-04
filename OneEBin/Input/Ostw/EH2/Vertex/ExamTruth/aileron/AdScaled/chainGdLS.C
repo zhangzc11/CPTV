@@ -1,0 +1,19 @@
+{
+  TChain Event("Event");
+  Event.Add("GdLS_r10.root");
+  Event.Add("GdLS_r11.root");
+  Event.Add("GdLS_r12.root");
+  Event.Add("GdLS_r13.root");
+  Event.Add("GdLS_r14.root");
+  Event.Add("GdLS_r15.root");
+  Event.Add("GdLS_r16.root");
+  Event.Add("GdLS_r17.root");
+  Event.Add("GdLS_r18.root");
+  Event.Add("GdLS_r19.root");
+  Event.Add("GdLS_r20.root");
+  Event.Add("GdLS_r21.root");
+  Event.Add("GdLS_r22.root");
+  Event.Add("GdLS_r23.root");
+  Event.Add("GdLS_r24.root");
+  Event.Add("GdLS_r25.root");
+}

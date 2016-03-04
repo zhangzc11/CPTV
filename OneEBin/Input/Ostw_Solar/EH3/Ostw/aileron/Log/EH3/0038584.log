@@ -1,0 +1,10 @@
+StreamChain add 0x102f37f0
+Start to process run: 38584 ... 
+[Run]:38584 [Site]:4 [Bin]:11594 [FullTime]:1949.79 [SkipTime]:0 [Veto1]:32.3196 [Veto2]:33.2769 [Veto3]:33.2685 [Veto4]:39.1778 [SgUp1]:37014 [SgUp2]:37732 [SgUp3]:37956 [SgUp4]:37123 [SgLow1]:36996 [SgLow2]:37709 [SgLow3]:37928 [SgLow4]:37097 [NetMuon1]:29197 [NetMuon2]:29189 [NetMuon3]:29180 [NetMuon4]:29093
+[Run]:38584 [Site]:4 [Bin]:11595 [FullTime]:3600 [SkipTime]:0 [Veto1]:66.892 [Veto2]:70.81 [Veto3]:61.932 [Veto4]:58.998 [SgUp1]:68400 [SgUp2]:69130 [SgUp3]:69984 [SgUp4]:69586 [SgLow1]:68360 [SgLow2]:69107 [SgLow3]:69941 [SgLow4]:69553 [NetMuon1]:53854 [NetMuon2]:53814 [NetMuon3]:53949 [NetMuon4]:54022
+[Run]:38584 [Site]:4 [Bin]:11596 [FullTime]:3600 [SkipTime]:0 [Veto1]:77.6682 [Veto2]:53.914 [Veto3]:66.7698 [Veto4]:57.8819 [SgUp1]:67603 [SgUp2]:69858 [SgUp3]:69994 [SgUp4]:69082 [SgLow1]:67570 [SgLow2]:69841 [SgLow3]:69975 [SgLow4]:69046 [NetMuon1]:53592 [NetMuon2]:53970 [NetMuon3]:53760 [NetMuon4]:53898
+[Run]:38584 [Site]:4 [Bin]:11597 [FullTime]:3600 [SkipTime]:0 [Veto1]:65.5519 [Veto2]:65.5384 [Veto3]:64.5217 [Veto4]:63.5284 [SgUp1]:68476 [SgUp2]:69432 [SgUp3]:69949 [SgUp4]:69113 [SgLow1]:68436 [SgLow2]:69399 [SgLow3]:69926 [SgLow4]:69070 [NetMuon1]:53496 [NetMuon2]:53514 [NetMuon3]:53510 [NetMuon4]:53526
+[Run]:38584 [Site]:4 [Bin]:11598 [FullTime]:3600 [SkipTime]:0 [Veto1]:61.0278 [Veto2]:71.7195 [Veto3]:66.888 [Veto4]:63.0081 [SgUp1]:68217 [SgUp2]:69030 [SgUp3]:69874 [SgUp4]:69645 [SgLow1]:68191 [SgLow2]:69017 [SgLow3]:69843 [SgLow4]:69621 [NetMuon1]:54094 [NetMuon2]:53905 [NetMuon3]:53973 [NetMuon4]:54046
+[Run]:38584 [Site]:4 [Bin]:11599 [FullTime]:3600 [SkipTime]:0 [Veto1]:65.9697 [Veto2]:62.0469 [Veto3]:64.9811 [Veto4]:61.4131 [SgUp1]:67935 [SgUp2]:68159 [SgUp3]:69619 [SgUp4]:69524 [SgLow1]:67917 [SgLow2]:68129 [SgLow3]:69577 [SgLow4]:69486 [NetMuon1]:54005 [NetMuon2]:54094 [NetMuon3]:54037 [NetMuon4]:54061
+End process Run: 38584 ... 
+[Run]:38584 [Site]:4 [Bin]:11600 [FullTime]:263.302 [SkipTime]:0 [Veto1]:5.22789 [Veto2]:3.23722 [Veto3]:8.18987 [Veto4]:5.22626
