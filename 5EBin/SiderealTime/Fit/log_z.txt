@@ -1,0 +1,242 @@
+
+Processing FitRatio_Paper_v3.C...
+ImSeeMee:  
+EH3:
+this is to compare the three sites simultaneously fit...
+ **********
+ **    1 **SET ERR           1
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 A11          0.00000e+00  1.00000e-02     no limits
+     2 A12          0.00000e+00  1.00000e-02     no limits
+     3 A2           0.00000e+00  1.00000e-02     no limits
+     4 A31          0.00000e+00  1.00000e-02     no limits
+     5 A32          0.00000e+00  1.00000e-02     no limits
+     6 A4           0.00000e+00  1.00000e-02     no limits
+     7 B1           0.00000e+00  1.00000e-02     no limits
+     8 B2           0.00000e+00  1.00000e-02     no limits
+ **********
+ **    2 **MIGRAD           0 -1.492e-154
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=74.8517 FROM MIGRAD    STATUS=INITIATE      131 CALLS         132 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  A11          0.00000e+00   1.00000e-02   0.00000e+00   3.84828e-02
+   2  A12          8.91042e+00   1.00000e-02   0.00000e+00  -5.53691e-01
+   3  A2           0.00000e+00   1.00000e-02   0.00000e+00  -3.69141e-01
+   4  A31          0.00000e+00   1.00000e-02   0.00000e+00   8.09083e-02
+   5  A32         -9.36412e+00   1.00000e-02  -9.36412e+00   4.90343e-02
+   6  A4           0.00000e+00   1.00000e-02   0.00000e+00  -3.23058e-01
+   7  B1           0.00000e+00   1.00000e-02   0.00000e+00   6.69708e-02
+   8  B2           0.00000e+00   1.00000e-02   0.00000e+00   2.79857e-03
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ FCN=44.0286 FROM MIGRAD    STATUS=CONVERGED     715 CALLS         716 TOTAL
+                     EDM=4.55404e-06    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   3.2 per cent
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  A11          2.94353e+03   8.46492e+02   1.63593e+00   1.11034e-05
+   2  A12         -2.13470e+03   6.69700e+02  -2.01650e+00   1.41859e-04
+   3  A2           1.71425e+03   5.51798e+02   1.74245e+00   2.15770e-04
+   4  A31         -5.80249e+03   1.70817e+03  -4.89387e+00   2.97518e-05
+   5  A32         -8.67547e+02   2.50974e+02  -4.38139e-01  -1.20969e-04
+   6  A4           1.74266e+03   5.17485e+02   1.32952e+00  -1.37163e-05
+   7  B1          -3.69952e+01   3.74281e+01   4.11278e-02   2.29524e-05
+   8  B2          -7.33486e-01   1.74693e+01   4.91987e-02   2.40897e-05
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  8    ERR DEF=1
+  7.165e+05 -5.379e+05  4.340e+05 -1.408e+06 -2.010e+05  4.270e+05 -4.426e+03 -1.884e+03 
+ -5.379e+05  4.485e+05 -3.671e+05  1.121e+06  1.462e+05 -3.403e+05  2.768e+03  2.213e+03 
+  4.340e+05 -3.671e+05  3.045e+05 -9.213e+05 -1.130e+05  2.729e+05 -2.221e+03 -1.945e+03 
+ -1.408e+06  1.121e+06 -9.213e+05  2.918e+06  3.804e+05 -8.569e+05  7.487e+03  5.287e+03 
+ -2.010e+05  1.462e+05 -1.130e+05  3.804e+05  6.299e+04 -1.228e+05  1.141e+03  3.900e+02 
+  4.270e+05 -3.403e+05  2.729e+05 -8.569e+05 -1.228e+05  2.678e+05 -2.310e+03 -1.388e+03 
+ -4.426e+03  2.768e+03 -2.221e+03  7.487e+03  1.141e+03 -2.310e+03  1.401e+03  7.986e+01 
+ -1.884e+03  2.213e+03 -1.945e+03  5.287e+03  3.900e+02 -1.388e+03  7.986e+01  3.052e+02 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7      8
+        1  0.99771   1.000 -0.949  0.929 -0.974 -0.946  0.975 -0.140 -0.127
+        2  0.99995  -0.949  1.000 -0.993  0.980  0.870 -0.982  0.110  0.189
+        3  0.99989   0.929 -0.993  1.000 -0.977 -0.816  0.956 -0.108 -0.202
+        4  0.99919  -0.974  0.980 -0.977  1.000  0.887 -0.969  0.117  0.177
+        5  0.99949  -0.946  0.870 -0.816  0.887  1.000 -0.946  0.121  0.089
+        6  0.99993   0.975 -0.982  0.956 -0.969 -0.946  1.000 -0.119 -0.154
+        7  0.22572  -0.140  0.110 -0.108  0.117  0.121 -0.119  1.000  0.122
+        8  0.32061  -0.127  0.189 -0.202  0.177  0.089 -0.154  0.122  1.000
+ **********
+ **    3 **IMPROVE           0
+ **********
+START ATTEMPT NO. 1 TO FIND NEW MINIMUM
+ IMPROVE HAS RETURNED TO REGION OF ORIGINAL MINIMUM
+ **********
+ **    4 **MINOS           0
+ **********
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -3.4135e-04  2.1208e-03  2.5751e-02  1.5477e-01  8.3195e-01  1.1784e+00  2.0414e+00  3.7660e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.004107 TO DIAGONAL.
+                         POSITIVE MINOS ERROR NOT CALCULATED FOR PARAMETER 2
+ MINUIT WARNING IN MNCROS    
+ ============== Cannot find slope of the right sign
+ FCN=40.1224 FROM MINOS     STATUS=NEW MINIMU   4636 CALLS        6734 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  A11          1.00499e+04   1.09309e+03  -9.55625e+02   1.36066e+03
+   2  A12         -2.99000e+03   8.06894e+01                            
+   3  A2           1.43673e+03   1.41680e+02                            
+   4  A31         -6.87753e+03   5.09316e+02                            
+   5  A32         -3.37446e+03   3.35315e+02                            
+   6  A4           4.57666e+03   3.15402e+02                            
+   7  B1          -2.56258e+01   4.09789e+01                            
+   8  B2          -1.88832e+01   2.92072e+01                            
+ NEW MINIMUM FOUND.  GO BACK TO MINIMIZATION STEP.
+ =================================================
+                                                  V
+                                                  V
+                                                  V
+                                               VVVVVVV
+                                                VVVVV
+                                                 VVV
+                                                  V
+
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 5.00e-05
+ FCN=40.1224 FROM MIGRAD    STATUS=INITIATE       18 CALLS        6752 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  A11          1.00499e+04   1.09309e+03  -4.07693e+00   2.23365e-06
+   2  A12         -2.99000e+03   8.06894e+01   8.06894e+01  -2.54822e-03
+   3  A2           1.43673e+03   1.41680e+02   6.03434e-01  -4.02165e-05
+   4  A31         -6.87753e+03   5.09316e+02  -8.88085e-01  -2.70365e-06
+   5  A32         -3.37446e+03   3.35315e+02   1.40184e+00   8.77442e-06
+   6  A4           4.57666e+03   3.15402e+02  -1.38597e+00  -1.76184e-05
+   7  B1          -2.56258e+01   4.09789e+01  -9.63223e-02  -3.48522e-06
+   8  B2          -1.88832e+01   2.92072e+01   1.79761e-01  -3.37257e-05
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ FCN=38.0555 FROM MIGRAD    STATUS=CONVERGED     357 CALLS        7091 TOTAL
+                     EDM=1.87209e-07    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   2.6 per cent
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  A11          6.15567e+03   2.81113e+03   1.42144e+00   6.19575e-07
+   2  A12         -1.75135e+03   8.49600e+02  -2.95283e-01  -4.00817e-06
+   3  A2           8.36881e+02   4.27668e+02   1.69079e-01  -1.34088e-05
+   4  A31         -4.25554e+03   1.79027e+03  -1.36453e+00  -1.96573e-06
+   5  A32         -2.05097e+03   9.82533e+02  -4.24878e-01   1.37808e-05
+   6  A4           2.74010e+03   1.31065e+03   4.90301e-01   7.28055e-06
+   7  B1          -3.27017e+01   4.20186e+01  -8.61600e-03   7.22747e-06
+   8  B2          -1.01519e+01   2.97665e+01  -7.19423e-03   1.90345e-05
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  8    ERR DEF=1
+  7.902e+06 -2.219e+06  9.105e+05 -4.595e+06 -2.741e+06  3.641e+06  1.460e+04 -1.428e+04 
+ -2.219e+06  7.218e+05 -3.385e+05  1.486e+06  7.781e+05 -1.075e+06 -2.800e+03  4.669e+03 
+  9.105e+05 -3.385e+05  1.829e+05 -7.209e+05 -3.125e+05  4.541e+05  5.827e+02 -1.812e+03 
+ -4.595e+06  1.486e+06 -7.209e+05  3.205e+06  1.584e+06 -2.191e+06 -6.071e+03  8.698e+03 
+ -2.741e+06  7.781e+05 -3.125e+05  1.584e+06  9.654e+05 -1.280e+06 -5.033e+03  5.462e+03 
+  3.641e+06 -1.075e+06  4.541e+05 -2.191e+06 -1.280e+06  1.718e+06  6.045e+03 -7.332e+03 
+  1.460e+04 -2.800e+03  5.827e+02 -6.071e+03 -5.033e+03  6.045e+03  1.766e+03  1.562e+02 
+ -1.428e+04  4.669e+03 -1.812e+03  8.698e+03  5.462e+03 -7.332e+03  1.562e+02  8.860e+02 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7      8
+        1  0.99958   1.000 -0.929  0.757 -0.913 -0.993  0.988  0.124 -0.171
+        2  0.99994  -0.929  1.000 -0.932  0.977  0.932 -0.966 -0.078  0.185
+        3  0.99963   0.757 -0.932  1.000 -0.942 -0.744  0.810  0.032 -0.142
+        4  0.99921  -0.913  0.977 -0.942  1.000  0.901 -0.934 -0.081  0.163
+        5  0.99996  -0.993  0.932 -0.744  0.901  1.000 -0.994 -0.122  0.187
+        6  0.99999   0.988 -0.966  0.810 -0.934 -0.994  1.000  0.110 -0.188
+        7  0.24543   0.124 -0.078  0.032 -0.081 -0.122  0.110  1.000  0.125
+        8  0.29463  -0.171  0.185 -0.142  0.163  0.187 -0.188  0.125  1.000
+                         POSITIVE MINOS ERROR NOT CALCULATED FOR PARAMETER 2
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 1 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 2 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 3 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 4 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 5 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 6 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 7 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 1.72696e+22 added to diagonal of error matrix
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -8.3750e+29 -1.7208e+12  1.0000e+00  1.0292e+00  1.0508e+00  1.1733e+00  8.3750e+29
+ MINUIT WARNING IN MIGRAD  
+ ============== MATRIX FORCED POS-DEF BY ADDING 838340100649696648679334608896.000000 TO DIAGONAL.
+ MIGRAD FAILS WITH STRATEGY=0.   WILL TRY WITH STRATEGY=1.
+                         POSITIVE MINOS ERROR NOT CALCULATED FOR PARAMETER 5
+ MIGRAD FAILS WITH STRATEGY=0.   WILL TRY WITH STRATEGY=1.
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 1 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 2 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 3 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 5 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 6 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 7 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 3.62461e+08 added to diagonal of error matrix
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -1.2417e+04  9.6824e-01  1.0001e+00  1.0003e+00  1.0505e+00  1.1165e+00  1.2419e+04
+ MINUIT WARNING IN MIGRAD  
+ ============== MATRIX FORCED POS-DEF BY ADDING 12429.408714 TO DIAGONAL.
+ MIGRAD FAILS WITH STRATEGY=0.   WILL TRY WITH STRATEGY=1.
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 1 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 2 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 3 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 4 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 5 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 6 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 7 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 6.29672e+10 added to diagonal of error matrix
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -1.6358e+05  1.0000e+00  1.0000e+00  1.0307e+00  1.0861e+00  1.1620e+00  1.6358e+05
+ MINUIT WARNING IN MIGRAD  
+ ============== MATRIX FORCED POS-DEF BY ADDING 163741.334252 TO DIAGONAL.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -1.4802e-04  1.4676e-02  9.0802e-02  4.8982e-01  8.1128e-01  1.5059e+00  4.0877e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.004236 TO DIAGONAL.
+                         NEGATIVE MINOS ERROR NOT CALCULATED FOR PARAMETER 6
+ FCN=38.0555 FROM MINOS     STATUS=PROBLEMS     8624 CALLS       15715 TOTAL
+                     EDM=1.87209e-07    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   2.6 per cent
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  A11          6.15567e+03   2.81113e+03  -1.91972e+03   2.62145e+03
+   2  A12         -1.75135e+03   8.49600e+02  -7.82682e+02              
+   3  A2           8.36881e+02   4.27668e+02  -3.75371e+02   4.03254e+02
+   4  A31         -4.25554e+03   1.79027e+03  -1.71684e+03   1.23940e+03
+   5  A32         -2.05097e+03   9.82533e+02  -8.85517e+02              
+   6  A4           2.74010e+03   1.31065e+03                 1.18980e+03
+   7  B1          -3.27017e+01   4.20186e+01  -3.66102e+01   3.72752e+01
+   8  B2          -1.01519e+01   2.97665e+01  -2.43973e+01   2.22832e+01
+ FCN=38.0555 FROM MINOS     STATUS=PROBLEMS     8624 CALLS       15715 TOTAL
+                     EDM=1.87209e-07    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   2.6 per cent
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  A11          6.15567e+03   2.81113e+03  -2.07602e+01   4.32436e-06
+   2  A12         -1.75135e+03   8.49600e+02   5.84952e+00  -1.78523e-05
+   3  A2           8.36881e+02   4.27668e+02  -2.57845e+00  -2.67086e-05
+   4  A31         -4.25554e+03   1.79027e+03   1.27575e+01  -1.44326e-06
+   5  A32         -2.05097e+03   9.82533e+02   7.01528e+00   2.78455e-05
+   6  A4           2.74010e+03   1.31065e+03  -9.38256e+00   5.59692e-06
+   7  B1          -3.27017e+01   4.20186e+01   1.31251e-02  -2.57992e-06
+   8  B2          -1.01519e+01   2.97665e+01   2.97665e+01   9.65909e-06
+this is the end of the check of simultaneously fit...

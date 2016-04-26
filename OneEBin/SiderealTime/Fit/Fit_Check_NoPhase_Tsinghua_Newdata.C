@@ -30,9 +30,12 @@ double RD_R_simu[8][24]={{0.0}};
 
 
 Double_t ParResult[8],ParErrResult[8];
-Double_t ParResult_EH1[8],ParErrResult_EH1[8];
-Double_t ParResult_EH2[8],ParErrResult_EH2[8];
-Double_t ParResult_EH3[8],ParErrResult_EH3[8];
+Double_t ParResult_EH1[8],ParErrResult_EH1[8]={0.0};
+Double_t ParResult_EH2[8],ParErrResult_EH2[8]={0.0};
+Double_t ParResult_EH3[8],ParErrResult_EH3[8]={0.0};
+ParResult_EH1[0] = AVEP[0];
+ParResult_EH2[0] = AVEP[1];
+ParResult_EH3[0] = AVEP[2];
 
 const double pi = 3.141592653;
 
@@ -89,7 +92,7 @@ double LatHall[3] = {22.598,22.606,22.612};//latitude of the three halls, degree
 	double PositionADn[8][3] = {0.0};
 	double PositionHalln[3][3] = {0.0};//position of the hall, center of the ADs,[HallNo][X/Y/Z]
 	double PositionRctn[6][3] = {0.0};
-	double RotAngl = 9.0*pi/180.0;//9 degrees of rotation
+	double RotAngl = 0.0;//9.0*pi/180.0;//9 degrees of rotation
 
 	double A_chi[3][6] = {0.0};//angle chi, [HallNo][RctNo],in unit of radius
 	double A_theta[3][6] = {0.0};//angle theta, [HallNo][RctNo]
@@ -126,8 +129,8 @@ double LatHall[3] = {22.598,22.606,22.612};//latitude of the three halls, degree
 	int NOF_SiteBySite_1Bin = 18; //24-7
 
 
-   Double_t vstart[8] = {1.0,-10.0,-10.0,-10.0,-10.0,-10.0,-10.0,0};
-   Double_t step[8] = {0.1, 0.1, 0.1, 0.1, 0.1, 0.1,0.1,0.1};
+   Double_t vstart[8] = {1.0,0,0,0,0,0,0,0};//-10.0,-10.0,-10.0,-10.0,-10.0,-10.0,0};
+   Double_t step[8] = {0.1, 0.01, 0.01, 0.01, 0.01, 0.01,0.01,0.01};
    
 
 void Fit_Check_NoPhase_Tsinghua_Newdata()
@@ -223,7 +226,8 @@ cout<<"start..."<<endl;
 			Nx[Hallidx][Rctidx] = cos(A_chi[Hallidx][Rctidx])*sin(A_theta[Hallidx][Rctidx])*cos(A_phi[Hallidx][Rctidx]) + sin(A_chi[Hallidx][Rctidx])*cos(A_theta[Hallidx][Rctidx]);
 			Ny[Hallidx][Rctidx] = sin(A_theta[Hallidx][Rctidx])*sin(A_phi[Hallidx][Rctidx]);
 			Nz[Hallidx][Rctidx] = -1*sin(A_chi[Hallidx][Rctidx])*sin(A_theta[Hallidx][Rctidx])*cos(A_phi[Hallidx][Rctidx]) + cos(A_chi[Hallidx][Rctidx])*cos(A_theta[Hallidx][Rctidx]);
-			//fprintf(stderr,"%5d %5d %12.6f %12.6f %12.6f %12.6f %12.6f %12.6f \n", Hallidx, Rctidx, A_theta[Hallidx][Rctidx]*180.0/pi, A_phi[Hallidx][Rctidx]*180.0/pi, A_chi[Hallidx][Rctidx]*180.0/pi, Nx[Hallidx][Rctidx], Ny[Hallidx][Rctidx], Nz[Hallidx][Rctidx]);
+			cout<<"directional factors......."<<endl;
+			fprintf(stderr,"%5d %5d %12.6f %12.6f %12.6f %12.6f %12.6f %12.6f \n", Hallidx, Rctidx, A_theta[Hallidx][Rctidx]*180.0/pi, A_phi[Hallidx][Rctidx]*180.0/pi, A_chi[Hallidx][Rctidx]*180.0/pi, Nx[Hallidx][Rctidx], Ny[Hallidx][Rctidx], Nz[Hallidx][Rctidx]);
 		}
 	}
 
@@ -1092,7 +1096,7 @@ cout<<"start..."<<endl;
 */
 
 	////////use the result from another program//////
-	 TFile *F_Bin_IBD = new TFile("../IBD.root");
+/*	 TFile *F_Bin_IBD = new TFile("../IBD.root");
 	     TTree *Tree_Bin_IBD = (TTree*)F_Bin_IBD->Get("IBD");
 		     Tree_Bin_IBD->SetBranchAddress("IBD",IBD_t_Bin);
 	double Ratio_t[3], RD_Ratio_t[3];
@@ -1112,18 +1116,34 @@ cout<<"start..."<<endl;
 			RD_R[Det][Bin] = RD_Ratio_t[Det];
 		}
 	}
+*/
+
+TFile *f_Houston = new TFile("Final_Houston.root");
+
+TH1D *h_EH1_Houston = (TH1D*)f_Houston->Get("h_EH1_sid");
+TH1D *h_EH2_Houston = (TH1D*)f_Houston->Get("h_EH2_sid");
+TH1D *h_EH3_Houston = (TH1D*)f_Houston->Get("h_EH3_sid");
+
+for(int Bin=0;Bin<24;Bin++)
+{
+R[0][Bin] = h_EH1_Houston->GetBinContent(Bin+1);
+RD_R[0][Bin] = h_EH1_Houston->GetBinError(Bin+1);
+R[1][Bin] = h_EH2_Houston->GetBinContent(Bin+1);
+RD_R[1][Bin] = h_EH2_Houston->GetBinError(Bin+1);
+R[2][Bin] = h_EH3_Houston->GetBinContent(Bin+1);
+RD_R[2][Bin] = h_EH3_Houston->GetBinError(Bin+1);
+}
 
 
-	
 	//////////////////////
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	
 	////////////////////////////////////////////////////Fit////////////////////////////////////////////////////////////////////////////////////////////////////
-  
-	TMinuit *gMinuit = new TMinuit(7);  //initialize TMinuit with a maximum of 5 params
+cout<<"simultaneous fit..............................."<<endl;
+	TMinuit *gMinuit = new TMinuit(6);  //initialize TMinuit with a maximum of 5 params
    gMinuit->SetFCN(ChiSquare);
 
-   Double_t arglist[10];
+   Double_t arglist[6];
    Int_t ierflg = 0;
 
    arglist[0] = 1;
@@ -1132,41 +1152,42 @@ cout<<"start..."<<endl;
 // Set starting values and step sizes for parameters
 //   Double_t vstart[8] = {0.9,-10.0,-10.0,-10.0,-10.0,-10.0,-10.0,10.0};
 //   Double_t step[8] = {0.0001, 0.01, 0.01, 0.01, 0.01, 0.01,0.01,0.01};
-   gMinuit->mnparm(0, "C", vstart[0], step[0], 0,0,ierflg);
-   gMinuit->mnparm(1, "A1", vstart[1], step[1], 0,0,ierflg);
-   gMinuit->mnparm(2, "A2", vstart[2], step[2], 0,0,ierflg);
-   gMinuit->mnparm(3, "A3", vstart[3], step[3], 0,0,ierflg);
-   gMinuit->mnparm(4, "A4", vstart[4], step[4], 0,0,ierflg);
-   gMinuit->mnparm(5, "B1", vstart[5], step[5], 0,0,ierflg);
-   gMinuit->mnparm(6, "B2", vstart[6], step[6], 0,0,ierflg);
+//   gMinuit->mnparm(0, "C", vstart[0], step[0], 0,0,ierflg);
+   gMinuit->mnparm(0, "A1", vstart[1], step[1], 0,0,ierflg);
+   gMinuit->mnparm(1, "A2", vstart[2], step[2], 0,0,ierflg);
+   gMinuit->mnparm(2, "A3", vstart[3], step[3], 0,0,ierflg);
+   gMinuit->mnparm(3, "A4", vstart[4], step[4], 0,0,ierflg);
+   gMinuit->mnparm(4, "B1", vstart[5], step[5], 0,0,ierflg);
+   gMinuit->mnparm(5, "B2", vstart[6], step[6], 0,0,ierflg);
 //   gMinuit->mnparm(7, "T0", vstart[7], step[7], 0,0,ierflg);
 
 // Now ready for minimization step
-   arglist[0] = 20000;
-   arglist[1] = 1.0.;
-   gMinuit->mnexcm("MIGRAD", arglist ,2,ierflg);
+  // arglist[0] = 20000;
+  // arglist[1] = 1.0.;
+   gMinuit->mnexcm("MIGRAD", arglist ,0,ierflg);
 
 // Print results
    Double_t amin,edm,errdef;
    Int_t nvpar,nparx,icstat;
    gMinuit->mnstat(amin,edm,errdef,nvpar,nparx,icstat);
-   gMinuit->mnprin(3,amin);
+  // gMinuit->mnprin(3,amin);
 
    //0   1   2   3   4   5   6
 	//C   A1  A2  A3  A4  B1  B2
 	//A1,A3: 1e-21; A2,A4,B1,B2:1e-18
    //Double_t ParResult[7],ParErrResult[7];
-   for(int i=0;i<7;i++)
+   for(int i=0;i<6;i++)
    {
 	   Double_t v,ev;
 	   gMinuit->GetParameter(i,v,ev);
-	   ParResult[i]=v;
-	   ParErrResult[i]=ev;
+	   ParResult[i+1]=v;
+	   ParErrResult[i+1]=ev;
    }
 
-   
+  cout<<"end of simultaneous fit........................"<<endl; 
    ////////////////////////////////////////////////////Fit site by site (EH1 only)////////////////////////////////////////////////////////////////////////////////////////////////////
-   TMinuit *gMinuit_EH1 = new TMinuit(7);  //initialize TMinuit with a maximum of 5 params
+   cout<<"----------------------this is to compare EH1 fit...................................."<<endl;
+   TMinuit *gMinuit_EH1 = new TMinuit(6);  //initialize TMinuit with a maximum of 5 params
    gMinuit_EH1->SetFCN(ChiSquare_EH1);
 
    Double_t arglist_EH1[10];
@@ -1178,13 +1199,13 @@ cout<<"start..."<<endl;
 // Set starting values and step sizes for parameters
 //   Double_t vstart[8] = {1.0,0,0,0,0,0,0,0};
 //   Double_t step[8] = {0.0001, 0.01, 0.01, 0.01, 0.01, 0.01,0.01,0.1};
-   gMinuit_EH1->mnparm(0, "C", vstart[0], step[0], 0,0,ierflg_EH1);
-   gMinuit_EH1->mnparm(1, "A1", vstart[1], step[1], 0,0,ierflg_EH1);
-   gMinuit_EH1->mnparm(2, "A2", vstart[2], step[2], 0,0,ierflg_EH1);
-   gMinuit_EH1->mnparm(3, "A3", vstart[3], step[3], 0,0,ierflg_EH1);
-   gMinuit_EH1->mnparm(4, "A4", vstart[4], step[4], 0,0,ierflg_EH1);
-   gMinuit_EH1->mnparm(5, "B1", vstart[5], step[5], 0,0,ierflg_EH1);
-   gMinuit_EH1->mnparm(6, "B2", vstart[6], step[6], 0,0,ierflg_EH1);
+//   gMinuit_EH1->mnparm(0, "C", vstart[0], step[0], 0,0,ierflg_EH1);
+   gMinuit_EH1->mnparm(0, "A1", vstart[1], step[1], 0,0,ierflg_EH1);
+   gMinuit_EH1->mnparm(1, "A2", vstart[2], step[2], 0,0,ierflg_EH1);
+   gMinuit_EH1->mnparm(2, "A3", vstart[3], step[3], 0,0,ierflg_EH1);
+   gMinuit_EH1->mnparm(3, "A4", vstart[4], step[4], 0,0,ierflg_EH1);
+   gMinuit_EH1->mnparm(4, "B1", vstart[5], step[5], 0,0,ierflg_EH1);
+   gMinuit_EH1->mnparm(5, "B2", vstart[6], step[6], 0,0,ierflg_EH1);
 //   gMinuit_EH1->mnparm(7, "T0", vstart[7], step[7], 0,0,ierflg_EH1);
 // Now ready for minimization step
    arglist_EH1[0] = 20000;
@@ -1201,18 +1222,19 @@ cout<<"start..."<<endl;
 	//C   A1  A2  A3  A4  B1  B2
 	//A1,A3: 1e-21; A2,A4,B1,B2:1e-18
    //Double_t ParResult_EH1[7],ParErrResult_EH1[7];
-   for(int i=0;i<7;i++)
+   for(int i=0;i<6;i++)
    {
 	   Double_t v,ev;
 	   gMinuit_EH1->GetParameter(i,v,ev);
-	   ParResult_EH1[i]=v;
-	   ParErrResult_EH1[i]=ev;
+	   ParResult_EH1[i+1]=v;
+	   ParErrResult_EH1[i+1]=ev;
    }
 
    
-
+   cout<<"----------------------this is the end of the comparison of EH1 fit...................................."<<endl;
    ////////////////////////////////////////////////////Fit site by site (EH2 only)////////////////////////////////////////////////////////////////////////////////////////////////////
-   TMinuit *gMinuit_EH2 = new TMinuit(7);  //initialize TMinuit with a maximum of 5 params
+   cout<<"----------------------this is to compare EH2 fit...................................."<<endl;
+   TMinuit *gMinuit_EH2 = new TMinuit(6);  //initialize TMinuit with a maximum of 5 params
    gMinuit_EH2->SetFCN(ChiSquare_EH2);
 
    Double_t arglist_EH2[10];
@@ -1224,15 +1246,14 @@ cout<<"start..."<<endl;
 // Set starting values and step sizes for parameters
 //   Double_t vstart[8] = {1.0,0,0,0,0,0,0,0};
 //   Double_t step[8] = {0.0001, 0.01, 0.01, 0.01, 0.01, 0.01,0.01,0.1};
-   gMinuit_EH2->mnparm(0, "C", vstart[0], step[0], 0,0,ierflg_EH2);
-   gMinuit_EH2->mnparm(1, "A1", vstart[1], step[1], 0,0,ierflg_EH2);
-   gMinuit_EH2->mnparm(2, "A2", vstart[2], step[2], 0,0,ierflg_EH2);
-   gMinuit_EH2->mnparm(3, "A3", vstart[3], step[3], 0,0,ierflg_EH2);
-   gMinuit_EH2->mnparm(4, "A4", vstart[4], step[4], 0,0,ierflg_EH2);
-   gMinuit_EH2->mnparm(5, "B1", vstart[5], step[5], 0,0,ierflg_EH2);
-   gMinuit_EH2->mnparm(6, "B2", vstart[6], step[6], 0,0,ierflg_EH2);
+//   gMinuit_EH2->mnparm(0, "C", vstart[0], step[0], 0,0,ierflg_EH2);
+   gMinuit_EH2->mnparm(0, "A1", vstart[1], step[1], 0,0,ierflg_EH2);
+   gMinuit_EH2->mnparm(1, "A2", vstart[2], step[2], 0,0,ierflg_EH2);
+   gMinuit_EH2->mnparm(2, "A3", vstart[3], step[3], 0,0,ierflg_EH2);
+   gMinuit_EH2->mnparm(3, "A4", vstart[4], step[4], 0,0,ierflg_EH2);
+   gMinuit_EH2->mnparm(4, "B1", vstart[5], step[5], 0,0,ierflg_EH2);
+   gMinuit_EH2->mnparm(5, "B2", vstart[6], step[6], 0,0,ierflg_EH2);
 //   gMinuit_EH2->mnparm(7, "T0", vstart[7], step[7], 0,0,ierflg_EH2);
-
 // Now ready for minimization step
    arglist_EH2[0] = 20000;
    arglist_EH2[1] = 1.;
@@ -1248,19 +1269,20 @@ cout<<"start..."<<endl;
 	//C   A1  A2  A3  A4  B1  B2
 	//A1,A3: 1e-21; A2,A4,B1,B2:1e-18
    //Double_t ParResult_EH2[7],ParErrResult_EH2[7];
-   for(int i=0;i<7;i++)
+   for(int i=0;i<6;i++)
    {
 	   Double_t v,ev;
 	   gMinuit_EH2->GetParameter(i,v,ev);
-	   ParResult_EH2[i]=v;
-	   ParErrResult_EH2[i]=ev;
+	   ParResult_EH2[i+1]=v;
+	   ParErrResult_EH2[i+1]=ev;
    }
+
    
+   cout<<"----------------------this is the end of the comparison of EH2 fit...................................."<<endl;
 
-
-
-   ////////////////////////////////////////////////////Fit site by site (EH3 only)////////////////////////////////////////////////////////////////////////////////////////////////////
-   TMinuit *gMinuit_EH3 = new TMinuit(7);  //initialize TMinuit with a maximum of 5 params
+////////////////////////////////////////////////////Fit site by site (EH3 only)////////////////////////////////////////////////////////////////////////////////////////////////////
+   cout<<"----------------------this is to compare EH3 fit...................................."<<endl;
+   TMinuit *gMinuit_EH3 = new TMinuit(6);  //initialize TMinuit with a maximum of 5 params
    gMinuit_EH3->SetFCN(ChiSquare_EH3);
 
    Double_t arglist_EH3[10];
@@ -1272,13 +1294,13 @@ cout<<"start..."<<endl;
 // Set starting values and step sizes for parameters
 //   Double_t vstart[8] = {1.0,0,0,0,0,0,0,0};
 //   Double_t step[8] = {0.0001, 0.01, 0.01, 0.01, 0.01, 0.01,0.01,0.1};
-   gMinuit_EH3->mnparm(0, "C", vstart[0], step[0], 0,0,ierflg_EH3);
-   gMinuit_EH3->mnparm(1, "A1", vstart[1], step[1], 0,0,ierflg_EH3);
-   gMinuit_EH3->mnparm(2, "A2", vstart[2], step[2], 0,0,ierflg_EH3);
-   gMinuit_EH3->mnparm(3, "A3", vstart[3], step[3], 0,0,ierflg_EH3);
-   gMinuit_EH3->mnparm(4, "A4", vstart[4], step[4], 0,0,ierflg_EH3);
-   gMinuit_EH3->mnparm(5, "B1", vstart[5], step[5], 0,0,ierflg_EH3);
-   gMinuit_EH3->mnparm(6, "B2", vstart[6], step[6], 0,0,ierflg_EH3);
+//   gMinuit_EH3->mnparm(0, "C", vstart[0], step[0], 0,0,ierflg_EH3);
+   gMinuit_EH3->mnparm(0, "A1", vstart[1], step[1], 0,0,ierflg_EH3);
+   gMinuit_EH3->mnparm(1, "A2", vstart[2], step[2], 0,0,ierflg_EH3);
+   gMinuit_EH3->mnparm(2, "A3", vstart[3], step[3], 0,0,ierflg_EH3);
+   gMinuit_EH3->mnparm(3, "A4", vstart[4], step[4], 0,0,ierflg_EH3);
+   gMinuit_EH3->mnparm(4, "B1", vstart[5], step[5], 0,0,ierflg_EH3);
+   gMinuit_EH3->mnparm(5, "B2", vstart[6], step[6], 0,0,ierflg_EH3);
 //   gMinuit_EH3->mnparm(7, "T0", vstart[7], step[7], 0,0,ierflg_EH3);
 // Now ready for minimization step
    arglist_EH3[0] = 20000;
@@ -1295,16 +1317,22 @@ cout<<"start..."<<endl;
 	//C   A1  A2  A3  A4  B1  B2
 	//A1,A3: 1e-21; A2,A4,B1,B2:1e-18
    //Double_t ParResult_EH3[7],ParErrResult_EH3[7];
-   for(int i=0;i<7;i++)
+   for(int i=0;i<6;i++)
    {
 	   Double_t v,ev;
 	   gMinuit_EH3->GetParameter(i,v,ev);
-	   ParResult_EH3[i]=v;
-	   ParErrResult_EH3[i]=ev;
+	   ParResult_EH3[i+1]=v;
+	   ParErrResult_EH3[i+1]=ev;
    }
+
+   
+   cout<<"----------------------this is the end of the comparison of EH3 fit...................................."<<endl;
+
+
+
    ///////////print
    fprintf(stderr,"fit result(three sites):\n");
-   fprintf(stderr,"C          &$%3.4f  \\pm  %3.4f$  &$%3.4f  \\pm  %3.4f$  &$%3.4f  \\pm  %3.4f$  &$%3.4f  \\pm  %3.4f$  \\\\ \n",ParResult[0],ParErrResult[0],ParResult_EH1[0],ParErrResult_EH1[0],ParResult_EH2[0],ParErrResult_EH2[0],ParResult_EH3[0],ParErrResult_EH3[0]);
+//   fprintf(stderr,"C          &$%3.4f  \\pm  %3.4f$  &$%3.4f  \\pm  %3.4f$  &$%3.4f  \\pm  %3.4f$  &$%3.4f  \\pm  %3.4f$  \\\\ \n",ParResult[0],ParErrResult[0],ParResult_EH1[0],ParErrResult_EH1[0],ParResult_EH2[0],ParErrResult_EH2[0],ParResult_EH3[0],ParErrResult_EH3[0]);
    fprintf(stderr,"$A_1$/GeV  &$(%3.1f  \\pm  %3.1f)\\times 10 ^{-21}$ &$(%3.1f  \\pm  %3.1f)\\times 10 ^{-21}$&$(%3.1f  \\pm  %3.1f)\\times 10 ^{-21}$&$(%3.1f  \\pm  %3.1f)\\times 10 ^{-21}$  \\\\  \n",ParResult[1],ParErrResult[1],ParResult_EH1[1],ParErrResult_EH1[1],ParResult_EH2[1],ParErrResult_EH2[1],ParResult_EH3[1],ParErrResult_EH3[1]);
    fprintf(stderr,"$A_2$      &$(%3.1f  \\pm  %3.1f)\\times 10 ^{-18}$ &$(%3.1f  \\pm  %3.1f)\\times 10 ^{-18}$&$(%3.1f  \\pm  %3.1f)\\times 10 ^{-18}$&$(%3.1f  \\pm  %3.1f)\\times 10 ^{-18}$   \\\\ \n",ParResult[2],ParErrResult[2],ParResult_EH1[2],ParErrResult_EH1[2],ParResult_EH2[2],ParErrResult_EH2[2],ParResult_EH3[2],ParErrResult_EH3[2]);
    fprintf(stderr,"$A_3$/GeV  &$(%3.1f  \\pm  %3.1f)\\times 10 ^{-21}$ &$(%3.1f  \\pm  %3.1f)\\times 10 ^{-21}$&$(%3.1f  \\pm  %3.1f)\\times 10 ^{-21}$&$(%3.1f  \\pm  %3.1f)\\times 10 ^{-21}$   \\\\ \n",ParResult[3],ParErrResult[3],ParResult_EH1[3],ParErrResult_EH1[3],ParResult_EH2[3],ParErrResult_EH2[3],ParResult_EH3[3],ParErrResult_EH3[3]);
@@ -1569,11 +1597,11 @@ cout<<"start..."<<endl;
 
 	for(int cdIdx=0;cdIdx<6;cdIdx++)
 	{
-		cout<<cdIdx_Name[cdIdx]<<endl;
+		cout<<"Now fitting=============: "<<cdIdx_Name[cdIdx]<<endl;
 	IndexCD[0] = Table_Index[cdIdx][0];
 	IndexCD[1] = Table_Index[cdIdx][1];
 	////////////////////////////////////////////////////Fit
-   TMinuit *gMinuit = new TMinuit(7);  //initialize TMinuit with a maximum of 5 params
+   TMinuit *gMinuit = new TMinuit(6);  //initialize TMinuit with a maximum of 5 params
    gMinuit->SetFCN(ChiSquare);
 
    Double_t arglist[10];
@@ -1585,13 +1613,13 @@ cout<<"start..."<<endl;
 // Set starting values and step sizes for parameters
 //   Double_t vstart[8] = {0.9,-10.0,-10.0,-10.0,-10.0,-10.0,-10.0,10.0};
 //   Double_t step[8] = {0.0001, 0.01, 0.01, 0.01, 0.01, 0.01,0.01,0.01};
-   gMinuit->mnparm(0, "C", vstart[0], step[0], 0,0,ierflg);
-   gMinuit->mnparm(1, "A1", vstart[1], step[1], 0,0,ierflg);
-   gMinuit->mnparm(2, "A2", vstart[2], step[2], 0,0,ierflg);
-   gMinuit->mnparm(3, "A3", vstart[3], step[3], 0,0,ierflg);
-   gMinuit->mnparm(4, "A4", vstart[4], step[4], 0,0,ierflg);
-   gMinuit->mnparm(5, "B1", vstart[5], step[5], 0,0,ierflg);
-   gMinuit->mnparm(6, "B2", vstart[6], step[6], 0,0,ierflg);
+//   gMinuit->mnparm(0, "C", vstart[0], step[0], 0,0,ierflg);
+   gMinuit->mnparm(0, "A1", vstart[1], step[1], 0,0,ierflg);
+   gMinuit->mnparm(1, "A2", vstart[2], step[2], 0,0,ierflg);
+   gMinuit->mnparm(2, "A3", vstart[3], step[3], 0,0,ierflg);
+   gMinuit->mnparm(3, "A4", vstart[4], step[4], 0,0,ierflg);
+   gMinuit->mnparm(4, "B1", vstart[5], step[5], 0,0,ierflg);
+   gMinuit->mnparm(5, "B2", vstart[6], step[6], 0,0,ierflg);
 //   gMinuit->mnparm(7, "T0", vstart[7], step[7], 0,0,ierflg);
 
 // Now ready for minimization step
@@ -1610,17 +1638,17 @@ cout<<"start..."<<endl;
 	//C   A1  A2  A3  A4  B1  B2
 	//A1,A3: 1e-21; A2,A4,B1,B2:1e-18
    //Double_t ParResult[7],ParErrResult[7];
-   for(int i=0;i<7;i++)
+   for(int i=0;i<6;i++)
    {
 	   Double_t v,ev;
 	   gMinuit->GetParameter(i,v,ev);
-	   ParResult[i]=v;
-	   ParErrResult[i]=ev;
+	   ParResult[i+1]=v;
+	   ParErrResult[i+1]=ev;
    }
 
 
    ////////////////////////////////////////////////////Fit site by site (EH1 only)
-   TMinuit *gMinuit_EH1 = new TMinuit(7);  //initialize TMinuit with a maximum of 5 params
+   TMinuit *gMinuit_EH1 = new TMinuit(6);  //initialize TMinuit with a maximum of 5 params
    gMinuit_EH1->SetFCN(ChiSquare_EH1);
 
    Double_t arglist_EH1[10];
@@ -1632,13 +1660,13 @@ cout<<"start..."<<endl;
 // Set starting values and step sizes for parameters
 //   Double_t vstart[8] = {1.0,0,0,0,0,0,0,0};
 //   Double_t step[8] = {0.0001, 0.01, 0.01, 0.01, 0.01, 0.01,0.01,0.1};
-   gMinuit_EH1->mnparm(0, "C", vstart[0], step[0], 0,0,ierflg_EH1);
-   gMinuit_EH1->mnparm(1, "A1", vstart[1], step[1], 0,0,ierflg_EH1);
-   gMinuit_EH1->mnparm(2, "A2", vstart[2], step[2], 0,0,ierflg_EH1);
-   gMinuit_EH1->mnparm(3, "A3", vstart[3], step[3], 0,0,ierflg_EH1);
-   gMinuit_EH1->mnparm(4, "A4", vstart[4], step[4], 0,0,ierflg_EH1);
-   gMinuit_EH1->mnparm(5, "B1", vstart[5], step[5], 0,0,ierflg_EH1);
-   gMinuit_EH1->mnparm(6, "B2", vstart[6], step[6], 0,0,ierflg_EH1);
+//   gMinuit_EH1->mnparm(0, "C", vstart[0], step[0], 0,0,ierflg_EH1);
+   gMinuit_EH1->mnparm(0, "A1", vstart[1], step[1], 0,0,ierflg_EH1);
+   gMinuit_EH1->mnparm(1, "A2", vstart[2], step[2], 0,0,ierflg_EH1);
+   gMinuit_EH1->mnparm(2, "A3", vstart[3], step[3], 0,0,ierflg_EH1);
+   gMinuit_EH1->mnparm(3, "A4", vstart[4], step[4], 0,0,ierflg_EH1);
+   gMinuit_EH1->mnparm(4, "B1", vstart[5], step[5], 0,0,ierflg_EH1);
+   gMinuit_EH1->mnparm(5, "B2", vstart[6], step[6], 0,0,ierflg_EH1);
 //   gMinuit_EH1->mnparm(7, "T0", vstart[7], step[7], 0,0,ierflg_EH1);
 
 // Now ready for minimization step
@@ -1657,18 +1685,18 @@ cout<<"start..."<<endl;
 	//C   A1  A2  A3  A4  B1  B2
 	//A1,A3: 1e-21; A2,A4,B1,B2:1e-18
    //Double_t ParResult_EH1[7],ParErrResult_EH1[7];
-   for(int i=0;i<7;i++)
+   for(int i=0;i<6;i++)
    {
 	   Double_t v,ev;
 	   gMinuit_EH1->GetParameter(i,v,ev);
-	   ParResult_EH1[i]=v;
-	   ParErrResult_EH1[i]=ev;
+	   ParResult_EH1[i+1]=v;
+	   ParErrResult_EH1[i+1]=ev;
    }
 
 
 
    ////////////////////////////////////////////////////Fit site by site (EH2 only)
-   TMinuit *gMinuit_EH2 = new TMinuit(7);  //initialize TMinuit with a maximum of 5 params
+   TMinuit *gMinuit_EH2 = new TMinuit(6);  //initialize TMinuit with a maximum of 5 params
    gMinuit_EH2->SetFCN(ChiSquare_EH2);
 
    Double_t arglist_EH2[10];
@@ -1680,13 +1708,13 @@ cout<<"start..."<<endl;
 // Set starting values and step sizes for parameters
 //   Double_t vstart[8] = {1.0,0,0,0,0,0,0,0};
 //   Double_t step[8] = {0.0001, 0.01, 0.01, 0.01, 0.01, 0.01,0.01,0.1};
-   gMinuit_EH2->mnparm(0, "C", vstart[0], step[0], 0,0,ierflg_EH2);
-   gMinuit_EH2->mnparm(1, "A1", vstart[1], step[1], 0,0,ierflg_EH2);
-   gMinuit_EH2->mnparm(2, "A2", vstart[2], step[2], 0,0,ierflg_EH2);
-   gMinuit_EH2->mnparm(3, "A3", vstart[3], step[3], 0,0,ierflg_EH2);
-   gMinuit_EH2->mnparm(4, "A4", vstart[4], step[4], 0,0,ierflg_EH2);
-   gMinuit_EH2->mnparm(5, "B1", vstart[5], step[5], 0,0,ierflg_EH2);
-   gMinuit_EH2->mnparm(6, "B2", vstart[6], step[6], 0,0,ierflg_EH2);
+//   gMinuit_EH2->mnparm(0, "C", vstart[0], step[0], 0,0,ierflg_EH2);
+   gMinuit_EH2->mnparm(0, "A1", vstart[1], step[1], 0,0,ierflg_EH2);
+   gMinuit_EH2->mnparm(1, "A2", vstart[2], step[2], 0,0,ierflg_EH2);
+   gMinuit_EH2->mnparm(2, "A3", vstart[3], step[3], 0,0,ierflg_EH2);
+   gMinuit_EH2->mnparm(3, "A4", vstart[4], step[4], 0,0,ierflg_EH2);
+   gMinuit_EH2->mnparm(4, "B1", vstart[5], step[5], 0,0,ierflg_EH2);
+   gMinuit_EH2->mnparm(5, "B2", vstart[6], step[6], 0,0,ierflg_EH2);
 //   gMinuit_EH2->mnparm(7, "T0", vstart[7], step[7], 0,0,ierflg_EH2);
 
 // Now ready for minimization step
@@ -1705,19 +1733,19 @@ cout<<"start..."<<endl;
 	//C   A1  A2  A3  A4  B1  B2
 	//A1,A3: 1e-21; A2,A4,B1,B2:1e-18
    //Double_t ParResult_EH2[7],ParErrResult_EH2[7];
-   for(int i=0;i<7;i++)
+   for(int i=0;i<6;i++)
    {
 	   Double_t v,ev;
 	   gMinuit_EH2->GetParameter(i,v,ev);
-	   ParResult_EH2[i]=v;
-	   ParErrResult_EH2[i]=ev;
+	   ParResult_EH2[i+1]=v;
+	   ParErrResult_EH2[i+1]=ev;
    }
    
 
 
 
    ////////////////////////////////////////////////////Fit site by site (EH3 only)
-   TMinuit *gMinuit_EH3 = new TMinuit(7);  //initialize TMinuit with a maximum of 5 params
+   TMinuit *gMinuit_EH3 = new TMinuit(6);  //initialize TMinuit with a maximum of 5 params
    gMinuit_EH3->SetFCN(ChiSquare_EH3);
 
    Double_t arglist_EH3[10];
@@ -1729,13 +1757,13 @@ cout<<"start..."<<endl;
 // Set starting values and step sizes for parameters
 //   Double_t vstart[8] = {1.0,0,0,0,0,0,0,0};
 //   Double_t step[8] = {0.0001, 0.01, 0.01, 0.01, 0.01, 0.01,0.01,0.1};
-   gMinuit_EH3->mnparm(0, "C", vstart[0], step[0], 0,0,ierflg_EH3);
-   gMinuit_EH3->mnparm(1, "A1", vstart[1], step[1], 0,0,ierflg_EH3);
-   gMinuit_EH3->mnparm(2, "A2", vstart[2], step[2], 0,0,ierflg_EH3);
-   gMinuit_EH3->mnparm(3, "A3", vstart[3], step[3], 0,0,ierflg_EH3);
-   gMinuit_EH3->mnparm(4, "A4", vstart[4], step[4], 0,0,ierflg_EH3);
-   gMinuit_EH3->mnparm(5, "B1", vstart[5], step[5], 0,0,ierflg_EH3);
-   gMinuit_EH3->mnparm(6, "B2", vstart[6], step[6], 0,0,ierflg_EH3);
+//   gMinuit_EH3->mnparm(0, "C", vstart[0], step[0], 0,0,ierflg_EH3);
+   gMinuit_EH3->mnparm(0, "A1", vstart[1], step[1], 0,0,ierflg_EH3);
+   gMinuit_EH3->mnparm(1, "A2", vstart[2], step[2], 0,0,ierflg_EH3);
+   gMinuit_EH3->mnparm(2, "A3", vstart[3], step[3], 0,0,ierflg_EH3);
+   gMinuit_EH3->mnparm(3, "A4", vstart[4], step[4], 0,0,ierflg_EH3);
+   gMinuit_EH3->mnparm(4, "B1", vstart[5], step[5], 0,0,ierflg_EH3);
+   gMinuit_EH3->mnparm(5, "B2", vstart[6], step[6], 0,0,ierflg_EH3);
 //   gMinuit_EH3->mnparm(7, "T0", vstart[7], step[7], 0,0,ierflg_EH3);
 
 
@@ -1755,12 +1783,12 @@ cout<<"start..."<<endl;
 	//C   A1  A2  A3  A4  B1  B2
 	//A1,A3: 1e-21; A2,A4,B1,B2:1e-18
    //Double_t ParResult_EH3[7],ParErrResult_EH3[7];
-   for(int i=0;i<7;i++)
+   for(int i=0;i<6;i++)
    {
 	   Double_t v,ev;
 	   gMinuit_EH3->GetParameter(i,v,ev);
-	   ParResult_EH3[i]=v;
-	   ParErrResult_EH3[i]=ev;
+	   ParResult_EH3[i+1]=v;
+	   ParErrResult_EH3[i+1]=ev;
    }
    ///////////print
    fprintf(m_outfile,"fit result(three sites) %2s:\n",cdIdx_Name[cdIdx]);
@@ -1876,15 +1904,116 @@ Double_t FitFunc1(Double_t x, Double_t *par)//EH1, C fixed to 1.0
 		Nyt = Ny[HallID][i];
 		Nzt = Nz[HallID][i];
 		TotalP  += 2.0*Baseline_Hall[HallID][i]*5.07*(frac[i]/TotalEveFrac)*IMSM*1.0e-3*( 
-			(Nyt*par[1]*0.001+2.0*E*Nyt*Nzt*par[2]+Nxt*par[3]*0.001-2.0*E*Nxt*Nzt*par[4])*sin(wP*(x+TZero)) +
-			(-1.0*Nxt*par[1]*0.001-2.0*E*Nxt*Nzt*par[2]+Nyt*par[3]*0.001-2.0*E*Nyt*Nzt*par[4])*cos(wP*(x+TZero)) +
-			(E*Nxt*Nyt*par[5]-E*(Nxt*Nxt-Nyt*Nyt)*par[6])*sin(2.0*wP*(x+TZero))+ 
-			(-0.5*E*(Nxt*Nxt-Nyt*Nyt)*par[5]-2.0*E*Nxt*Nyt*par[6])*cos(2.0*wP*(x+TZero)));
+			(Nyt*par[0]*0.001+2.0*E*Nyt*Nzt*par[1]+Nxt*par[2]*0.001-2.0*E*Nxt*Nzt*par[3])*sin(wP*(x+TZero)) +
+			(-1.0*Nxt*par[0]*0.001-2.0*E*Nxt*Nzt*par[1]+Nyt*par[2]*0.001-2.0*E*Nyt*Nzt*par[3])*cos(wP*(x+TZero)) +
+			(E*Nxt*Nyt*par[4]-E*(Nxt*Nxt-Nyt*Nyt)*par[5])*sin(2.0*wP*(x+TZero))+ 
+			(-0.5*E*(Nxt*Nxt-Nyt*Nyt)*par[4]-2.0*E*Nxt*Nyt*par[5])*cos(2.0*wP*(x+TZero)));
 	}
 	return TotalP;
 
 }
 
+Double_t FitFunc2(Double_t x, Double_t *par)//EH1, C fixed to 1.0
+{
+	//0   1   2   3   4   5   6  7
+	//C   A1  A2  A3  A4  B1  B2 TZero
+	//A1,A3: 1e-21; A2,A4,B1,B2:1e-18
+	double TZero = 0.0;//par[7];
+	Int_t HallID=1;
+	Double_t wP = 2.0*pi/86164.09;//omega plus, sidereal frequency
+	Double_t TotalEveFrac = 0.0;
+	Double_t TotalP = AVEP[HallID];
+	Double_t frac[6];
+	Double_t IMSM,Nxt,Nyt,Nzt,E;
+	E = Ave_Energy*1.0e-3;
+	int BIN = int(x/WidthOfBin);
+
+	if(BIN<24)
+	{
+		for(int i=0;i<6;i++)
+		{
+		frac[i] = EveFrac_Hall[HallID][i][BIN];
+		}
+	}
+	else
+	{
+		for(int i=0;i<6;i++)
+		{
+		frac[i] = EveFrac_Hall[HallID][i][23];
+		}
+	}
+
+	for(int i=0;i<6;i++)
+	{
+		TotalEveFrac += frac[i];
+	}
+
+	for(int i=0;i<6;i++)
+	{
+		IMSM = Table_ImSeeMee[HallID][i][IndexCD[0]][IndexCD[1]];
+		Nxt = Nx[HallID][i];
+		Nyt = Ny[HallID][i];
+		Nzt = Nz[HallID][i];
+		TotalP  += 2.0*Baseline_Hall[HallID][i]*5.07*(frac[i]/TotalEveFrac)*IMSM*1.0e-3*( 
+			(Nyt*par[0]*0.001+2.0*E*Nyt*Nzt*par[1]+Nxt*par[2]*0.001-2.0*E*Nxt*Nzt*par[3])*sin(wP*(x+TZero)) +
+			(-1.0*Nxt*par[0]*0.001-2.0*E*Nxt*Nzt*par[1]+Nyt*par[2]*0.001-2.0*E*Nyt*Nzt*par[3])*cos(wP*(x+TZero)) +
+			(E*Nxt*Nyt*par[4]-E*(Nxt*Nxt-Nyt*Nyt)*par[5])*sin(2.0*wP*(x+TZero))+ 
+			(-0.5*E*(Nxt*Nxt-Nyt*Nyt)*par[4]-2.0*E*Nxt*Nyt*par[5])*cos(2.0*wP*(x+TZero)));
+	}
+	return TotalP;
+
+}
+Double_t FitFunc3(Double_t x, Double_t *par)//EH1, C fixed to 1.0
+{
+	//0   1   2   3   4   5   6  7
+	//C   A1  A2  A3  A4  B1  B2 TZero
+	//A1,A3: 1e-21; A2,A4,B1,B2:1e-18
+	double TZero = 0.0;//par[7];
+	Int_t HallID=2;
+	Double_t wP = 2.0*pi/86164.09;//omega plus, sidereal frequency
+	Double_t TotalEveFrac = 0.0;
+	Double_t TotalP = AVEP[HallID];
+	Double_t frac[6];
+	Double_t IMSM,Nxt,Nyt,Nzt,E;
+	E = Ave_Energy*1.0e-3;
+	int BIN = int(x/WidthOfBin);
+
+	if(BIN<24)
+	{
+		for(int i=0;i<6;i++)
+		{
+		frac[i] = EveFrac_Hall[HallID][i][BIN];
+		}
+	}
+	else
+	{
+		for(int i=0;i<6;i++)
+		{
+		frac[i] = EveFrac_Hall[HallID][i][23];
+		}
+	}
+
+	for(int i=0;i<6;i++)
+	{
+		TotalEveFrac += frac[i];
+	}
+
+	for(int i=0;i<6;i++)
+	{
+		IMSM = Table_ImSeeMee[HallID][i][IndexCD[0]][IndexCD[1]];
+		Nxt = Nx[HallID][i];
+		Nyt = Ny[HallID][i];
+		Nzt = Nz[HallID][i];
+		TotalP  += 2.0*Baseline_Hall[HallID][i]*5.07*(frac[i]/TotalEveFrac)*IMSM*1.0e-3*( 
+			(Nyt*par[0]*0.001+2.0*E*Nyt*Nzt*par[1]+Nxt*par[2]*0.001-2.0*E*Nxt*Nzt*par[3])*sin(wP*(x+TZero)) +
+			(-1.0*Nxt*par[0]*0.001-2.0*E*Nxt*Nzt*par[1]+Nyt*par[2]*0.001-2.0*E*Nyt*Nzt*par[3])*cos(wP*(x+TZero)) +
+			(E*Nxt*Nyt*par[4]-E*(Nxt*Nxt-Nyt*Nyt)*par[5])*sin(2.0*wP*(x+TZero))+ 
+			(-0.5*E*(Nxt*Nxt-Nyt*Nyt)*par[4]-2.0*E*Nxt*Nyt*par[5])*cos(2.0*wP*(x+TZero)));
+	}
+	return TotalP;
+
+}
+/*
 Double_t FitFunc2(Double_t x, Double_t *par)//EH2, C fixed to 1.0
 {
 	//0   1   2   3   4   5   6  7
@@ -1986,7 +2115,7 @@ Double_t FitFunc3(Double_t x, Double_t *par)//EH3, C fixed to 1.0
 	return TotalP;
 
 }
-
+*/
 
 
 void ChiSquare(Int_t &npar, Double_t *gin, Double_t &f, Double_t *par, Int_t iflag)
@@ -1998,6 +2127,7 @@ void ChiSquare(Int_t &npar, Double_t *gin, Double_t &f, Double_t *par, Int_t ifl
    Double_t chisq = 0;
    Double_t delta;
    //EH1
+  
    for (i=0;i<nbins; i++) {
      delta  = (R[0][i]-FitFunc1(i*WidthOfBin,par))/RD_R[0][i];
      chisq += delta*delta;
@@ -2008,6 +2138,8 @@ void ChiSquare(Int_t &npar, Double_t *gin, Double_t &f, Double_t *par, Int_t ifl
      chisq += delta*delta;
    }
    //EH3
+ 
+   
    for (i=0;i<nbins; i++) {
      delta  = (R[2][i]-FitFunc3(i*WidthOfBin,par))/RD_R[2][i];
      chisq += delta*delta;

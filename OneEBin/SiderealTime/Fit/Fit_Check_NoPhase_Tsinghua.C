@@ -89,7 +89,7 @@ double LatHall[3] = {22.598,22.606,22.612};//latitude of the three halls, degree
 	double PositionADn[8][3] = {0.0};
 	double PositionHalln[3][3] = {0.0};//position of the hall, center of the ADs,[HallNo][X/Y/Z]
 	double PositionRctn[6][3] = {0.0};
-	double RotAngl = 9.0*pi/180.0;//9 degrees of rotation
+	double RotAngl = 0.0;//9.0*pi/180.0;//9 degrees of rotation
 
 	double A_chi[3][6] = {0.0};//angle chi, [HallNo][RctNo],in unit of radius
 	double A_theta[3][6] = {0.0};//angle theta, [HallNo][RctNo]
@@ -200,7 +200,7 @@ cout<<"start..."<<endl;
 	
 	////////cout<<"Hall			Rct			theta			phi			chi			Nx			Ny			Nz"<<endl;			
 	//fprintf(stderr,"\n");
-	//fprintf(stderr,"%5s %5s %12s %12s %12s %12s %12s %12s \n","Hall","Rct","theta","phi","chi","Nx","Ny","Nz");
+	fprintf(stderr,"%5s %5s %12s %12s %12s %12s %12s %12s \n","Hall","Rct","theta","phi","chi","Nx","Ny","Nz");
 	for(int Hallidx = 0;Hallidx<3;Hallidx++)
 	{
 		for(int Rctidx = 0;Rctidx<6;Rctidx++)
@@ -223,7 +223,7 @@ cout<<"start..."<<endl;
 			Nx[Hallidx][Rctidx] = cos(A_chi[Hallidx][Rctidx])*sin(A_theta[Hallidx][Rctidx])*cos(A_phi[Hallidx][Rctidx]) + sin(A_chi[Hallidx][Rctidx])*cos(A_theta[Hallidx][Rctidx]);
 			Ny[Hallidx][Rctidx] = sin(A_theta[Hallidx][Rctidx])*sin(A_phi[Hallidx][Rctidx]);
 			Nz[Hallidx][Rctidx] = -1*sin(A_chi[Hallidx][Rctidx])*sin(A_theta[Hallidx][Rctidx])*cos(A_phi[Hallidx][Rctidx]) + cos(A_chi[Hallidx][Rctidx])*cos(A_theta[Hallidx][Rctidx]);
-			//fprintf(stderr,"%5d %5d %12.6f %12.6f %12.6f %12.6f %12.6f %12.6f \n", Hallidx, Rctidx, A_theta[Hallidx][Rctidx]*180.0/pi, A_phi[Hallidx][Rctidx]*180.0/pi, A_chi[Hallidx][Rctidx]*180.0/pi, Nx[Hallidx][Rctidx], Ny[Hallidx][Rctidx], Nz[Hallidx][Rctidx]);
+			fprintf(stderr,"%5d %5d %12.6f %12.6f %12.6f %12.6f %12.6f %12.6f \n", Hallidx, Rctidx, A_theta[Hallidx][Rctidx]*180.0/pi, A_phi[Hallidx][Rctidx]*180.0/pi, A_chi[Hallidx][Rctidx]*180.0/pi, Nx[Hallidx][Rctidx], Ny[Hallidx][Rctidx], Nz[Hallidx][Rctidx]);
 		}
 	}
 

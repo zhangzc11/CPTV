@@ -974,10 +974,15 @@ void CalculateRatio()
 		{
 			cout<<R[Hidx][i][Eidx]<<"   "<<RD_R[Hidx][i][Eidx]<<"      ";
 		}
+		for(int Det=0;Det<8;Det++)
+		{
+
+			cout<<RD_R_Det[Det][i][Eidx]<<"   ";
+		}
 		cout<<endl;
 	}
 	}
-
+     cout<<"end of checking of data..."<<endl;
 	Double_t MeanRatio[3][5] = {0.0};
 	for(int Eidx=0;Eidx<5;Eidx++)
 	{
